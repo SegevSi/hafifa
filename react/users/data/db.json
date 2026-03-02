@@ -1,0 +1,29 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "segev",
+            "age": 20
+        },
+        {
+            "id": 2,
+            "name": "david",
+            "age": 45
+        },
+        {
+            "id": 3,
+            "name": "shalom",
+            "age": 88
+        },
+        {
+            "id": 4,
+            "name": "hello",
+            "age": 55
+        },
+        {
+            "id": 5,
+            "name": "world",
+            "age": 100
+        }
+    ]
+}
