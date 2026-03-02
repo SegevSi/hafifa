@@ -2,6 +2,7 @@ import "./index.css"
 import UserList from "./UserList";
 import useFetch from "./useFetch";
 import type { User } from "./types";
+import Loading from "./Loading";
 
 const server: string = "http://localhost:8000";
 
@@ -14,7 +15,7 @@ const App = () => {
   return (
     <div className=".app">
       { error && <div>{ "shilat buchnik" }</div> }
-      { isPending && <div>Loading...</div> }
+      { isPending && <Loading/> }
       { users && <UserList users={users} /> }
     </div>
   );

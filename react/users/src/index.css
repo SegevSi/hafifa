@@ -32,3 +32,10 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
