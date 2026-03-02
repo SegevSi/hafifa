@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Loading = () => {
+const Loading = ({loadingPrompt }: {loadingPrompt: string}) => {
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const Loading = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <div className="loading-container"><h2>Loading{".".repeat(count)}</h2></div>;
+  return <div className="loading-container"><h2>{loadingPrompt}{".".repeat(count)}</h2></div>;
 };
 
 export default Loading;

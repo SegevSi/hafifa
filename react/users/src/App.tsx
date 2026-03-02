@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className=".app">
       { error && <div>{ "shilat buchnik" }</div> }
-      { isPending && <Loading/> }
+      { isPending && <Loading loadingPrompt="Loading"/> }
       { users && <UserList users={users} /> }
     </div>
   );
