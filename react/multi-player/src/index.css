@@ -45,14 +45,14 @@
   color: white;
 }
 
-.addForm {
+.playerForm {
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin-top: 10px;
 }
 
-.input {
+.addForm input {
   padding: 4px;
 }
 
@@ -80,4 +80,8 @@
   display: flex;
   gap: 10px;
   margin-top: 15px;
+}
+
+.profession {
+  font-size: 12;
 }

@@ -11,22 +11,17 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
     const BEST_SKILL_SIGN = "*";
 
     const changeSkill = (currSkill: Skill, value: number): void => {
-        if (!selectedPlayer) 
-            throw Error("trying to change skill of a player that does not exist");
-
         changeAllSkills({...selectedPlayer.skills, [currSkill]: value});
     };
 
     return (
         <>
         <div className="content">
-        {selectedPlayer ? (
-            <>
-            {selectedPlayer.free != 0 ? (<h1 className="error">there is unused skills points</h1>) : {}}
+            {selectedPlayer.free !== 0 && (<h1 className="error">there is unused skills points</h1>)}
             <div>Total Points: {selectedPlayer.total}</div>
             <div>Free Points: {selectedPlayer.free}</div>
             <hr />
-
+            
             {SKILLS.map(skill => {
                 let name: string = skill;
                 let minPoints: number = SkillData.MIN_POINTS;
@@ -56,14 +51,10 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
                 <button className="button" onClick={() => changeAllSkills(initSkills(selectedPlayer.cls))}>
                     Reset
                 </button>
-            </div>
-            </>
-        ) : (
-            <div>Select a player</div>
-        )}
+            </div> 
         </div>
     </>
-    )
+    );
 };
 
 export default SkillContent;
