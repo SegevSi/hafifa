@@ -17,7 +17,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
     return (
         <>
         <div className="content">
-            {selectedPlayer.free !== 0 && (<h1 className="error">there is unused skills points</h1>)}
+            {selectedPlayer.free !== 0 && (<h1 className="error">there are unused skills points</h1>)}
             <div>Total Points: {selectedPlayer.total}</div>
             <div>Free Points: {selectedPlayer.free}</div>
             <hr />
