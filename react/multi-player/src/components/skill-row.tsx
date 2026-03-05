@@ -6,7 +6,7 @@ function SkillRow(props: SkillRowProps) {
 
     return (
         <>
-        <div key={props.skill} className="skillRow">
+        <div className="skillRow">
             <span>
                 {props.name}
             </span>
@@ -14,7 +14,7 @@ function SkillRow(props: SkillRowProps) {
                 <button onClick={() => props.changePoints(props.currPoints - 1)}>-</button>
                 <input type="number" 
                     value={props.currPoints} 
-                    onInput={e => props.changePoints(e.currentTarget.valueAsNumber)}
+                    onChange={e => props.changePoints(e.target.valueAsNumber)}
                 />
                 <button onClick={() => props.changePoints(props.currPoints + 1)}>+</button>
             </div>

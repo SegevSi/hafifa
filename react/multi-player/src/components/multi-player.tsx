@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { Player, PlayerFormData, Skills } from "../types";
 import SkillContent from "./skill-content";
-import { changePlayerSkills } from "../utils/player";
+import { getChangedSkillsPlayer } from "../utils/player";
 import { createPlayer } from "../utils/player";
 import PlayersSideBar from "./player-side-bar";
 
@@ -24,7 +24,7 @@ export default function Multiplayer() {
     const addPlayer = (data: PlayerFormData): void => {
         const p = createPlayer(data);
         setPlayers([...players, p]);
-        setSelectedPlayerId(p.id);
+        setSelectedPlayerId(p.id)
     };
 
     const disableButton = selectedPlayer !== undefined ? selectedPlayer.free !== 0 : false;
@@ -43,7 +43,7 @@ export default function Multiplayer() {
             {selectedPlayer ? (
                 <SkillContent 
                     selectedPlayer={selectedPlayer} 
-                    changeAllSkills={(skills: Skills): void => updatePlayer(changePlayerSkills(selectedPlayer, skills))}
+                    changeAllSkills={(skills: Skills): void => updatePlayer(getChangedSkillsPlayer(selectedPlayer, skills))}
                 />) : (
             <div className="content">Select a player</div>
             )}
