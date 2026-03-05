@@ -36,11 +36,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
             <hr />
 
             {SKILLS.map(skill => {
-                let name: string = skill;
-
-                if (ProfessionData[selectedPlayer.cls].bonusSkill === skill) {
-                    name = `${skill} ${BEST_SKILL_SIGN}`;
-                }
+                const name = ProfessionData[selectedPlayer.cls].bonusSkill === skill? `${skill} ${BEST_SKILL_SIGN}` : skill;
 
                 return (
                     <SkillRow
