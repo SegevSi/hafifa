@@ -11,7 +11,20 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
     const BEST_SKILL_SIGN = "*";
 
     const changeSkill = (currSkill: Skill, value: number): void => {
-        changeAllSkills({...selectedPlayer.skills, [currSkill]: value});
+        let min = SkillData.MIN_POINTS;
+        let max = SkillData.MAX_POINTS;
+
+        if (ProfessionData[selectedPlayer.cls].bonusSkill === currSkill) {
+            min += SkillData.BONUS_POINTS;
+            max += SkillData.BONUS_POINTS;
+        }
+
+        if (value >= min && value <= max) {
+            changeAllSkills({
+                ...selectedPlayer.skills,
+                [currSkill]: value
+            });
+        }
     };
 
     return (
@@ -24,13 +37,9 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
 
             {SKILLS.map(skill => {
                 let name: string = skill;
-                let minPoints: number = SkillData.MIN_POINTS;
-                let maxPoints: number = SkillData.MAX_POINTS;
 
                 if (ProfessionData[selectedPlayer.cls].bonusSkill === skill) {
                     name = `${skill} ${BEST_SKILL_SIGN}`;
-                    minPoints += SkillData.BONUS_POINTS;
-                    maxPoints += SkillData.BONUS_POINTS;
                 }
 
                 return (
@@ -39,8 +48,6 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
                         name={name}
                         skill={skill}
                         currPoints={selectedPlayer.skills[skill]}
-                        minPoints={minPoints}
-                        maxPoints={maxPoints}
                         changePoints={(value: number) => changeSkill(skill, value)}
                     />
                 );

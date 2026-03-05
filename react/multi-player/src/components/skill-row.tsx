@@ -13,8 +13,6 @@ function SkillRow(props: SkillRowProps) {
             <div>
                 <button onClick={() => props.changePoints(props.currPoints - 1)}>-</button>
                 <input type="number" 
-                    min={props.minPoints} 
-                    max={props.maxPoints} 
                     value={props.currPoints} 
                     onInput={e => props.changePoints(e.currentTarget.valueAsNumber)}
                 />

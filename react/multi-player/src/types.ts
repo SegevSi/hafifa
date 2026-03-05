@@ -14,8 +14,6 @@ type SkillRowProps = {
     skill: Skill;
     name: string;
     currPoints: number;
-    minPoints: number;
-    maxPoints: number;
     changePoints: (value: number) => void;
 };
 
