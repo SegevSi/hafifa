@@ -1,7 +1,9 @@
 import { useState } from "react";
-import type { Player, Skills } from "../types";
+import type { Player, PlayerFormData, Skills } from "../types";
 import SkillContent from "./skill-content";
 import { changePlayerSkills } from "../utils/player";
+import { createPlayer } from "../utils/player";
+import PlayersSideBar from "./player-side-bar";
 
 
 export default function Multiplayer() {
@@ -19,21 +21,25 @@ export default function Multiplayer() {
         }));
     }; 
 
-    const isValid = (): boolean => {
-        if (selectedPlayer !== undefined) 
-            return selectedPlayer.free === 0;
-
-        return true;
+    const addPlayer = (data: PlayerFormData): void => {
+        const p = createPlayer(data);
+        setPlayers([...players, p]);
+        setSelectedPlayerId(p.id);
     };
 
-    const selectPlayer = (id: number): void => {
-        if (isValid()) 
-            setSelectedPlayerId(id)
-    };
+    const disableButton = selectedPlayer !== undefined ? selectedPlayer.free !== 0 : false;
+    
 
     return (
     <>
         <div className="container">
+            <PlayersSideBar 
+                addPlayer={addPlayer}
+                disableButton={disableButton}
+                selectedPlayerId={selectedPlayerId}
+                players={players}
+                selectPlayer={(id: number): void => setSelectedPlayerId(id)}
+            />
             {selectedPlayer ? (
                 <SkillContent 
                     selectedPlayer={selectedPlayer} 

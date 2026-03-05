@@ -5,7 +5,7 @@ import SkillData from "../data/SkillData";
 
 function initSkills(proffession: Profession): Skills {
   const skills = {} as Skills;
-  SKILLS.forEach(skill => (skills[skill] = SkillData.MIN_SKILL));
+  SKILLS.forEach(skill => (skills[skill] = SkillData.MIN_POINTS));
   skills[ProfessionsData[proffession].bonusSkill] += SkillData.BONUS_POINTS;
   
   return skills;

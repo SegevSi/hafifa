@@ -15,7 +15,7 @@ const ProfessionsData: Record<Profession, ProfessionData> = {
     },
     assassin: {
         bonusSkill: "CHR",
-        img: "/public/images/assassin.jpg"
+        img: "/public/images/assasin.jpg"
     },
     paladin: {
         bonusSkill: "CON",

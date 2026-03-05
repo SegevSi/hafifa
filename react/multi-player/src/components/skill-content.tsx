@@ -21,7 +21,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
             <div>Total Points: {selectedPlayer.total}</div>
             <div>Free Points: {selectedPlayer.free}</div>
             <hr />
-            
+
             {SKILLS.map(skill => {
                 let name: string = skill;
                 let minPoints: number = SkillData.MIN_POINTS;
@@ -35,6 +35,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
 
                 return (
                     <SkillRow
+                        key={skill}
                         name={name}
                         skill={skill}
                         currPoints={selectedPlayer.skills[skill]}

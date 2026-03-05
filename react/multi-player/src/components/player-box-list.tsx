@@ -1,9 +1,9 @@
-import type { PlayerBoxListProp } from "../types";
+import type { PlayerBoxListProps } from "../types";
 import ProfessionsData from "../data/ProffessionsData";
 import "../index.css";
 
 
-export default function PlayerBoxList({ selectedPlayerId, players, selectPlayer }: PlayerBoxListProp) {
+export default function PlayerBoxList({ selectedPlayerId, players, selectPlayer }: PlayerBoxListProps) {
 
     return (
     <>
