@@ -22,7 +22,7 @@ type Skills = Record<Skill, number>;
 type Player = {
     id: number;
     name: string;
-    cls: Profession;
+    profession: Profession;
     total: number;
     skills: Skills;
     free: number;

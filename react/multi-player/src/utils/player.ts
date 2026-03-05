@@ -18,7 +18,7 @@ function calcPlayerTotalPoints() {
 };
 
 // TODO: rename cls to profession
-function createPlayer({name, profession}: PlayerFormData) {
+function createPlayer({name, profession}: PlayerFormData): Player {
   const total = calcPlayerTotalPoints();
   const skills = initSkills(profession);
   const used = Object.values(skills).reduce((a, b) => a + b, 0);
@@ -26,7 +26,7 @@ function createPlayer({name, profession}: PlayerFormData) {
   return {
     id: getId(),
     name,
-    cls: profession,
+    profession,
     total: total,
     skills,
     free: total - used,

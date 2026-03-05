@@ -15,12 +15,12 @@ export default function PlayerBoxList({ selectedPlayerId, players, selectPlayer 
           >
             <img
               className="icon"
-              src={ ProfessionsData[p.cls].img }
+              src={ ProfessionsData[p.profession].img }
               alt="image unavalible"
             />
             <div>
               <div>{p.name}</div>
-              <div className="profession">{p.cls}</div>
+              <div className="profession">{p.profession}</div>
             </div>
           </div>
         ))}

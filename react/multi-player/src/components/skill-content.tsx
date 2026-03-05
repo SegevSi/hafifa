@@ -14,7 +14,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
         let min = SkillData.MIN_POINTS;
         let max = SkillData.MAX_POINTS;
 
-        if (ProfessionData[selectedPlayer.cls].bonusSkill === currSkill) {
+        if (ProfessionData[selectedPlayer.profession].bonusSkill === currSkill) {
             min += SkillData.BONUS_POINTS;
             max += SkillData.BONUS_POINTS;
         }
@@ -36,7 +36,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
             <hr />
 
             {SKILLS.map(skill => {
-                const name = ProfessionData[selectedPlayer.cls].bonusSkill === skill? `${skill} ${BEST_SKILL_SIGN}` : skill;
+                const name = ProfessionData[selectedPlayer.profession].bonusSkill === skill? `${skill} ${BEST_SKILL_SIGN}` : skill;
 
                 return (
                     <SkillRow
@@ -49,10 +49,10 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
                 );
             })}
             <div className="buttonsRow">
-                <button className="button" onClick={() => changeAllSkills(randomizeSkills(selectedPlayer.cls, selectedPlayer.total))}>
+                <button className="button" onClick={() => changeAllSkills(randomizeSkills(selectedPlayer.profession, selectedPlayer.total))}>
                     Random
                 </button>
-                <button className="button" onClick={() => changeAllSkills(initSkills(selectedPlayer.cls))}>
+                <button className="button" onClick={() => changeAllSkills(initSkills(selectedPlayer.profession))}>
                     Reset
                 </button>
             </div> 
