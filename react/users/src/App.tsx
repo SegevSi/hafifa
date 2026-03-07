@@ -1,5 +1,5 @@
 import "./index.css"
-import UserList from "./UserList";
+import UserCardList from "./UserCardList";
 import useFetch from "./useFetch";
 import type { User } from "./types";
 import Loading from "./Loading";
@@ -16,7 +16,7 @@ const App = () => {
     <div className=".app">
       { error && <div>{ "shilat buchnik" }</div> }
       { isPending && <Loading loadingPrompt="Loading"/> }
-      { users && <UserList users={users} /> }
+      { users && <UserCardList users={users} /> }
     </div>
   );
 }

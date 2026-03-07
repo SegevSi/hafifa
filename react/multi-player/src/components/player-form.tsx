@@ -23,12 +23,11 @@ export default function PlayerForm({ addPlayer, disableButton }: PlayerFormProps
 
     return (
     <>
-    <div className="playerForm">
+    <form className="playerForm">
         <input
             placeholder="Name"
             value={name}
             onChange={e => setName(e.target.value)}
-            className="input"
         />
         <select
             value={profession}
@@ -39,10 +38,10 @@ export default function PlayerForm({ addPlayer, disableButton }: PlayerFormProps
             <option key={c}>{c}</option>
             ))}
         </select>
-        <button className="button" onClick={addPlayerHandler} disabled={disableButton}>
+        <button className="button" type="submit" onClick={addPlayerHandler} disabled={disableButton}>
             Save
         </button>
-        </div> 
+        </form> 
     </>
     );
 };
