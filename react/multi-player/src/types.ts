@@ -10,6 +10,8 @@ type ProfessionData = {
     img: string;
 };
 
+type Skills = Record<Skill, number>;
+
 type SkillRowProps = {
     skill: Skill;
     name: string;
@@ -17,7 +19,12 @@ type SkillRowProps = {
     changePoints: (value: number) => void;
 };
 
-type Skills = Record<Skill, number>;
+type SkillRowListProps = {
+    skills: Skills;
+    changeSkill: (skill: Skill, value: number) => void;
+    bestSkill: Skill;
+};
+
 
 type Player = {
     id: number;
@@ -61,6 +68,7 @@ export type {
     ProfessionData, 
     Profession, 
     SkillRowProps, 
+    SkillRowListProps,
     Player, 
     SkillsContentProps, 
     Skill, 

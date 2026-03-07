@@ -9,7 +9,7 @@ function initSkills(proffession: Profession): Skills {
   skills[ProfessionsData[proffession].bonusSkill] += SkillData.BONUS_POINTS;
   
   return skills;
-};
+}
 
 function randomizeSkills(profession: Profession, totalPoints: number): Skills {
   const skills: Skills = initSkills(profession);
@@ -31,4 +31,8 @@ function randomizeSkills(profession: Profession, totalPoints: number): Skills {
   return skills;
 }
 
-export { initSkills, randomizeSkills };
+function sumSkillsPoints(skills: Skills): number {
+    return Object.values(skills).reduce((a, b) => a + b, 0);
+}
+
+export { initSkills, randomizeSkills, sumSkillsPoints };

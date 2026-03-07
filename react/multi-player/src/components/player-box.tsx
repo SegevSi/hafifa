@@ -20,5 +20,5 @@ export default function PlayerBox({ isSelected, player, selectPlayer }: PlayerBo
             </div>
         </div>
     );
-};
+}
 

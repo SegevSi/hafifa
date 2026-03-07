@@ -48,5 +48,5 @@ export default function PlayerForm({ savePlayer, disableButton }: PlayerFormProp
     </div> 
     </>
     );
-};
+}
 

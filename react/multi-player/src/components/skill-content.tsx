@@ -1,20 +1,19 @@
 import type { Skill, SkillsContentProps } from "../types";
-import SKILLS from "../data/Skills";
 import ProfessionData from "../data/ProffessionsData";
 import SkillData from "../data/SkillData";
 import "../index.css";
-import SkillRow from "./skill-row";
+import SkillRowList from "./skill-row-list";
 import { initSkills, randomizeSkills } from "../utils/skills";
 
 
-function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
-    const BEST_SKILL_SIGN = "*";
 
-    const changeSkill = (currSkill: Skill, value: number): void => {
+function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
+
+    const changeSkill = (skill: Skill, value: number): void => {
         let min = SkillData.MIN_POINTS;
         let max = SkillData.MAX_POINTS;
 
-        if (ProfessionData[selectedPlayer.profession].bonusSkill === currSkill) {
+        if (ProfessionData[selectedPlayer.profession].bonusSkill === skill) {
             min += SkillData.BONUS_POINTS;
             max += SkillData.BONUS_POINTS;
         }
@@ -22,32 +21,25 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
         if (value >= min && value <= max) {
             changeAllSkills({
                 ...selectedPlayer.skills,
-                [currSkill]: value
+                [skill]: value
             });
         }
     };
 
     return (
         <>
-        <div className="content">
-            {selectedPlayer.free !== 0 && (<h1 className="error">there are unused skills points</h1>)}
+        <div className="skillContent">
+            <h1>Player {selectedPlayer.name}</h1>
             <div>Total Points: {selectedPlayer.total}</div>
             <div>Free Points: {selectedPlayer.free}</div>
+            {selectedPlayer.free !== 0 && (<div className="error">there are unused skills points</div>)}
             <hr />
 
-            {SKILLS.map(skill => {
-                const name = ProfessionData[selectedPlayer.profession].bonusSkill === skill? `${skill} ${BEST_SKILL_SIGN}` : skill;
-
-                return (
-                    <SkillRow
-                        key={skill}
-                        name={name}
-                        skill={skill}
-                        currPoints={selectedPlayer.skills[skill]}
-                        changePoints={(value: number) => changeSkill(skill, value)}
-                    />
-                );
-            })}
+            <SkillRowList
+                skills={selectedPlayer.skills}
+                changeSkill={changeSkill}
+                bestSkill={ProfessionData[selectedPlayer.profession].bonusSkill}
+            />
             <div className="buttonsRow">
                 <button 
                     className="button" 
@@ -63,6 +55,6 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
         </div>
     </>
     );
-};
+}
 
 export default SkillContent;

@@ -1,5 +1,4 @@
 import type { SkillRowProps } from "../types";
-import "../index.css";
 
 
 function SkillRow(props: SkillRowProps) {
@@ -21,6 +20,6 @@ function SkillRow(props: SkillRowProps) {
         </div>
         </>
     )
-};
+}
 
 export default SkillRow;
