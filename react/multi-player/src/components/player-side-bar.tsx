@@ -13,8 +13,8 @@ export default function PlayersSideBar(props: playersSideBarProps) {
             props.selectPlayer(id);
     };
 
-    const addPlayerHandler = (playerForm: PlayerFormData): void => {
-        props.addPlayer(playerForm);
+    const savePlayerHandler = (playerForm: PlayerFormData): void => {
+        props.savePlayer(playerForm);
         setShowForm(false);
     };
 
@@ -37,7 +37,7 @@ export default function PlayersSideBar(props: playersSideBarProps) {
         ) : (
             <PlayerForm 
                 disableButton={props.disableButton}
-                addPlayer={addPlayerHandler}
+                savePlayer={savePlayerHandler}
             />
         )}
     </div>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../index.css";
 
 
-export default function PlayerForm({ addPlayer, disableButton }: PlayerFormProps) {
+export default function PlayerForm({ savePlayer, disableButton }: PlayerFormProps) {
     const DEFAULT_NAME = undefined;
     const DEFAULT_PROFESSION = PROFESSIONS[0];
     
@@ -18,7 +18,7 @@ export default function PlayerForm({ addPlayer, disableButton }: PlayerFormProps
 
     const addPlayerHandler = () => {
         if (name) {
-            addPlayer({name, profession});
+            savePlayer({name, profession});
             resetForm();
         }
     };

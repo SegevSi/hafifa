@@ -21,10 +21,21 @@ export default function Multiplayer() {
         }));
     }; 
 
-    const addPlayer = (data: PlayerFormData): void => {
-        const p = createPlayer(data);
-        setPlayers([...players, p]);
-        setSelectedPlayerId(p.id)
+    const addPlayer = (player: Player): void => {
+        setPlayers([...players, player]);
+    };
+
+    const savePlayerHandler = (data: PlayerFormData): void => {
+        const newPlayer = createPlayer(data);
+        addPlayer(newPlayer);
+        setSelectedPlayerId(newPlayer.id);
+    };
+
+    const changeSelectedPlayerSkills = (skills: Skills): void => {
+        if (selectedPlayer) {
+            const updatedSelectedPlayer = getChangedSkillsPlayer(selectedPlayer, skills);
+            updatePlayer(updatedSelectedPlayer);
+        }
     };
 
     const disableButton = selectedPlayer !== undefined ? selectedPlayer.free !== 0 : false;
@@ -34,7 +45,7 @@ export default function Multiplayer() {
     <>
         <div className="container">
             <PlayersSideBar 
-                addPlayer={addPlayer}
+                savePlayer={savePlayerHandler}
                 disableButton={disableButton}
                 selectedPlayerId={selectedPlayerId}
                 players={players}
@@ -43,7 +54,7 @@ export default function Multiplayer() {
             {selectedPlayer ? (
                 <SkillContent 
                     selectedPlayer={selectedPlayer} 
-                    changeAllSkills={(skills: Skills): void => updatePlayer(getChangedSkillsPlayer(selectedPlayer, skills))}
+                    changeAllSkills={changeSelectedPlayerSkills}
                 />) : (
             <div className="content">Select a player</div>
             )}

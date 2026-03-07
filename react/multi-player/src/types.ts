@@ -33,6 +33,12 @@ type SkillsContentProps = {
     changeAllSkills: (skills: Skills) => void
 };
 
+type PlayerBoxProps = {
+    player: Player;
+    isSelected: boolean;
+    selectPlayer: () => void;
+};
+
 type PlayerBoxListProps = {
     selectedPlayerId: number | null;
     players: Player[];
@@ -45,7 +51,7 @@ type PlayerFormData = {
 };
 
 type PlayerFormProps = {
-    addPlayer: (playerForm: PlayerFormData) => void;
+    savePlayer: (playerForm: PlayerFormData) => void;
     disableButton: boolean;
 };
 
@@ -59,6 +65,7 @@ export type {
     SkillsContentProps, 
     Skill, 
     Skills, 
+    PlayerBoxProps,
     PlayerBoxListProps,
     PlayerFormData,
     PlayerFormProps,

@@ -1,28 +1,18 @@
 import type { PlayerBoxListProps } from "../types";
-import ProfessionsData from "../data/ProffessionsData";
-import "../index.css";
+import PlayerBox from "./player-box";
 
 
 export default function PlayerBoxList({ selectedPlayerId, players, selectPlayer }: PlayerBoxListProps) {
 
     return (
     <>
-        {players.map(p => (
-          <div
-            key={p.id}
-            className={`playerBox ${selectedPlayerId === p.id ? "selected" : ""}`}
-            onClick={() => selectPlayer(p.id)}
-          >
-            <img
-              className="icon"
-              src={ ProfessionsData[p.profession].img }
-              alt="image unavalible"
+        {players.map(player => (
+            <PlayerBox 
+                key={player.id}
+                player={player}
+                isSelected={player.id == selectedPlayerId}  
+                selectPlayer={() => selectPlayer(player.id)}  
             />
-            <div>
-              <div>{p.name}</div>
-              <div className="profession">{p.profession}</div>
-            </div>
-          </div>
         ))}
     </>
     );

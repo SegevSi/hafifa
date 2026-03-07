@@ -49,10 +49,14 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
                 );
             })}
             <div className="buttonsRow">
-                <button className="button" onClick={() => changeAllSkills(randomizeSkills(selectedPlayer.profession, selectedPlayer.total))}>
+                <button 
+                    className="button" 
+                    onClick={() => changeAllSkills(randomizeSkills(selectedPlayer.profession, selectedPlayer.total))}>
                     Random
                 </button>
-                <button className="button" onClick={() => changeAllSkills(initSkills(selectedPlayer.profession))}>
+                <button 
+                    className="button" 
+                    onClick={() => changeAllSkills(initSkills(selectedPlayer.profession))}>
                     Reset
                 </button>
             </div> 
