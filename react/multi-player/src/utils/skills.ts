@@ -2,10 +2,12 @@ import type { Skills, Skill } from "../types";
 import SKILLS from "../data/Skills";
 import SkillData from "../data/skill-data";
 
-function initSkills(bonusSkill: Skill): Skills {
+function initSkills(bonusSkill: Skill | null = null): Skills {
   const skills = {} as Skills;
   SKILLS.forEach(skill => (skills[skill] = SkillData.MIN_POINTS));
-  skills[bonusSkill] += SkillData.BONUS_POINTS;
+  
+  if (bonusSkill)
+    skills[bonusSkill] += SkillData.BONUS_POINTS;
   
   return skills;
 }
@@ -15,9 +17,9 @@ function sumSkillsPoints(skills: Skills): number {
 }
 
 function randomizeSkills(bonusSkill: Skill, totalPoints: number): Skills {
-  const skills: Skills = initSkills(bonusSkill);
+  const skills: Skills = initSkills();
 
-  let remaining = totalPoints - sumSkillsPoints(skills) - SkillData.BONUS_POINTS;
+  let remaining = totalPoints - sumSkillsPoints(skills);
 
   while (remaining > 0) {
     const randomSkill = SKILLS[Math.floor(Math.random() * SKILLS.length)];
