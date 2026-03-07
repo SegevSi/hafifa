@@ -2,6 +2,7 @@ import type { Player, Skills, PlayerFormData } from "../types";
 import { initSkills, sumSkillsPoints } from "./skills";
 import PlayerData from "../data/player-data";
 import SkillData from "../data/skill-data";
+import ProfessionsData from "../data/proffessions-data";
 
 
 let count = 0;
@@ -19,8 +20,7 @@ function calcPlayerTotalPoints() {
 
 function createPlayer({name, profession}: PlayerFormData): Player {
   const total = calcPlayerTotalPoints();
-  const skills = initSkills(profession);
-  const used = sumSkillsPoints(skills);
+  const skills = initSkills(ProfessionsData[profession].bonusSkill);
   
   return {
     id: getId(),
@@ -28,17 +28,16 @@ function createPlayer({name, profession}: PlayerFormData): Player {
     profession,
     total: total,
     skills,
-    free: total - used,
+    free: total - sumSkillsPoints(skills)
   };
 }
 
 function getChangedSkillsPlayer(player: Player, skills: Skills): Player {
-    const used = sumSkillsPoints(skills);
 
     return {
         ...player,
         skills,
-        free: player.total - used
+        free: player.total - sumSkillsPoints(skills)
     };
 }
 

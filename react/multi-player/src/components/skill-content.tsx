@@ -1,7 +1,6 @@
 import type { Skill, SkillsContentProps } from "../types";
-import ProfessionData from "../data/proffessions-data";
+import ProfessionsData from "../data/proffessions-data";
 import SkillData from "../data/skill-data";
-import "../index.css";
 import SkillRowList from "./skill-row-list";
 import { initSkills, randomizeSkills } from "../utils/skills";
 
@@ -13,7 +12,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
         let min = SkillData.MIN_POINTS;
         let max = SkillData.MAX_POINTS;
 
-        if (ProfessionData[selectedPlayer.profession].bonusSkill === skill) {
+        if (ProfessionsData[selectedPlayer.profession].bonusSkill === skill) {
             min += SkillData.BONUS_POINTS;
             max += SkillData.BONUS_POINTS;
         }
@@ -27,11 +26,11 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
     };
     
     const randomizeSkillsHandler = (): void => {
-        changeAllSkills(randomizeSkills(selectedPlayer.profession, selectedPlayer.total));
+        changeAllSkills(randomizeSkills(ProfessionsData[selectedPlayer.profession].bonusSkill, selectedPlayer.total));
     };
 
     const resetSkillsHandler = (): void => {
-        changeAllSkills(initSkills(selectedPlayer.profession));
+        changeAllSkills(initSkills(ProfessionsData[selectedPlayer.profession].bonusSkill));
     };
 
     return (
@@ -46,7 +45,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
             <SkillRowList
                 skills={selectedPlayer.skills}
                 changeSkill={changeSkillHandler}
-                bestSkill={ProfessionData[selectedPlayer.profession].bonusSkill}
+                bestSkill={ProfessionsData[selectedPlayer.profession].bonusSkill}
             />
             <div className="buttonsRow">
                 <button 

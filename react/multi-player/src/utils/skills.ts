@@ -1,26 +1,28 @@
-import type { Skills, Profession } from "../types";
+import type { Skills, Skill } from "../types";
 import SKILLS from "../data/Skills";
-import ProfessionsData from "../data/proffessions-data";
 import SkillData from "../data/skill-data";
 
-function initSkills(proffession: Profession): Skills {
+function initSkills(bonusSkill: Skill): Skills {
   const skills = {} as Skills;
   SKILLS.forEach(skill => (skills[skill] = SkillData.MIN_POINTS));
-  skills[ProfessionsData[proffession].bonusSkill] += SkillData.BONUS_POINTS;
+  skills[bonusSkill] += SkillData.BONUS_POINTS;
   
   return skills;
 }
 
-function randomizeSkills(profession: Profession, totalPoints: number): Skills {
-  const skills: Skills = initSkills(profession);
+function sumSkillsPoints(skills: Skills): number {
+    return Object.values(skills).reduce((a, b) => a + b, 0);
+}
 
-  const used = Object.values(skills).reduce((a, b) => a + b, 0);
-  let remaining = totalPoints - used;
+function randomizeSkills(bonusSkill: Skill, totalPoints: number): Skills {
+  const skills: Skills = initSkills(bonusSkill);
+
+  let remaining = totalPoints - sumSkillsPoints(skills);
 
   while (remaining > 0) {
     const randomSkill = SKILLS[Math.floor(Math.random() * SKILLS.length)];
 
-    const maxPoints = randomSkill === ProfessionsData[profession].bonusSkill ? SkillData.MAX_POINTS + SkillData.BONUS_POINTS : SkillData.MAX_POINTS;
+    const maxPoints = randomSkill === bonusSkill ? SkillData.MAX_POINTS + SkillData.BONUS_POINTS : SkillData.MAX_POINTS;
 
     if (skills[randomSkill] < maxPoints) {
       skills[randomSkill]++;
@@ -31,8 +33,5 @@ function randomizeSkills(profession: Profession, totalPoints: number): Skills {
   return skills;
 }
 
-function sumSkillsPoints(skills: Skills): number {
-    return Object.values(skills).reduce((a, b) => a + b, 0);
-}
 
 export { initSkills, randomizeSkills, sumSkillsPoints };
