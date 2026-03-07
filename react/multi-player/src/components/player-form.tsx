@@ -5,10 +5,10 @@ import "../index.css";
 
 
 export default function PlayerForm({ addPlayer, disableButton }: PlayerFormProps) {
-    const DEFAULT_NAME = "";
+    const DEFAULT_NAME = undefined;
     const DEFAULT_PROFESSION = PROFESSIONS[0];
     
-    const [name, setName] = useState<string>(DEFAULT_NAME);
+    const [name, setName] = useState<string | undefined>(DEFAULT_NAME);
     const [profession, setProfession] = useState<Profession>(DEFAULT_PROFESSION);
 
     const resetForm = () => {
@@ -17,13 +17,15 @@ export default function PlayerForm({ addPlayer, disableButton }: PlayerFormProps
     };
 
     const addPlayerHandler = () => {
-        addPlayer({name, profession});
-        resetForm();
-    }
+        if (name) {
+            addPlayer({name, profession});
+            resetForm();
+        }
+    };
 
     return (
     <>
-    <form className="playerForm">
+    <div className="playerForm">
         <input
             placeholder="Name"
             value={name}
@@ -32,16 +34,18 @@ export default function PlayerForm({ addPlayer, disableButton }: PlayerFormProps
         <select
             value={profession}
             onChange={e => setProfession(e.target.value as Profession)}
-            className="input"
         >
             {PROFESSIONS.map(c => (
-            <option key={c}>{c}</option>
+                <option key={c}>{c}</option>
             ))}
         </select>
-        <button className="button" type="submit" onClick={addPlayerHandler} disabled={disableButton}>
+        <button 
+            className="button" 
+            onClick={addPlayerHandler} 
+            disabled={disableButton}>
             Save
         </button>
-        </form> 
+    </div> 
     </>
     );
 };
