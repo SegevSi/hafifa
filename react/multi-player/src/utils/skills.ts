@@ -1,7 +1,7 @@
 import type { Skills, Profession } from "../types";
 import SKILLS from "../data/Skills";
-import ProfessionsData from "../data/ProffessionsData";
-import SkillData from "../data/SkillData";
+import ProfessionsData from "../data/proffessions-data";
+import SkillData from "../data/skill-data";
 
 function initSkills(proffession: Profession): Skills {
   const skills = {} as Skills;

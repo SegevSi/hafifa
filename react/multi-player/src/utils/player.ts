@@ -1,7 +1,7 @@
 import type { Player, Skills, PlayerFormData } from "../types";
 import { initSkills, sumSkillsPoints } from "./skills";
-import PlayerData from "../data/playerData";
-import SkillData from "../data/SkillData";
+import PlayerData from "../data/player-data";
+import SkillData from "../data/skill-data";
 
 
 let count = 0;

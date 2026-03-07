@@ -12,8 +12,9 @@ function SkillRow(props: SkillRowProps) {
             <div>
                 <button onClick={() => props.changePoints(props.currPoints - 1)}>-</button>
                 <input type="number" 
-                    value={props.currPoints} 
-                    onChange={e => props.changePoints(e.target.valueAsNumber)}
+                    defaultValue={props.currPoints} 
+                    key={props.currPoints} 
+                    onBlur={e => props.changePoints(e.currentTarget.valueAsNumber)}
                 />
                 <button onClick={() => props.changePoints(props.currPoints + 1)}>+</button>
             </div>

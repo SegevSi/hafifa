@@ -1,6 +1,6 @@
 import type { Skill, SkillsContentProps } from "../types";
-import ProfessionData from "../data/ProffessionsData";
-import SkillData from "../data/SkillData";
+import ProfessionData from "../data/proffessions-data";
+import SkillData from "../data/skill-data";
 import "../index.css";
 import SkillRowList from "./skill-row-list";
 import { initSkills, randomizeSkills } from "../utils/skills";
@@ -9,7 +9,7 @@ import { initSkills, randomizeSkills } from "../utils/skills";
 
 function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
 
-    const changeSkill = (skill: Skill, value: number): void => {
+    const changeSkillHandler = (skill: Skill, value: number): void => {
         let min = SkillData.MIN_POINTS;
         let max = SkillData.MAX_POINTS;
 
@@ -18,12 +18,20 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
             max += SkillData.BONUS_POINTS;
         }
 
-        if (value >= min && value <= max) {
-            changeAllSkills({
-                ...selectedPlayer.skills,
-                [skill]: value
-            });
-        }
+        value = Number.isNaN(value) ? min : Math.min(max, Math.max(min, value));
+        
+        changeAllSkills({
+            ...selectedPlayer.skills,
+            [skill]: value
+        });   
+    };
+    
+    const randomizeSkillsHandler = (): void => {
+        changeAllSkills(randomizeSkills(selectedPlayer.profession, selectedPlayer.total));
+    };
+
+    const resetSkillsHandler = (): void => {
+        changeAllSkills(initSkills(selectedPlayer.profession));
     };
 
     return (
@@ -37,18 +45,18 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
 
             <SkillRowList
                 skills={selectedPlayer.skills}
-                changeSkill={changeSkill}
+                changeSkill={changeSkillHandler}
                 bestSkill={ProfessionData[selectedPlayer.profession].bonusSkill}
             />
             <div className="buttonsRow">
                 <button 
                     className="button" 
-                    onClick={() => changeAllSkills(randomizeSkills(selectedPlayer.profession, selectedPlayer.total))}>
+                    onClick={randomizeSkillsHandler}>
                     Random
                 </button>
                 <button 
                     className="button" 
-                    onClick={() => changeAllSkills(initSkills(selectedPlayer.profession))}>
+                    onClick={resetSkillsHandler}>
                     Reset
                 </button>
             </div> 

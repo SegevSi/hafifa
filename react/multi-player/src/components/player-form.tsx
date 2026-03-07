@@ -1,14 +1,14 @@
 import type { PlayerFormProps, Profession } from "../types";
-import PROFESSIONS from "../data/Professions";
+import PROFESSIONS from "../data/professions";
 import { useState } from "react";
 import "../index.css";
 
 
 export default function PlayerForm({ savePlayer, disableButton }: PlayerFormProps) {
-    const DEFAULT_NAME = undefined;
+    const DEFAULT_NAME = "";
     const DEFAULT_PROFESSION = PROFESSIONS[0];
     
-    const [name, setName] = useState<string | undefined>(DEFAULT_NAME);
+    const [name, setName] = useState<string>(DEFAULT_NAME);
     const [profession, setProfession] = useState<Profession>(DEFAULT_PROFESSION);
 
     const resetForm = () => {
@@ -17,7 +17,7 @@ export default function PlayerForm({ savePlayer, disableButton }: PlayerFormProp
     };
 
     const addPlayerHandler = () => {
-        if (name) {
+        if (name !== DEFAULT_NAME) {
             savePlayer({name, profession});
             resetForm();
         }

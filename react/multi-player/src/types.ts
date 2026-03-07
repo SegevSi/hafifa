@@ -1,5 +1,5 @@
 import SKILLS from "./data/Skills";
-import PROFESSIONS from "./data/Professions";
+import PROFESSIONS from "./data/professions";
 
 type Skill = typeof SKILLS[number];
 
