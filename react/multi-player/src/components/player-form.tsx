@@ -1,7 +1,6 @@
 import type { PlayerFormProps, Profession } from "../types";
 import PROFESSIONS from "../data/professions";
 import { useState } from "react";
-import "../index.css";
 
 
 export default function PlayerForm({ savePlayer, disableButton }: PlayerFormProps) {
@@ -40,7 +39,6 @@ export default function PlayerForm({ savePlayer, disableButton }: PlayerFormProp
             ))}
         </select>
         <button 
-            className="button" 
             onClick={addPlayerHandler} 
             disabled={disableButton}>
             Save

@@ -28,7 +28,6 @@ export default function PlayersSideBar(props: playersSideBarProps) {
         />
         {!showForm ? (
           <button
-            className="button"
             onClick={() => setShowForm(true)}
             disabled={props.disableButton}
           >

@@ -56,7 +56,7 @@ export default function Multiplayer() {
                     selectedPlayer={selectedPlayer} 
                     changeAllSkills={changeSelectedPlayerSkills}
                 />) : (
-            <div className="content">Select a player</div>
+                <p>Select a player</p>
             )}
         </div>
     </>

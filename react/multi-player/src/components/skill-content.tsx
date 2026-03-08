@@ -39,8 +39,13 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
             <h1>Player {selectedPlayer.name}</h1>
             <div>Total Points: {selectedPlayer.total}</div>
             <div>Free Points: {selectedPlayer.free}</div>
-            {selectedPlayer.free !== 0 && (<div className="error">there are unused skills points</div>)}
-            <hr />
+            {selectedPlayer.free > 0 ? (
+                <div className="error">there are unused points</div>
+            ) : selectedPlayer.free < 0 ? (
+                <div className="error">too many points used</div>
+            ) : (
+                <br/>
+            )}
 
             <SkillRowList
                 skills={selectedPlayer.skills}
@@ -49,12 +54,10 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
             />
             <div className="buttonsRow">
                 <button 
-                    className="button" 
                     onClick={randomizeSkillsHandler}>
                     Random
                 </button>
                 <button 
-                    className="button" 
                     onClick={resetSkillsHandler}>
                     Reset
                 </button>

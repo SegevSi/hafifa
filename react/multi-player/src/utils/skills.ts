@@ -19,7 +19,7 @@ function sumSkillsPoints(skills: Skills): number {
 function randomizeSkills(bonusSkill: Skill, totalPoints: number): Skills {
   const skills: Skills = initSkills();
 
-  let remaining = totalPoints - sumSkillsPoints(skills);
+  let remaining = totalPoints - (sumSkillsPoints(skills) + SkillData.BONUS_POINTS);
 
   while (remaining > 0) {
     const randomSkill = SKILLS[Math.floor(Math.random() * SKILLS.length)];

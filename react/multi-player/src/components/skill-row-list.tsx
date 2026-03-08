@@ -7,7 +7,7 @@ export default function SkillRowList({ skills, changeSkill, bestSkill  }: SkillR
     const BEST_SKILL_SIGN = "*";
 
     return (
-    <>
+    <div className="skillRowList">
     {SKILLS.map((skill) => ( 
         <SkillRow
             key={skill}
@@ -17,7 +17,7 @@ export default function SkillRowList({ skills, changeSkill, bestSkill  }: SkillR
             changePoints={(value: number) => changeSkill(skill, value)}
         />          
     ))}
-    </>
+    </div>
     );
 }
 
