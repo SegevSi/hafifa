@@ -78,7 +78,7 @@
 
 .buttonsRow {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   margin-top: 15px;
   align-items: center;
   justify-content: center;
@@ -93,5 +93,5 @@
 }
 
 .buttonsRow button {
-  padding: 6px;
+  padding: 10px;
 }
