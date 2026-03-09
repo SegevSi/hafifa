@@ -1,4 +1,4 @@
-import SKILLS from "../data/Skills";
+import SKILLS from "../data/skills";
 import type { SkillRowListProps } from "../types";
 import SkillRow from "./SkillRow";
 

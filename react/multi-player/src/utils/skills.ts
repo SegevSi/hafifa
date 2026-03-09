@@ -1,6 +1,6 @@
 import type { Skills, Skill } from "../types";
-import SKILLS from "../data/Skills";
-import SkillData from "../data/skill-data";
+import SKILLS from "../data/skills";
+import SkillData from "../data/skillData";
 
 function initSkills(bonusSkill: Skill | null = null): Skills {
   const skills = {} as Skills;

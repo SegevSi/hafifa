@@ -1,8 +1,8 @@
 import type { Player, Skills, PlayerFormData } from "../types";
 import { initSkills, sumSkillsPoints } from "./skills";
-import PlayerData from "../data/player-data";
-import SkillData from "../data/skill-data";
-import ProfessionsData from "../data/proffessions-data";
+import PlayerData from "../data/playerData";
+import SkillData from "../data/skillData";
+import ProfessionsData from "../data/proffessionsData";
 
 
 function calcPlayerTotalPoints() {

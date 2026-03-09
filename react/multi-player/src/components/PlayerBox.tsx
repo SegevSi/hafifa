@@ -1,5 +1,5 @@
 import type { PlayerBoxProps } from "../types";
-import ProfessionsData from "../data/proffessions-data";
+import ProfessionsData from "../data/proffessionsData";
 
 
 export default function PlayerBox({ isSelected, player, selectPlayer }: PlayerBoxProps) {
