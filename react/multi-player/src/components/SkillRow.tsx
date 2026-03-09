@@ -23,6 +23,7 @@ function SkillRow(props: SkillRowProps) {
                 <button onClick={() => changePointsHandler(props.currPoints - 1)}>-</button>
                 <input type="number" 
                     defaultValue={props.currPoints} 
+                    key={props.currPoints} 
                     ref={inputRef}
                     onBlur={e => changePointsHandler(e.currentTarget.valueAsNumber)}
                 />

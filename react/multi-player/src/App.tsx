@@ -1,4 +1,4 @@
-import  Multiplayer from "./components/multi-player";
+import  Multiplayer from "./components/Multiplayer";
 
 function App() {
  

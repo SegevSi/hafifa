@@ -1,9 +1,9 @@
 import { useState } from "react";
 import type { Player, PlayerFormData, Skills } from "../types";
-import SkillContent from "./skill-content";
+import SkillContent from "./SkillContent";
 import { getChangedSkillsPlayer } from "../utils/player";
 import { createPlayer } from "../utils/player";
-import PlayersSideBar from "./player-side-bar";
+import PlayersSideBar from "./PlayersSideBar";
 
 
 export default function Multiplayer() {

@@ -1,6 +1,6 @@
 import SKILLS from "../data/Skills";
 import type { SkillRowListProps } from "../types";
-import SkillRow from "./skill-row";
+import SkillRow from "./SkillRow";
 
 
 export default function SkillRowList({ skills, changeSkill, bestSkill, processSkill  }: SkillRowListProps) {

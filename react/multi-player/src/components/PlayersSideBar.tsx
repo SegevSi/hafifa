@@ -1,7 +1,7 @@
 import type { playersSideBarProps, PlayerFormData } from "../types";
 import { useState } from "react";
-import PlayerBoxList from "./player-box-list";
-import PlayerForm from "./player-form";
+import PlayerBoxList from "./PlayerBoxList";
+import PlayerForm from "./PlayerForm";
 import "../index.css";
 
 

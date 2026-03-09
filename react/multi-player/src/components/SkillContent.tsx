@@ -1,7 +1,7 @@
 import type { Skill, SkillsContentProps } from "../types";
 import ProfessionsData from "../data/proffessions-data";
 import SkillData from "../data/skill-data";
-import SkillRowList from "./skill-row-list";
+import SkillRowList from "./SkillRowList";
 import { initSkills, randomizeSkills } from "../utils/skills";
 
 

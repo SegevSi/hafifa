@@ -1,5 +1,5 @@
 import type { PlayerBoxListProps } from "../types";
-import PlayerBox from "./player-box";
+import PlayerBox from "./PlayerBox";
 
 
 export default function PlayerBoxList({ selectedPlayerId, players, selectPlayer }: PlayerBoxListProps) {
