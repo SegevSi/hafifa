@@ -1,7 +1,17 @@
+import { useRef } from "react";
 import type { SkillRowProps } from "../types";
 
 
 function SkillRow(props: SkillRowProps) {
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    const changePointsHandler = (value: number): void => {
+        if (inputRef.current) {
+            const processedPoints = props.processPoints(value);
+            props.changePoints(processedPoints);
+            inputRef.current.value = String(processedPoints);
+        }
+    };
 
     return (
         <>
@@ -10,13 +20,13 @@ function SkillRow(props: SkillRowProps) {
                 {props.name}
             </span>
             <div>
-                <button onClick={() => props.changePoints(props.currPoints - 1)}>-</button>
+                <button onClick={() => changePointsHandler(props.currPoints - 1)}>-</button>
                 <input type="number" 
                     defaultValue={props.currPoints} 
-                    key={Date.now()} 
-                    onBlur={e => props.changePoints(e.currentTarget.valueAsNumber)}
+                    ref={inputRef}
+                    onBlur={e => changePointsHandler(e.currentTarget.valueAsNumber)}
                 />
-                <button onClick={() => props.changePoints(props.currPoints + 1)}>+</button>
+                <button onClick={() => changePointsHandler(props.currPoints + 1)}>+</button>
             </div>
         </div>
         </>

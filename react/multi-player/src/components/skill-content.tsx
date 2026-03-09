@@ -9,6 +9,13 @@ import { initSkills, randomizeSkills } from "../utils/skills";
 function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
 
     const changeSkillHandler = (skill: Skill, value: number): void => {
+        changeAllSkills({
+            ...selectedPlayer.skills,
+            [skill]: value
+        });   
+    };
+
+    const processSkillHandler = (skill: Skill, value: number): number => {
         let min = SkillData.MIN_POINTS;
         let max = SkillData.MAX_POINTS;
 
@@ -17,12 +24,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
             max += SkillData.BONUS_POINTS;
         }
 
-        value = Number.isNaN(value) ? min : Math.min(max, Math.max(min, value));
-        
-        changeAllSkills({
-            ...selectedPlayer.skills,
-            [skill]: value
-        });   
+        return Number.isNaN(value) ? min : Math.min(max, Math.max(min, value));
     };
     
     const randomizeSkillsHandler = (): void => {
@@ -51,6 +53,7 @@ function SkillContent({selectedPlayer, changeAllSkills }: SkillsContentProps) {
                 skills={selectedPlayer.skills}
                 changeSkill={changeSkillHandler}
                 bestSkill={ProfessionsData[selectedPlayer.profession].bonusSkill}
+                processSkill={processSkillHandler}
             />
             <div className="buttonsRow">
                 <button 

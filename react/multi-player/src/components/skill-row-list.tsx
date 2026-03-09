@@ -3,7 +3,7 @@ import type { SkillRowListProps } from "../types";
 import SkillRow from "./skill-row";
 
 
-export default function SkillRowList({ skills, changeSkill, bestSkill  }: SkillRowListProps) {
+export default function SkillRowList({ skills, changeSkill, bestSkill, processSkill  }: SkillRowListProps) {
     const BEST_SKILL_SIGN = "*";
 
     return (
@@ -15,6 +15,7 @@ export default function SkillRowList({ skills, changeSkill, bestSkill  }: SkillR
             skill={skill}
             currPoints={skills[skill]}
             changePoints={(value: number) => changeSkill(skill, value)}
+            processPoints={(value: number) => processSkill(skill, value)}
         />          
     ))}
     </div>

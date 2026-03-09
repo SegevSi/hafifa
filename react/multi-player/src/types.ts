@@ -17,11 +17,13 @@ type SkillRowProps = {
     name: string;
     currPoints: number;
     changePoints: (value: number) => void;
+    processPoints: (value: number) => number;
 };
 
 type SkillRowListProps = {
     skills: Skills;
     changeSkill: (skill: Skill, value: number) => void;
+    processSkill: (skill: Skill, value: number) => number;
     bestSkill: Skill;
 };
 
