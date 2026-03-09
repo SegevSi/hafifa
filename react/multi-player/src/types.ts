@@ -29,7 +29,7 @@ type SkillRowListProps = {
 
 
 type Player = {
-    id: number;
+    id: string;
     name: string;
     profession: Profession;
     total: number;
@@ -49,9 +49,9 @@ type PlayerBoxProps = {
 };
 
 type PlayerBoxListProps = {
-    selectedPlayerId: number | null;
+    selectedPlayerId: string | null;
     players: Player[];
-    selectPlayer: (id: number) => void;
+    selectPlayer: (id: string) => void;
 };
 
 type PlayerFormData = {

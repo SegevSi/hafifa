@@ -8,7 +8,7 @@ import "../index.css";
 export default function PlayersSideBar(props: playersSideBarProps) { 
     const [showForm, setShowForm] = useState<boolean>(false);
 
-    const selectPlayerHandler = (id: number): void => {
+    const selectPlayerHandler = (id: string): void => {
         if (!props.disableButton)
             props.selectPlayer(id);
     };

@@ -8,7 +8,7 @@ import PlayersSideBar from "./player-side-bar";
 
 export default function Multiplayer() {
     const [players, setPlayers] = useState<Player[]>([]);
-    const [selectedPlayerId, setSelectedPlayerId] = useState<number | null>(null);
+    const [selectedPlayerId, setSelectedPlayerId] = useState<string | null>(null);
 
     const selectedPlayer = players.find(p => p.id === selectedPlayerId);
 
@@ -49,7 +49,7 @@ export default function Multiplayer() {
                 disableButton={disableButton}
                 selectedPlayerId={selectedPlayerId}
                 players={players}
-                selectPlayer={(id: number): void => setSelectedPlayerId(id)}
+                selectPlayer={(id: string): void => setSelectedPlayerId(id)}
             />
             {selectedPlayer ? (
                 <SkillContent 

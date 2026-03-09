@@ -5,14 +5,6 @@ import SkillData from "../data/skill-data";
 import ProfessionsData from "../data/proffessions-data";
 
 
-let count = 0;
-
-function getId(): number  {
-  count++;
-
-  return count;
-}
-
 function calcPlayerTotalPoints() {
   return Math.floor(Math.random() * (PlayerData.MAX_POINTS - PlayerData.MIN_POINTS)) 
         + PlayerData.MIN_POINTS + SkillData.BONUS_POINTS;
@@ -23,7 +15,7 @@ function createPlayer({name, profession}: PlayerFormData): Player {
   const skills = initSkills(ProfessionsData[profession].bonusSkill);
   
   return {
-    id: getId(),
+    id: crypto.randomUUID(),
     name,
     profession,
     total: total,
