@@ -1,18 +1,18 @@
 from pymongo.asynchronous.database import AsyncDatabase
-from starlette.requests import Request
 from config import conf
 from contextlib import asynccontextmanager
 import logging
 from fastapi import FastAPI
 from pymongo import AsyncMongoClient
+from beanie import init_beanie
+from models import User, Dish, Vote
 
 
 logger = logging.getLogger(__name__)
 
 # todo: make it better with the async with gather or make helper func
 async def init_db(db: AsyncDatabase) -> None:
-    await db["users"].create_index("name", unique=True)
-    await db["votes"].create_index("user_id", unique=True)
+   await init_beanie(db, document_models=[User, Vote, Dish])
 
 
 # instead of using url create the url when u have db that need password and user
@@ -36,5 +36,5 @@ async def db_lifespan(app: FastAPI):
     await app.mongodb_client.close()
 
 
-def get_db(request: Request) -> AsyncDatabase:
-    return request.app.database
+# def get_db(request: Request) -> AsyncDatabase:
+#     return request.app.database

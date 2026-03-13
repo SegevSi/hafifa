@@ -4,3 +4,4 @@ pymongo
 passlib
 python-jose
 python-multipart
+beanie===2.0.1

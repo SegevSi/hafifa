@@ -12,8 +12,8 @@ from utlis.jwt import create_access_token
 logger = logging.getLogger(__name__)
 
 
-async def login(username: str, password: str, db: AsyncDatabase) -> Token:
-    user = await user_repository.get_user_by_name(username, db)
+async def login(username: str, password: str) -> Token:
+    user = await user_repository.get_user_by_name(username)
 
     # if verify_password(password, user.password): passwords in db are not hashed
     if password != user.password:

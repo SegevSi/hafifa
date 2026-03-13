@@ -13,3 +13,15 @@ class VoteModel(BaseModel):
         arbitrary_types_allowed=True
     )
 
+from beanie import Document, Indexed, PydanticObjectId, Link
+from user import User
+from dish import Dish
+
+class Vote(Document):
+    id: PydanticObjectId = Field(default_factory=PydanticObjectId, alias="_id")
+    dish: Link[Dish]
+    user: Link[User]
+
+    class Settings:
+        name = "votes"
+
