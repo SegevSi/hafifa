@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from fastapi.params import Query
 from starlette import status
-from schemas.dish import DishRequest, DishResponse
+from schemas.dish import DishRequest, DishResponse, UpdateDish
 from services import dish_service
 from utlis.oauth2 import get_current_user
 
@@ -24,6 +24,6 @@ async def delete_dish(dish_id: str):
     return await dish_service.delete_dish(dish_id)
 
 
-@router.put("/{dish_id}")
-async def update_dish(dish_id: int):
+@router.put("/{dish_id}", response_model=DishResponse, status_code=status.HTTP_202_ACCEPTED)
+async def update_dish(dish_id: str, update_dish: UpdateDish) -> DishResponse:
     pass

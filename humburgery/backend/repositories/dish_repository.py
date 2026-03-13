@@ -1,6 +1,5 @@
 from database.models import Dish
 from exceptions import NotFoundException
-from services import dish_service
 
 
 async def create_dish(dish: Dish) -> Dish:
