@@ -1,6 +1,6 @@
 from datetime import date
-
-from pydantic import BaseModel, PositiveFloat, Field, PositiveInt
+from beanie import PydanticObjectId
+from pydantic import BaseModel, PositiveFloat, Field, PositiveInt, ConfigDict
 
 
 class DishRequest(BaseModel):
@@ -12,9 +12,11 @@ class DishRequest(BaseModel):
 
 
 class DishResponse(DishRequest):
-    id: str
+    id: PydanticObjectId
     created_at: date
     updated_at: date
+
+    model_config = ConfigDict(arbitrary_types_allowed=True, from_attributes=True)
 
 
 class DishStatsResponse(DishResponse):

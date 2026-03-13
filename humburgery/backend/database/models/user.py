@@ -1,10 +1,6 @@
-from typing import Annotated, Optional, TYPE_CHECKING
+from typing import Annotated, Optional
 from pydantic import Field, BaseModel, ConfigDict
 from beanie import Document, Indexed, PydanticObjectId, Link, BackLink
-
-
-if TYPE_CHECKING:
-    from .vote import Vote
 
 
 class User(Document):

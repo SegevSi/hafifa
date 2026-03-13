@@ -121,3 +121,396 @@ ERROR: middlewares.exception_handler_middleware Server error: `User` is not full
 
 For further information visit https://errors.pydantic.dev/2.12/u/class-not-fully-defined 2026-03-13 16:13:36
 ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:13:36
+INFO: database.connection Connected to database cluster. 2026-03-13 16:15:32
+INFO: database.connection Database is initialized. 2026-03-13 16:15:32
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:15:42
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.78ms) 2026-03-13 16:15:42
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:15:42
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (18.03ms) 2026-03-13 16:15:42
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:15:52
+ERROR: middlewares.exception_handler_middleware Server error: `User` is not fully defined; you should define `Vote`, then call `User.model_rebuild()`.
+
+For further information visit https://errors.pydantic.dev/2.12/u/class-not-fully-defined 2026-03-13 16:15:52
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:15:52
+INFO: database.connection Connected to database cluster. 2026-03-13 16:17:38
+INFO: database.connection Database is initialized. 2026-03-13 16:17:38
+INFO: database.connection Connected to database cluster. 2026-03-13 16:17:47
+INFO: database.connection Database is initialized. 2026-03-13 16:17:47
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:17:54
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.54ms) 2026-03-13 16:17:54
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:17:54
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.60ms) 2026-03-13 16:17:54
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:18:04
+ERROR: middlewares.exception_handler_middleware Server error: `User` is not fully defined; you should define `Vote`, then call `User.model_rebuild()`.
+
+For further information visit https://errors.pydantic.dev/2.12/u/class-not-fully-defined 2026-03-13 16:18:04
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:18:04
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:18:18
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.49ms) 2026-03-13 16:18:18
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:18:18
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.69ms) 2026-03-13 16:18:18
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:19:00
+ERROR: middlewares.exception_handler_middleware Server error: `User` is not fully defined; you should define `Vote`, then call `User.model_rebuild()`.
+
+For further information visit https://errors.pydantic.dev/2.12/u/class-not-fully-defined 2026-03-13 16:19:00
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:19:00
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:19:17
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.47ms) 2026-03-13 16:19:17
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:19:17
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.64ms) 2026-03-13 16:19:17
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:19:23
+ERROR: middlewares.exception_handler_middleware Server error: `User` is not fully defined; you should define `Vote`, then call `User.model_rebuild()`.
+
+For further information visit https://errors.pydantic.dev/2.12/u/class-not-fully-defined 2026-03-13 16:19:23
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:19:23
+INFO: database.connection Connected to database cluster. 2026-03-13 16:19:47
+INFO: database.connection Database is initialized. 2026-03-13 16:19:47
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:20:10
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.64ms) 2026-03-13 16:20:10
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:20:10
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.58ms) 2026-03-13 16:20:10
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:20:15
+ERROR: middlewares.exception_handler_middleware Server error: `User` is not fully defined; you should define `Vote`, then call `User.model_rebuild()`.
+
+For further information visit https://errors.pydantic.dev/2.12/u/class-not-fully-defined 2026-03-13 16:20:15
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:20:15
+INFO: database.connection Connected to database cluster. 2026-03-13 16:21:27
+INFO: database.connection Database is initialized. 2026-03-13 16:21:27
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:21:38
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (2.04ms) 2026-03-13 16:21:38
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:21:38
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (194.83ms) 2026-03-13 16:21:38
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:21:39
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (1.45ms) 2026-03-13 16:21:39
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:21:39
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (2.03ms) 2026-03-13 16:21:39
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:21:44
+ERROR: middlewares.exception_handler_middleware Server error: Object of type PydanticObjectId is not JSON serializable 2026-03-13 16:21:44
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:21:44
+INFO: database.connection Connected to database cluster. 2026-03-13 16:22:38
+INFO: database.connection Database is initialized. 2026-03-13 16:22:38
+INFO: database.connection Connected to database cluster. 2026-03-13 16:31:01
+INFO: database.connection Database is initialized. 2026-03-13 16:31:01
+INFO: database.connection Connected to database cluster. 2026-03-13 16:31:01
+INFO: database.connection Database is initialized. 2026-03-13 16:31:01
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:31:10
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.63ms) 2026-03-13 16:31:10
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:31:10
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.63ms) 2026-03-13 16:31:10
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:31:14
+ERROR: middlewares.exception_handler_middleware Server error: Object of type PydanticObjectId is not JSON serializable 2026-03-13 16:31:14
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:31:14
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:31:33
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.51ms) 2026-03-13 16:31:33
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:31:33
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.60ms) 2026-03-13 16:31:33
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:31:34
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.61ms) 2026-03-13 16:31:34
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:31:34
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.59ms) 2026-03-13 16:31:34
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:31:38
+ERROR: middlewares.exception_handler_middleware Server error: Object of type PydanticObjectId is not JSON serializable 2026-03-13 16:31:38
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:31:38
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:36:45
+ERROR: middlewares.exception_handler_middleware Server error: Object of type PydanticObjectId is not JSON serializable 2026-03-13 16:36:45
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:36:45
+INFO: database.connection Connected to database cluster. 2026-03-13 16:41:00
+INFO: database.connection Database is initialized. 2026-03-13 16:41:00
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:43:28
+ERROR: middlewares.exception_handler_middleware Server error: Object of type PydanticObjectId is not JSON serializable 2026-03-13 16:43:28
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:43:28
+INFO: database.connection Connected to database cluster. 2026-03-13 16:43:29
+INFO: database.connection Database is initialized. 2026-03-13 16:43:29
+INFO: database.connection Connected to database cluster. 2026-03-13 16:43:48
+INFO: database.connection Database is initialized. 2026-03-13 16:43:48
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:43:55
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 16:43:55
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.98ms) 2026-03-13 16:43:55
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 16:45:14
+ERROR: middlewares.exception_handler_middleware Server error: 'DishRequest' object has no attribute 'id' 2026-03-13 16:45:14
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 16:45:14
+INFO: database.connection Connected to database cluster. 2026-03-13 16:48:47
+INFO: database.connection Database is initialized. 2026-03-13 16:48:47
+INFO: database.connection Connected to database cluster. 2026-03-13 16:53:45
+INFO: database.connection Database is initialized. 2026-03-13 16:53:45
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:53:58
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.63ms) 2026-03-13 16:53:58
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:53:58
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (19.52ms) 2026-03-13 16:53:58
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:54:03
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 16:54:03
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.92ms) 2026-03-13 16:54:03
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 16:54:10
+ERROR: middlewares.exception_handler_middleware Server error: 'DishRequest' object has no attribute 'id' 2026-03-13 16:54:10
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 16:54:10
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 16:54:22
+ERROR: middlewares.exception_handler_middleware Server error: 'DishRequest' object has no attribute 'id' 2026-03-13 16:54:22
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 16:54:22
+INFO: database.connection Connected to database cluster. 2026-03-13 16:54:36
+INFO: database.connection Database is initialized. 2026-03-13 16:54:36
+INFO: database.connection Connected to database cluster. 2026-03-13 16:54:36
+INFO: database.connection Database is initialized. 2026-03-13 16:54:36
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:55:12
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.71ms) 2026-03-13 16:55:12
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:55:12
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (16.16ms) 2026-03-13 16:55:12
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:55:18
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 16:55:18
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.00ms) 2026-03-13 16:55:18
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 16:55:23
+ERROR: middlewares.exception_handler_middleware Server error: 'DishRequest' object has no attribute 'id' 2026-03-13 16:55:23
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 16:55:23
+INFO: database.connection Connected to database cluster. 2026-03-13 16:58:41
+INFO: database.connection Database is initialized. 2026-03-13 16:58:41
+INFO: database.connection Connected to database cluster. 2026-03-13 16:58:55
+INFO: database.connection Database is initialized. 2026-03-13 16:58:55
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:59:01
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.65ms) 2026-03-13 16:59:01
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:59:01
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.97ms) 2026-03-13 16:59:01
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:59:06
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 16:59:06
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.95ms) 2026-03-13 16:59:06
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 16:59:10
+INFO: services.dish_service Dish with id 69b4263e7b426853881399e1 was created 2026-03-13 16:59:10
+ERROR: middlewares.exception_handler_middleware Server error: 2 validation errors for DishResponse
+description
+  Field required [type=missing, input_value={'id': ObjectId('69b4263e...at 0x000001BE0D2C8C30>]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+id
+  Input should be a valid string [type=string_type, input_value=ObjectId('69b4263e7b426853881399e1'), input_type=PydanticObjectId]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type 2026-03-13 16:59:10
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 16:59:10
+INFO: database.connection Connected to database cluster. 2026-03-13 17:04:26
+INFO: database.connection Database is initialized. 2026-03-13 17:04:26
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:04:44
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.59ms) 2026-03-13 17:04:44
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:04:44
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (28.19ms) 2026-03-13 17:04:44
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:04:49
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:04:49
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.07ms) 2026-03-13 17:04:49
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:05:03
+INFO: services.dish_service Dish with id 69b4279fe8dcf05e254cd15c was created 2026-03-13 17:05:03
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+description
+  Field required [type=missing, input_value={'id': ObjectId('69b4279f...at 0x000002A46D1E89D0>]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-13 17:05:03
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:05:03
+INFO: database.connection Connected to database cluster. 2026-03-13 17:07:16
+INFO: database.connection Database is initialized. 2026-03-13 17:07:16
+INFO: database.connection Connected to database cluster. 2026-03-13 17:07:16
+INFO: database.connection Database is initialized. 2026-03-13 17:07:16
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:07:22
+INFO: services.dish_service Dish with id 69b4282ab381694a27ed9b14 was created 2026-03-13 17:07:22
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+description
+  Field required [type=missing, input_value={'id': ObjectId('69b4282a...at 0x000002CDB20D1450>]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-13 17:07:22
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:07:22
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:07:25
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.59ms) 2026-03-13 17:07:25
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:07:25
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.14ms) 2026-03-13 17:07:25
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:07:34
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes - 401 2026-03-13 17:07:34
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:07:46
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:07:46
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.26ms) 2026-03-13 17:07:46
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:07:51
+INFO: services.dish_service Dish with id 69b42847b381694a27ed9b15 was created 2026-03-13 17:07:51
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+description
+  Field required [type=missing, input_value={'id': ObjectId('69b42847...at 0x000002CDB1EE9C70>]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-13 17:07:51
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:07:51
+INFO: database.connection Connected to database cluster. 2026-03-13 17:11:57
+INFO: database.connection Database is initialized. 2026-03-13 17:11:57
+INFO: database.connection Connected to database cluster. 2026-03-13 17:11:59
+INFO: database.connection Database is initialized. 2026-03-13 17:11:59
+INFO: database.connection Connected to database cluster. 2026-03-13 17:12:31
+INFO: database.connection Database is initialized. 2026-03-13 17:12:31
+INFO: database.connection Connected to database cluster. 2026-03-13 17:12:50
+INFO: database.connection Database is initialized. 2026-03-13 17:12:50
+INFO: database.connection Connected to database cluster. 2026-03-13 17:12:57
+INFO: database.connection Database is initialized. 2026-03-13 17:12:57
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:13:00
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.61ms) 2026-03-13 17:13:00
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:13:00
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (19.00ms) 2026-03-13 17:13:00
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:13:05
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:13:05
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.04ms) 2026-03-13 17:13:05
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:13:10
+INFO: services.dish_service Dish with id 69b429860f51f9ecddda579f was created 2026-03-13 17:13:10
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+  Input should be a valid dictionary or instance of DishResponse [type=model_type, input_value=Dish(id=ObjectId('69b4298...at 0x000002581E849480>]), input_type=Dish]
+    For further information visit https://errors.pydantic.dev/2.12/v/model_type 2026-03-13 17:13:10
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:13:10
+INFO: database.connection Connected to database cluster. 2026-03-13 17:18:59
+INFO: database.connection Database is initialized. 2026-03-13 17:18:59
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:19:04
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.57ms) 2026-03-13 17:19:04
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:19:04
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.52ms) 2026-03-13 17:19:04
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:19:09
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:19:09
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.03ms) 2026-03-13 17:19:09
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:19:13
+INFO: services.dish_service Dish with id 69b42af1adb54a4b68562307 was created 2026-03-13 17:19:13
+ERROR: middlewares.exception_handler_middleware Server error: pydantic.main.BaseModel.model_validate() argument after ** must be a mapping, not Dish 2026-03-13 17:19:13
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:19:13
+INFO: database.connection Connected to database cluster. 2026-03-13 17:19:43
+INFO: database.connection Database is initialized. 2026-03-13 17:19:43
+INFO: database.connection Connected to database cluster. 2026-03-13 17:19:49
+INFO: database.connection Database is initialized. 2026-03-13 17:19:49
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:19:53
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.58ms) 2026-03-13 17:19:53
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:19:53
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (16.15ms) 2026-03-13 17:19:53
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:19:56
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes - 401 2026-03-13 17:19:56
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:20:00
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:20:00
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.82ms) 2026-03-13 17:20:00
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:20:04
+INFO: services.dish_service Dish with id 69b42b24bfa6901de6bcf8fd was created 2026-03-13 17:20:04
+ERROR: middlewares.exception_handler_middleware Server error: BaseModel.model_validate() got an unexpected keyword argument 'id' 2026-03-13 17:20:04
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:20:04
+INFO: database.connection Connected to database cluster. 2026-03-13 17:21:52
+INFO: database.connection Database is initialized. 2026-03-13 17:21:52
+INFO: database.connection Connected to database cluster. 2026-03-13 17:21:56
+INFO: database.connection Database is initialized. 2026-03-13 17:21:56
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:22:07
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.63ms) 2026-03-13 17:22:07
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:22:07
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.76ms) 2026-03-13 17:22:07
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:22:12
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:22:12
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.24ms) 2026-03-13 17:22:12
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:22:18
+INFO: services.dish_service Dish with id 69b42baaeaced9063c84009c was created 2026-03-13 17:22:18
+ERROR: middlewares.exception_handler_middleware Server error: BaseModel.model_validate() got an unexpected keyword argument 'id' 2026-03-13 17:22:18
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:22:18
+INFO: database.connection Connected to database cluster. 2026-03-13 17:31:56
+INFO: database.connection Database is initialized. 2026-03-13 17:31:56
+INFO: database.connection Connected to database cluster. 2026-03-13 17:36:56
+INFO: database.connection Database is initialized. 2026-03-13 17:36:56
+INFO: database.connection Connected to database cluster. 2026-03-13 17:37:15
+INFO: database.connection Database is initialized. 2026-03-13 17:37:15
+INFO: database.connection Connected to database cluster. 2026-03-13 17:37:21
+INFO: database.connection Database is initialized. 2026-03-13 17:37:21
+INFO: database.connection Connected to database cluster. 2026-03-13 17:43:43
+INFO: database.connection Database is initialized. 2026-03-13 17:43:43
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:43:56
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.60ms) 2026-03-13 17:43:56
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:43:56
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (22.87ms) 2026-03-13 17:43:56
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:44:02
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:44:02
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.17ms) 2026-03-13 17:44:02
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:44:10
+INFO: services.dish_service Dish with id 69b430caaff9aa4d048e19a7 was created 2026-03-13 17:44:10
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+description
+  Field required [type=missing, input_value=Dish(id=ObjectId('69b430c...at 0x00000201577B8C30>]), input_type=Dish]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-13 17:44:10
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:44:10
+INFO: database.connection Connected to database cluster. 2026-03-13 17:52:43
+INFO: database.connection Database is initialized. 2026-03-13 17:52:43
+INFO: database.connection Connected to database cluster. 2026-03-13 17:52:48
+INFO: database.connection Database is initialized. 2026-03-13 17:52:48
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:52:56
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.65ms) 2026-03-13 17:52:56
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:52:56
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.57ms) 2026-03-13 17:52:56
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:53:01
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:53:01
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.98ms) 2026-03-13 17:53:01
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:53:05
+INFO: services.dish_service Dish with id 69b432e19ec46d13981f5293 was created 2026-03-13 17:53:05
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+description
+  Field required [type=missing, input_value=Dish(id=ObjectId('69b432e...at 0x0000021DA8CF8C30>]), input_type=Dish]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-13 17:53:05
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:53:05
+INFO: database.connection Connected to database cluster. 2026-03-13 17:54:10
+INFO: database.connection Database is initialized. 2026-03-13 17:54:10
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:54:20
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (2.15ms) 2026-03-13 17:54:20
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:54:20
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (191.82ms) 2026-03-13 17:54:21
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:54:26
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:54:26
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (12.72ms) 2026-03-13 17:54:26
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:54:36
+INFO: services.dish_service Dish with id 69b4333c1a5fdaef35c94528 was created 2026-03-13 17:54:36
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+description
+  Field required [type=missing, input_value=Dish(id=ObjectId('69b4333...at 0x000001581B7175C0>]), input_type=Dish]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-13 17:55:06
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:55:06
+INFO: database.connection Connected to database cluster. 2026-03-13 17:57:09
+INFO: database.connection Database is initialized. 2026-03-13 17:57:09
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:57:15
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.59ms) 2026-03-13 17:57:15
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:57:15
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.46ms) 2026-03-13 17:57:15
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:57:21
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:57:21
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.00ms) 2026-03-13 17:57:21
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:57:25
+INFO: services.dish_service Dish with id 69b433e5a6e8bfb4e4c0d187 was created 2026-03-13 17:57:25
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+description
+  Field required [type=missing, input_value=Dish(id=ObjectId('69b433e...at 0x00000270E9418C30>]), input_type=Dish]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-13 17:57:25
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:57:25
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 17:59:40
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.49ms) 2026-03-13 17:59:40
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 17:59:40
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.89ms) 2026-03-13 17:59:40
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 17:59:45
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 17:59:45
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (2.73ms) 2026-03-13 17:59:45
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 17:59:53
+INFO: services.dish_service Dish with id 69b43479a6e8bfb4e4c0d188 was created 2026-03-13 17:59:53
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for DishResponse
+description
+  Field required [type=missing, input_value=Dish(id=ObjectId('69b4347...at 0x00000270E98A6030>]), input_type=Dish]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-13 17:59:53
+ERROR: middlewares.request_logging_middleware Server error: POST /dishes - 500 2026-03-13 17:59:53
+INFO: database.connection Connected to database cluster. 2026-03-13 18:02:09
+INFO: database.connection Database is initialized. 2026-03-13 18:02:09
+INFO: database.connection Connected to database cluster. 2026-03-13 18:04:07
+INFO: database.connection Database is initialized. 2026-03-13 18:04:07
+INFO: database.connection Connected to database cluster. 2026-03-13 18:04:13
+INFO: database.connection Database is initialized. 2026-03-13 18:04:13
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 18:04:24
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.58ms) 2026-03-13 18:04:24
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 18:04:24
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (16.80ms) 2026-03-13 18:04:24
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 18:04:28
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 18:04:28
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.18ms) 2026-03-13 18:04:28
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 18:04:32
+INFO: services.dish_service Dish with id 69b435909234ec82eb96af09 was created 2026-03-13 18:04:32
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (3.76ms) 2026-03-13 18:04:32
+INFO: database.connection Connected to database cluster. 2026-03-13 18:05:23
+INFO: database.connection Database is initialized. 2026-03-13 18:05:23
+INFO: database.connection Connected to database cluster. 2026-03-13 18:05:26
+INFO: database.connection Database is initialized. 2026-03-13 18:05:26
+INFO: database.connection Connected to database cluster. 2026-03-13 18:05:30
+INFO: database.connection Database is initialized. 2026-03-13 18:05:30
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 18:05:33
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.58ms) 2026-03-13 18:05:33
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 18:05:33
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.39ms) 2026-03-13 18:05:33
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 18:05:38
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 18:05:38
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.97ms) 2026-03-13 18:05:38
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 18:05:44
+INFO: services.dish_service Dish with id 69b435d822da64998dd5b2c7 was created 2026-03-13 18:05:44
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (5.21ms) 2026-03-13 18:05:44
+INFO: database.connection Connected to database cluster. 2026-03-13 18:08:11
+INFO: database.connection Database is initialized. 2026-03-13 18:08:12

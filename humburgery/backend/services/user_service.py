@@ -21,7 +21,7 @@ async def login(username: str, password: str) -> Token:
 
     access_token_expires = timedelta(minutes=conf["jwt"]["ACCESS_TOKEN_EXPIRE_MINUTES"])
     access_token = create_access_token(
-        data={"sub": user.name, "user_id": user.id}, expires_delta=access_token_expires
+        data={"sub": user.name, "user_id": str(user.id)}, expires_delta=access_token_expires
     )
     logger.info(f"user with id {user.id} logged in successfully")
 

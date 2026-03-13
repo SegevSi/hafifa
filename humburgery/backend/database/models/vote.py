@@ -1,13 +1,7 @@
-from typing import TYPE_CHECKING
-
 from pydantic import Field, BaseModel, ConfigDict
 from beanie import Document, Indexed, PydanticObjectId, Link
 
-
-if TYPE_CHECKING:
-    from .dish import Dish
-    from .user import User
-
+# id: Optional[PydanticObjectId] = Field(default=None, alias="_id") todo delete comment
 class Vote(Document):
     id: PydanticObjectId = Field(default_factory=PydanticObjectId, alias="_id")
     dish: Link['Dish']
