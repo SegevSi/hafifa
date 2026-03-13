@@ -1,3 +1,10 @@
+from .vote import Vote
 from .dish import Dish
 from .user import User
-from .vote import Vote
+
+
+# Dish.model_rebuild()
+# User.model_rebuild()
+# Vote.model_rebuild()
+
+

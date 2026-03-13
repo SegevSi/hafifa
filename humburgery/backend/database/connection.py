@@ -5,7 +5,7 @@ import logging
 from fastapi import FastAPI
 from pymongo import AsyncMongoClient
 from beanie import init_beanie
-from models import User, Dish, Vote
+from .models import User, Dish, Vote
 
 
 logger = logging.getLogger(__name__)

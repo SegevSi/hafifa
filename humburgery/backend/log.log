@@ -80,3 +80,44 @@ INFO: services.user_service user with id 69b1a98fd166048b675f315a logged in succ
 INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.98ms) 2026-03-11 19:55:28
 INFO: middlewares.request_logging_middleware Request started: POST /dishes 2026-03-11 19:56:23
 INFO: middlewares.request_logging_middleware Success: POST /dishes - 200 (1.55ms) 2026-03-11 19:56:23
+INFO: database.connection Connected to database cluster. 2026-03-13 14:11:10
+INFO: database.connection Connected to database cluster. 2026-03-13 14:11:25
+INFO: database.connection Connected to database cluster. 2026-03-13 14:20:24
+INFO: database.connection Connected to database cluster. 2026-03-13 14:20:52
+INFO: database.connection Connected to database cluster. 2026-03-13 14:22:58
+INFO: database.connection Connected to database cluster. 2026-03-13 14:34:07
+INFO: database.connection Connected to database cluster. 2026-03-13 14:34:20
+INFO: database.connection Connected to database cluster. 2026-03-13 14:57:23
+INFO: database.connection Connected to database cluster. 2026-03-13 15:01:05
+INFO: database.connection Connected to database cluster. 2026-03-13 15:05:27
+INFO: database.connection Connected to database cluster. 2026-03-13 15:11:45
+INFO: database.connection Connected to database cluster. 2026-03-13 15:12:09
+INFO: database.connection Connected to database cluster. 2026-03-13 15:12:45
+INFO: database.connection Connected to database cluster. 2026-03-13 15:13:28
+INFO: database.connection Connected to database cluster. 2026-03-13 15:14:32
+INFO: database.connection Connected to database cluster. 2026-03-13 15:16:59
+INFO: database.connection Connected to database cluster. 2026-03-13 15:19:23
+INFO: database.connection Connected to database cluster. 2026-03-13 15:25:29
+INFO: database.connection Connected to database cluster. 2026-03-13 15:26:54
+INFO: database.connection Connected to database cluster. 2026-03-13 15:28:52
+INFO: database.connection Connected to database cluster. 2026-03-13 15:30:17
+INFO: database.connection Connected to database cluster. 2026-03-13 15:31:58
+INFO: database.connection Connected to database cluster. 2026-03-13 15:34:23
+INFO: database.connection Connected to database cluster. 2026-03-13 15:35:28
+INFO: database.connection Connected to database cluster. 2026-03-13 15:36:45
+INFO: database.connection Connected to database cluster. 2026-03-13 15:59:10
+INFO: database.connection Connected to database cluster. 2026-03-13 16:10:51
+INFO: database.connection Database is initialized. 2026-03-13 16:10:51
+INFO: database.connection Connected to database cluster. 2026-03-13 16:11:03
+INFO: database.connection Database is initialized. 2026-03-13 16:11:03
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 16:13:05
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (1.13ms) 2026-03-13 16:13:05
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 16:13:05
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (20.09ms) 2026-03-13 16:13:05
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 16:13:19
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes - 401 2026-03-13 16:13:19
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 16:13:36
+ERROR: middlewares.exception_handler_middleware Server error: `User` is not fully defined; you should define `Vote`, then call `User.model_rebuild()`.
+
+For further information visit https://errors.pydantic.dev/2.12/u/class-not-fully-defined 2026-03-13 16:13:36
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-13 16:13:36
