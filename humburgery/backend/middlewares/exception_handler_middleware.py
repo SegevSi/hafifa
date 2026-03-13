@@ -8,7 +8,7 @@ from starlette import status
 
 logger = logging.getLogger(__name__)
 
-# todo del httpexception or handle that better, delete unused exceptions
+
 class ExceptionHandlerMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         headers = None
@@ -35,9 +35,9 @@ class ExceptionHandlerMiddleware(BaseHTTPMiddleware):
             detail = str(e)
 
         if status_code >= 500:
-            logger.error(f"Server error, detail: {detail}")
-        elif status_code >= 400:
-            logger.warning( f"Client error, detail: {detail}")
+            logger.error(f"Server error: {detail}")
+        else:
+            logger.warning( f"Client error: {detail}")
 
 
         return JSONResponse(status_code=status_code, content={"detail": detail}, headers=headers)
