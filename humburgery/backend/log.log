@@ -1,0 +1,82 @@
+INFO: database.connection Connected to database cluster. 2026-03-11 01:58:16
+INFO: database.connection Database is initialized. 2026-03-11 01:58:16
+INFO: middlewares.logging_middleware Request started: GET /docs 2026-03-11 01:58:41
+INFO: middlewares.logging_middleware Success: GET /docs - 200 (0.77ms) 2026-03-11 01:58:41
+INFO: middlewares.logging_middleware Request started: GET /openapi.json 2026-03-11 01:58:41
+INFO: middlewares.logging_middleware Success: GET /openapi.json - 200 (1.15ms) 2026-03-11 01:58:41
+INFO: database.connection Connected to database cluster. 2026-03-11 02:03:16
+INFO: database.connection Database is initialized. 2026-03-11 02:03:16
+INFO: database.connection Connected to database cluster. 2026-03-11 15:28:41
+INFO: database.connection Database is initialized. 2026-03-11 15:28:41
+INFO: middlewares.logging_middleware Request started: GET /docs 2026-03-11 15:28:52
+INFO: middlewares.logging_middleware Success: GET /docs - 200 (0.72ms) 2026-03-11 15:28:52
+INFO: middlewares.logging_middleware Request started: GET /openapi.json 2026-03-11 15:28:52
+INFO: middlewares.logging_middleware Success: GET /openapi.json - 200 (5.14ms) 2026-03-11 15:28:52
+INFO: database.connection Connected to database cluster. 2026-03-11 15:33:40
+INFO: database.connection Database is initialized. 2026-03-11 15:33:40
+INFO: database.connection Connected to database cluster. 2026-03-11 15:38:40
+INFO: database.connection Database is initialized. 2026-03-11 15:38:40
+INFO: database.connection Connected to database cluster. 2026-03-11 15:48:40
+INFO: database.connection Database is initialized. 2026-03-11 15:48:40
+INFO: database.connection Connected to database cluster. 2026-03-11 15:53:40
+INFO: database.connection Database is initialized. 2026-03-11 15:53:40
+INFO: database.connection Connected to database cluster. 2026-03-11 16:03:40
+INFO: database.connection Database is initialized. 2026-03-11 16:03:40
+INFO: database.connection Connected to database cluster. 2026-03-11 19:31:49
+INFO: database.connection Database is initialized. 2026-03-11 19:31:49
+INFO: middlewares.request_logging_middleware Request started: GET /docs 2026-03-11 19:31:58
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.64ms) 2026-03-11 19:31:58
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json 2026-03-11 19:31:58
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (12.17ms) 2026-03-11 19:31:58
+INFO: middlewares.request_logging_middleware Request started: POST /users/login 2026-03-11 19:32:10
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login - 405 2026-03-11 19:32:10
+INFO: middlewares.request_logging_middleware Request started: POST /users/login 2026-03-11 19:32:30
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login - 405 2026-03-11 19:32:30
+INFO: database.connection Connected to database cluster. 2026-03-11 19:40:06
+INFO: database.connection Database is initialized. 2026-03-11 19:40:06
+INFO: middlewares.request_logging_middleware Request started: GET /docs 2026-03-11 19:40:10
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.69ms) 2026-03-11 19:40:10
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json 2026-03-11 19:40:10
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (10.61ms) 2026-03-11 19:40:10
+INFO: middlewares.request_logging_middleware Request started: GET /docs 2026-03-11 19:45:03
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.54ms) 2026-03-11 19:45:03
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json 2026-03-11 19:45:03
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.59ms) 2026-03-11 19:45:03
+INFO: database.connection Connected to database cluster. 2026-03-11 19:45:07
+INFO: database.connection Database is initialized. 2026-03-11 19:45:07
+INFO: middlewares.request_logging_middleware Request started: GET /docs 2026-03-11 19:45:07
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.67ms) 2026-03-11 19:45:07
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json 2026-03-11 19:45:07
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (10.23ms) 2026-03-11 19:45:07
+INFO: middlewares.request_logging_middleware Request started: POST /users/login 2026-03-11 19:47:07
+WARNING: middlewares.exception_handler_middleware Client error, detail: Incorrect password 2026-03-11 19:47:07
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login - 404 2026-03-11 19:47:07
+INFO: middlewares.request_logging_middleware Request started: POST /users/login 2026-03-11 19:47:24
+WARNING: middlewares.exception_handler_middleware Client error, detail: Incorrect password 2026-03-11 19:47:24
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login - 404 2026-03-11 19:47:24
+INFO: middlewares.request_logging_middleware Request started: GET /docs 2026-03-11 19:48:52
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.99ms) 2026-03-11 19:48:52
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json 2026-03-11 19:48:52
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.73ms) 2026-03-11 19:48:52
+INFO: middlewares.request_logging_middleware Request started: POST /users/login 2026-03-11 19:49:04
+WARNING: middlewares.exception_handler_middleware Client error, detail: Incorrect password 2026-03-11 19:49:04
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login - 404 2026-03-11 19:49:04
+INFO: middlewares.request_logging_middleware Request started: POST /users/login 2026-03-11 19:49:08
+WARNING: middlewares.exception_handler_middleware Client error, detail: Incorrect password 2026-03-11 19:49:08
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login - 404 2026-03-11 19:49:08
+INFO: database.connection Connected to database cluster. 2026-03-11 19:50:03
+INFO: database.connection Database is initialized. 2026-03-11 19:50:03
+INFO: middlewares.request_logging_middleware Request started: POST /users/login 2026-03-11 19:50:13
+ERROR: middlewares.exception_handler_middleware Server error, detail: 'ACCESS_TOKEN_EXPIRES' 2026-03-11 19:50:13
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-11 19:50:13
+INFO: database.connection Connected to database cluster. 2026-03-11 19:55:03
+INFO: database.connection Database is initialized. 2026-03-11 19:55:03
+INFO: middlewares.request_logging_middleware Request started: GET /docs 2026-03-11 19:55:12
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.75ms) 2026-03-11 19:55:12
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json 2026-03-11 19:55:12
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (10.94ms) 2026-03-11 19:55:12
+INFO: middlewares.request_logging_middleware Request started: POST /users/login 2026-03-11 19:55:28
+INFO: services.user_service user with id 69b1a98fd166048b675f315a logged in successfully 2026-03-11 19:55:28
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.98ms) 2026-03-11 19:55:28
+INFO: middlewares.request_logging_middleware Request started: POST /dishes 2026-03-11 19:56:23
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 200 (1.55ms) 2026-03-11 19:56:23
