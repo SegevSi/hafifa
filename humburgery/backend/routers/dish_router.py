@@ -25,5 +25,5 @@ async def delete_dish(dish_id: str):
 
 
 @router.put("/{dish_id}", response_model=DishResponse, status_code=status.HTTP_202_ACCEPTED)
-async def update_dish(dish_id: str, update_dish: UpdateDish) -> DishResponse:
-    pass
+async def update_dish(dish_id: str, to_update: UpdateDish) -> DishResponse:
+    return await dish_service.update_dish(dish_id, to_update)

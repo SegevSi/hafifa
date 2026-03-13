@@ -553,3 +553,38 @@ INFO: database.connection Connected to database cluster. 2026-03-13 19:36:15
 INFO: database.connection Database is initialized. 2026-03-13 19:36:15
 INFO: database.connection Connected to database cluster. 2026-03-13 19:46:15
 INFO: database.connection Database is initialized. 2026-03-13 19:46:15
+INFO: database.connection Connected to database cluster. 2026-03-13 19:51:16
+INFO: database.connection Database is initialized. 2026-03-13 19:51:16
+INFO: database.connection Connected to database cluster. 2026-03-13 19:56:16
+INFO: database.connection Database is initialized. 2026-03-13 19:56:16
+INFO: database.connection Connected to database cluster. 2026-03-13 21:31:27
+INFO: database.connection Database is initialized. 2026-03-13 21:31:27
+INFO: database.connection Connected to database cluster. 2026-03-13 21:31:34
+INFO: database.connection Database is initialized. 2026-03-13 21:31:34
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 21:31:41
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.67ms) 2026-03-13 21:31:41
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 21:31:41
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (20.90ms) 2026-03-13 21:31:41
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 21:31:47
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 21:31:47
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (12.35ms) 2026-03-13 21:31:47
+INFO: database.connection Connected to database cluster. 2026-03-13 21:32:22
+INFO: database.connection Database is initialized. 2026-03-13 21:32:22
+INFO: database.connection Connected to database cluster. 2026-03-13 21:32:27
+INFO: database.connection Database is initialized. 2026-03-13 21:32:27
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 21:33:14
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.99ms) 2026-03-13 21:33:14
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 21:33:14
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (19.95ms) 2026-03-13 21:33:14
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 21:33:20
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 21:33:20
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.92ms) 2026-03-13 21:33:20
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 21:33:35
+INFO: services.dish_service Dish with id 69b4668f7ed31dae2375fe9c was created 2026-03-13 21:33:35
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (3.71ms) 2026-03-13 21:33:35
+INFO: database.connection Connected to database cluster. 2026-03-13 21:46:48
+INFO: database.connection Database is initialized. 2026-03-13 21:46:48
+INFO: database.connection Connected to database cluster. 2026-03-13 21:51:48
+INFO: database.connection Database is initialized. 2026-03-13 21:51:48
+INFO: database.connection Connected to database cluster. 2026-03-13 21:54:35
+INFO: database.connection Database is initialized. 2026-03-13 21:54:35
