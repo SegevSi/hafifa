@@ -514,3 +514,17 @@ INFO: services.dish_service Dish with id 69b435d822da64998dd5b2c7 was created 20
 INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (5.21ms) 2026-03-13 18:05:44
 INFO: database.connection Connected to database cluster. 2026-03-13 18:08:11
 INFO: database.connection Database is initialized. 2026-03-13 18:08:12
+INFO: database.connection Connected to database cluster. 2026-03-13 18:08:22
+INFO: database.connection Database is initialized. 2026-03-13 18:08:22
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-13 18:08:31
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.59ms) 2026-03-13 18:08:31
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-13 18:08:31
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (17.53ms) 2026-03-13 18:08:31
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-13 18:08:36
+INFO: services.user_service user with id 69b41cccd166048b675f315b logged in successfully 2026-03-13 18:08:36
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.87ms) 2026-03-13 18:08:36
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-13 18:08:40
+INFO: services.dish_service Dish with id 69b43688782285250efed359 was created 2026-03-13 18:08:40
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (4.61ms) 2026-03-13 18:08:40
+INFO: database.connection Connected to database cluster. 2026-03-13 18:34:55
+INFO: database.connection Database is initialized. 2026-03-13 18:34:55

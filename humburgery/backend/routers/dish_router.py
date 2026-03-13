@@ -19,9 +19,9 @@ async def get_all_dishes(for_stats: bool = Query(default=False)):
     pass
 
 
-@router.delete("/{dish_id}")
-async def delete_dish(dish_id: int):
-    pass
+@router.delete("/{dish_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_dish(dish_id: str):
+    return await dish_service.delete_dish(dish_id)
 
 
 @router.put("/{dish_id}")

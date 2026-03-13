@@ -10,6 +10,8 @@ class Vote(Document):
     class Settings:
         name = "votes"
         keep_nulls = False
+        use_state_management = True
+        cascade = ["dish", "user"]
 
 
 # from custom_types import PyObjectId
