@@ -860,3 +860,54 @@ INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-
 ERROR: root E11000 duplicate key error collection: mydb.votes index: user_id_1 dup key: { user_id: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: mydb.votes index: user_id_1 dup key: { user_id: null }', 'keyPattern': {'user_id': 1}, 'keyValue': {'user_id': None}} 2026-03-14 01:51:07
 WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b1a98fd166048b675f315a  already voted 2026-03-14 01:51:07
 WARNING: middlewares.request_logging_middleware Client error: POST /votes - 409 2026-03-14 01:51:07
+INFO: database.connection Connected to database cluster. 2026-03-14 01:59:53
+INFO: database.connection Database is initialized. 2026-03-14 01:59:53
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-14 02:04:18
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.59ms) 2026-03-14 02:04:18
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-14 02:04:18
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (27.39ms) 2026-03-14 02:04:18
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-14 02:04:24
+INFO: services.user_service User with id 69b4a5ea914ad0f5a9c5cd2a logged in successfully 2026-03-14 02:04:24
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.99ms) 2026-03-14 02:04:24
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-14 02:04:39
+INFO: services.dish_service Dish with id 69b4a617f4757e817b27cc9e was created 2026-03-14 02:04:39
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (13.26ms) 2026-03-14 02:04:39
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:05:05
+WARNING: middlewares.exception_handler_middleware Client error: Could not Create Vote, dish with id 5eb7cf5a86d9755df3a6c593 not found 2026-03-14 02:05:05
+WARNING: middlewares.request_logging_middleware Client error: POST /votes - 404 2026-03-14 02:05:05
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:05:16
+INFO: services.vote_service Vote with id 69b4a63cf4757e817b27cc9f was created 2026-03-14 02:05:16
+INFO: middlewares.request_logging_middleware Success: POST /votes - 201 (15.64ms) 2026-03-14 02:05:16
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:05:23
+INFO: services.vote_service Vote with id 69b4a643f4757e817b27cca0 was created 2026-03-14 02:05:23
+INFO: middlewares.request_logging_middleware Success: POST /votes - 201 (3.38ms) 2026-03-14 02:05:23
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69b4a617f4757e817b27cc9e  2026-03-14 02:07:31
+INFO: services.dish_service Dish with id 69b4a617f4757e817b27cc9e was deleted 2026-03-14 02:07:31
+INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69b4a617f4757e817b27cc9e - 204 (3.33ms) 2026-03-14 02:07:31
+INFO: database.connection Connected to database cluster. 2026-03-14 02:18:45
+INFO: database.connection Database is initialized. 2026-03-14 02:18:45
+INFO: database.connection Connected to database cluster. 2026-03-14 02:18:51
+INFO: database.connection Database is initialized. 2026-03-14 02:18:51
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-14 02:20:07
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.62ms) 2026-03-14 02:20:07
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-14 02:20:07
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (22.36ms) 2026-03-14 02:20:07
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-14 02:20:12
+INFO: services.user_service User with id 69b4a5ea914ad0f5a9c5cd2a logged in successfully 2026-03-14 02:20:12
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.97ms) 2026-03-14 02:20:12
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-14 02:20:20
+INFO: services.dish_service Dish with id 69b4a9c4f0e4efb82aa3cbb6 was created 2026-03-14 02:20:20
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (3.52ms) 2026-03-14 02:20:20
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:20:41
+INFO: services.vote_service Vote with id 69b4a9d9f0e4efb82aa3cbb7 was created 2026-03-14 02:20:41
+INFO: middlewares.request_logging_middleware Success: POST /votes - 201 (4.92ms) 2026-03-14 02:20:41
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:20:55
+INFO: services.vote_service Vote with id 69b4a9e7f0e4efb82aa3cbb8 was created 2026-03-14 02:20:55
+INFO: middlewares.request_logging_middleware Success: POST /votes - 201 (3.58ms) 2026-03-14 02:20:55
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69b4a9c4f0e4efb82aa3cbb6  2026-03-14 02:22:05
+INFO: services.dish_service Dish with id 69b4a9c4f0e4efb82aa3cbb6 was deleted 2026-03-14 02:22:05
+INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69b4a9c4f0e4efb82aa3cbb6 - 204 (3.47ms) 2026-03-14 02:22:05
+INFO: database.connection Connected to database cluster. 2026-03-14 02:23:51
+INFO: database.connection Database is initialized. 2026-03-14 02:23:51
+INFO: database.connection Connected to database cluster. 2026-03-14 02:26:17
+INFO: database.connection Database is initialized. 2026-03-14 02:26:17

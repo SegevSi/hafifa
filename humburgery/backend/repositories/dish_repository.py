@@ -1,3 +1,4 @@
+from beanie import DeleteRules, PydanticObjectId
 from database.models import Dish
 from exceptions import NotFoundException
 from schemas.dish import UpdateDish
@@ -8,16 +9,16 @@ async def create_dish(dish: Dish) -> Dish:
     return  await Dish.insert_one(dish)
 
 
-async def delete_dish(dish_id: str) -> None:
+async def delete_dish(dish_id: PydanticObjectId) -> None:
     dish = await Dish.get(dish_id)
 
     if not dish:
         raise NotFoundException(f"Could not delete dish, dish with id {dish_id} was not found")
 
-    await dish.delete()
+    await dish.delete(link_rule=DeleteRules.DELETE_LINKS)
 
 
-async def update_dish(dish_id: str, to_update: UpdateDish) -> Dish:
+async def update_dish(dish_id: PydanticObjectId, to_update: UpdateDish) -> Dish:
     dish = await Dish.get(dish_id)
 
     if not dish:

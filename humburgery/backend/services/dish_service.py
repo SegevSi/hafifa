@@ -2,6 +2,7 @@ from schemas.dish import DishRequest, DishResponse, UpdateDish
 from repositories import dish_repository
 import logging
 from database.models import Dish
+from beanie import PydanticObjectId
 
 
 logger = logging.getLogger(__name__)
@@ -14,12 +15,12 @@ async def create_dish(dish: DishRequest) -> DishResponse:
     return DishResponse.model_validate(new_dish)
 
 
-async def delete_dish(dish_id: str):
+async def delete_dish(dish_id: PydanticObjectId):
     await dish_repository.delete_dish(dish_id)
     logger.info(f"Dish with id {dish_id} was deleted")
 
 
-async def update_dish(dish_id: str, to_update: UpdateDish) -> DishResponse:
+async def update_dish(dish_id: PydanticObjectId, to_update: UpdateDish) -> DishResponse:
     updated_dish = await dish_repository.update_dish(dish_id, to_update)
     logger.info(f"Dish with id {dish_id} was updated")
 
