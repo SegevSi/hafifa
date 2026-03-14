@@ -911,3 +911,39 @@ INFO: database.connection Connected to database cluster. 2026-03-14 02:23:51
 INFO: database.connection Database is initialized. 2026-03-14 02:23:51
 INFO: database.connection Connected to database cluster. 2026-03-14 02:26:17
 INFO: database.connection Database is initialized. 2026-03-14 02:26:17
+INFO: database.connection Connected to database cluster. 2026-03-14 02:26:29
+INFO: database.connection Database is initialized. 2026-03-14 02:26:29
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-14 02:29:22
+INFO: services.dish_service Dish with id 69b4abe292d1098ca45dfe55 was created 2026-03-14 02:29:22
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (3.85ms) 2026-03-14 02:29:22
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:29:48
+WARNING: middlewares.exception_handler_middleware Client error: Could not Create Vote, dish with id 69b4a9c4f0e4efb82aa3cbb6 not found 2026-03-14 02:29:48
+WARNING: middlewares.request_logging_middleware Client error: POST /votes - 404 2026-03-14 02:29:48
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:29:59
+INFO: services.vote_service Vote with id 69b4ac0792d1098ca45dfe56 was created 2026-03-14 02:29:59
+INFO: middlewares.request_logging_middleware Success: POST /votes - 201 (3.66ms) 2026-03-14 02:29:59
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69b4abe292d1098ca45dfe55  2026-03-14 02:32:08
+INFO: services.dish_service Dish with id 69b4abe292d1098ca45dfe55 was deleted 2026-03-14 02:32:08
+INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69b4abe292d1098ca45dfe55 - 204 (2.83ms) 2026-03-14 02:32:08
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69b4abe292d1098ca45dfe55  2026-03-14 02:32:13
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete dish, dish with id 69b4abe292d1098ca45dfe55 was not found 2026-03-14 02:32:13
+WARNING: middlewares.request_logging_middleware Client error: DELETE /dishes/69b4abe292d1098ca45dfe55 - 404 2026-03-14 02:32:13
+INFO: database.connection Connected to database cluster. 2026-03-14 02:43:02
+INFO: database.connection Database is initialized. 2026-03-14 02:43:02
+INFO: database.connection Connected to database cluster. 2026-03-14 02:43:47
+INFO: database.connection Database is initialized. 2026-03-14 02:43:47
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-14 02:44:49
+INFO: services.dish_service Dish with id 69b4af81a711c4d0b7334fc2 was created 2026-03-14 02:44:49
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (4.19ms) 2026-03-14 02:44:49
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-14 02:44:50
+INFO: services.dish_service Dish with id 69b4af82a711c4d0b7334fc3 was created 2026-03-14 02:44:50
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (2.88ms) 2026-03-14 02:44:50
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:45:08
+INFO: services.vote_service Vote with id 69b4af94a711c4d0b7334fc4 was created 2026-03-14 02:45:08
+INFO: middlewares.request_logging_middleware Success: POST /votes - 201 (6.50ms) 2026-03-14 02:45:08
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69b4af82a711c4d0b7334fc3  2026-03-14 02:45:58
+INFO: services.dish_service Dish with id 69b4af82a711c4d0b7334fc3 was deleted 2026-03-14 02:45:58
+INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69b4af82a711c4d0b7334fc3 - 204 (12.80ms) 2026-03-14 02:45:58
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69b4af82a711c4d0b7334fc3  2026-03-14 02:46:02
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete dish, dish with id 69b4af82a711c4d0b7334fc3 was not found 2026-03-14 02:46:02
+WARNING: middlewares.request_logging_middleware Client error: DELETE /dishes/69b4af82a711c4d0b7334fc3 - 404 2026-03-14 02:46:02
