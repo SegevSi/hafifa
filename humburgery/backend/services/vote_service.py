@@ -23,7 +23,3 @@ async def create_vote(vote: VoteRequest, user_id: PydanticObjectId) -> VoteRespo
     return VoteResponse(id=new_vote.id, dish_id=vote.dish_id)
 
 
-async def get_user_vote(user_id: PydanticObjectId) -> VoteResponse:
-    vote = await vote_repository.get_user_vote(user_id)
-
-    return VoteResponse(id=vote.id, dish_id=vote.dish.id)

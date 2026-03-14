@@ -35,10 +35,10 @@ async def login(username: str, password: str) -> Token:
 
 
 async def get_user_vote(user_id: PydanticObjectId) -> VoteResponse:
-    vote = await vote_service.get_user_vote(user_id)
+    vote = await user_repository.get_user_vote(user_id)
     logger.info(f"Fetched vote for user with id {user_id} successfully")
 
-    return vote
+    return VoteResponse(id=vote.id, dish_id=vote.dish.id)
 
 
 
