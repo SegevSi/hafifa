@@ -1,4 +1,6 @@
 from datetime import datetime, timedelta, timezone
+
+from beanie import PydanticObjectId
 from fastapi import HTTPException
 from jose import jwt, JWTError
 from config import conf
@@ -7,6 +9,7 @@ from schemas.token import TokenData
 
 def create_access_token(data: dict, expires_delta: timedelta | None = None):
     to_encode = data.copy()
+
     if expires_delta:
         expire = datetime.now(timezone.utc) + expires_delta
     else:
@@ -25,7 +28,7 @@ def verify_token(token: str, credentials_exception: HTTPException) -> TokenData:
         if username is None:
             raise credentials_exception
 
-        return TokenData(username=username, user_id=user_id)
+        return TokenData(username=username, user_id=PydanticObjectId(user_id))
     except JWTError:
         raise credentials_exception
 

@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from beanie import PydanticObjectId
 
 
 class Token(BaseModel):
@@ -7,5 +8,5 @@ class Token(BaseModel):
 
 
 class TokenData(BaseModel):
-    user_id: str
+    user_id: PydanticObjectId
     username: str

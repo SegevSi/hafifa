@@ -23,7 +23,7 @@ async def login(username: str, password: str) -> Token:
     access_token = create_access_token(
         data={"sub": user.name, "user_id": str(user.id)}, expires_delta=access_token_expires
     )
-    logger.info(f"user with id {user.id} logged in successfully")
+    logger.info(f"User with id {user.id} logged in successfully")
 
     return Token(access_token=access_token, token_type="bearer")
 

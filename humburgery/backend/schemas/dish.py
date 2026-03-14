@@ -1,6 +1,5 @@
 from datetime import date
 from typing import Optional
-
 from beanie import PydanticObjectId
 from pydantic import BaseModel, PositiveFloat, Field, PositiveInt, ConfigDict
 
