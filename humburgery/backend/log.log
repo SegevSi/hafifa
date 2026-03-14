@@ -947,3 +947,21 @@ INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69b4af82a71
 INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69b4af82a711c4d0b7334fc3  2026-03-14 02:46:02
 WARNING: middlewares.exception_handler_middleware Client error: Could not delete dish, dish with id 69b4af82a711c4d0b7334fc3 was not found 2026-03-14 02:46:02
 WARNING: middlewares.request_logging_middleware Client error: DELETE /dishes/69b4af82a711c4d0b7334fc3 - 404 2026-03-14 02:46:02
+INFO: database.connection Connected to database cluster. 2026-03-14 02:53:27
+INFO: database.connection Database is initialized. 2026-03-14 02:53:27
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-14 02:54:28
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes - 401 2026-03-14 02:54:28
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-14 02:54:38
+INFO: services.user_service User with id 69b4a5ea914ad0f5a9c5cd2a logged in successfully 2026-03-14 02:54:38
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (5.03ms) 2026-03-14 02:54:38
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-14 02:54:42
+INFO: services.dish_service Dish with id 69b4b1d2aa06ff4f89a95a45 was created 2026-03-14 02:54:42
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (2.86ms) 2026-03-14 02:54:42
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-14 02:54:55
+INFO: services.vote_service Vote with id 69b4b1dfaa06ff4f89a95a46 was created 2026-03-14 02:54:55
+INFO: middlewares.request_logging_middleware Success: POST /votes - 201 (4.67ms) 2026-03-14 02:54:55
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69b4b1d2aa06ff4f89a95a45  2026-03-14 02:55:28
+INFO: services.dish_service Dish with id 69b4b1d2aa06ff4f89a95a45 was deleted 2026-03-14 02:55:28
+INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69b4b1d2aa06ff4f89a95a45 - 204 (9.90ms) 2026-03-14 02:55:28
+INFO: database.connection Connected to database cluster. 2026-03-14 02:58:55
+INFO: database.connection Database is initialized. 2026-03-14 02:58:55

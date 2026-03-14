@@ -1,11 +1,12 @@
-from pydantic import Field, BaseModel, ConfigDict
+from typing import Annotated
+from pydantic import Field
 from beanie import Document, Indexed, PydanticObjectId, Link
 
 # id: Optional[PydanticObjectId] = Field(default=None, alias="_id") todo delete comment
 class Vote(Document):
     id: PydanticObjectId = Field(default_factory=PydanticObjectId, alias="_id")
     dish: Link['Dish']
-    user: Link['User']
+    user: Annotated[Link['User'], Indexed(unique=True)]
 
     class Settings:
         name = "votes"
