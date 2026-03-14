@@ -1,10 +1,16 @@
 from datetime import timedelta
+
+from beanie import PydanticObjectId
 from pymongo.asynchronous.database import AsyncDatabase
 from config import conf
+from database.models import Vote
 from exceptions import NotFoundException
 from schemas.token import Token
 from repositories import user_repository
 import logging
+
+from schemas.vote import VoteResponse
+from services import vote_service
 from utlis.hash import verify_password
 from utlis.jwt import create_access_token
 
@@ -26,6 +32,13 @@ async def login(username: str, password: str) -> Token:
     logger.info(f"User with id {user.id} logged in successfully")
 
     return Token(access_token=access_token, token_type="bearer")
+
+
+async def get_user_vote(user_id: PydanticObjectId) -> VoteResponse:
+    vote = await vote_service.get_user_vote(user_id)
+    logger.info(f"Fetched vote for user with id {user_id} successfully")
+
+    return vote
 
 
 
