@@ -1097,3 +1097,45 @@ INFO: database.connection Connected to database cluster. 2026-03-14 03:44:13
 INFO: database.connection Database is initialized. 2026-03-14 03:44:13
 INFO: database.connection Connected to database cluster. 2026-03-14 03:48:53
 INFO: database.connection Database is initialized. 2026-03-14 03:48:53
+INFO: database.connection Connected to database cluster. 2026-03-15 11:24:23
+INFO: database.connection Database is initialized. 2026-03-15 11:24:23
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-15 11:25:27
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.83ms) 2026-03-15 11:25:27
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-15 11:25:27
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (26.72ms) 2026-03-15 11:25:27
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 11:25:33
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-15 11:25:33
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (14.04ms) 2026-03-15 11:25:33
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote  2026-03-15 11:25:41
+INFO: services.user_service Fetched vote for user with id 69b4baf3d166048b675f3160 successfully 2026-03-15 11:25:41
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote - 200 (7.87ms) 2026-03-15 11:25:41
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-15 11:27:44
+INFO: services.dish_service Dish with id 69b67b900853adc0e9df4ec9 was created 2026-03-15 11:27:44
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (5.37ms) 2026-03-15 11:27:44
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69b4bb272640caf794160d08/dish  2026-03-15 11:27:55
+INFO: services.vote_service Vote with id 69b4bb272640caf794160d08 dish was Changed to dish id with id 69b67b900853adc0e9df4ec9 2026-03-15 11:27:55
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69b4bb272640caf794160d08/dish - 202 (21.83ms) 2026-03-15 11:27:55
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote  2026-03-15 11:28:19
+INFO: services.user_service Fetched vote for user with id 69b4baf3d166048b675f3160 successfully 2026-03-15 11:28:19
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote - 200 (4.01ms) 2026-03-15 11:28:19
+INFO: database.connection Connected to database cluster. 2026-03-15 11:43:02
+INFO: database.connection Database is initialized. 2026-03-15 11:43:02
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-15 11:43:15
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.59ms) 2026-03-15 11:43:15
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-15 11:43:15
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (24.92ms) 2026-03-15 11:43:15
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 11:43:34
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-15 11:43:34
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.07ms) 2026-03-15 11:43:34
+INFO: middlewares.request_logging_middleware Request started: POST /dishes  2026-03-15 11:43:50
+INFO: services.dish_service Dish with id 69b67f566c26880277ba1805 was created 2026-03-15 11:43:50
+INFO: middlewares.request_logging_middleware Success: POST /dishes - 201 (3.82ms) 2026-03-15 11:43:50
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-15 11:44:29
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b4baf3d166048b675f3160  already voted 2026-03-15 11:44:29
+WARNING: middlewares.request_logging_middleware Client error: POST /votes - 409 2026-03-15 11:44:29
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote  2026-03-15 11:44:55
+INFO: services.user_service Fetched vote for user with id 69b4baf3d166048b675f3160 successfully 2026-03-15 11:44:55
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote - 200 (7.48ms) 2026-03-15 11:44:55
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69b4bb272640caf794160d08/dish  2026-03-15 11:45:29
+INFO: services.vote_service Vote with id 69b4bb272640caf794160d08 dish was Changed to dish id with id 69b67f566c26880277ba1805 2026-03-15 11:45:29
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69b4bb272640caf794160d08/dish - 202 (4.49ms) 2026-03-15 11:45:29
