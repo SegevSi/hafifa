@@ -1243,3 +1243,33 @@ INFO: database.connection Connected to database cluster. 2026-03-15 15:13:28
 INFO: database.connection Database is initialized. 2026-03-15 15:13:28
 INFO: database.connection Connected to database cluster. 2026-03-15 15:15:14
 INFO: database.connection Database is initialized. 2026-03-15 15:15:14
+INFO: database.connection Connected to database cluster. 2026-03-15 15:15:59
+INFO: database.connection Database is initialized. 2026-03-15 15:15:59
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats  2026-03-15 15:16:09
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-15 15:16:09
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats - 200 (7.81ms) 2026-03-15 15:16:09
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 15:18:29
+INFO: services.user_service User with id 69b6b19ad166048b675f3161 logged in successfully 2026-03-15 15:18:29
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.75ms) 2026-03-15 15:18:29
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats  2026-03-15 15:18:36
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-15 15:18:36
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats - 200 (4.68ms) 2026-03-15 15:18:36
+INFO: middlewares.request_logging_middleware Request started: POST /votes  2026-03-15 15:19:01
+INFO: services.vote_service Vote with id 69b6b1c57dd36a1e1417007a was created 2026-03-15 15:19:01
+INFO: middlewares.request_logging_middleware Success: POST /votes - 201 (20.04ms) 2026-03-15 15:19:01
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats  2026-03-15 15:19:41
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-15 15:19:41
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats - 200 (3.79ms) 2026-03-15 15:19:41
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/5eb7cf5a86d9755df3a6c593/dish  2026-03-15 15:20:21
+WARNING: middlewares.exception_handler_middleware Client error: Could not Change Vote dish, vote with id 5eb7cf5a86d9755df3a6c593 not found 2026-03-15 15:20:21
+WARNING: middlewares.request_logging_middleware Client error: PATCH /votes/5eb7cf5a86d9755df3a6c593/dish - 404 2026-03-15 15:20:21
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69b6b1c57dd36a1e1417007a/dish  2026-03-15 15:20:39
+INFO: services.vote_service Vote with id 69b6b1c57dd36a1e1417007a dish was Changed to dish id with id 69b4b3459c77dac4b0d4697a 2026-03-15 15:20:39
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69b6b1c57dd36a1e1417007a/dish - 202 (4.75ms) 2026-03-15 15:20:39
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats  2026-03-15 15:20:48
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-15 15:20:48
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats - 200 (3.84ms) 2026-03-15 15:20:48
+INFO: database.connection Connected to database cluster. 2026-03-15 15:25:58
+INFO: database.connection Database is initialized. 2026-03-15 15:25:58
+INFO: database.connection Connected to database cluster. 2026-03-15 15:34:34
+INFO: database.connection Database is initialized. 2026-03-15 15:34:34

@@ -1,8 +1,7 @@
 from datetime import date
 from typing import List, Optional
-from beanie.odm.documents import DocumentProjectionType
 from pydantic import Field, PositiveFloat, NonNegativeInt, BaseModel
-from beanie import Document, before_event, Replace, Insert, Update, PydanticObjectId, BackLink
+from beanie import Document, before_event, Replace, Insert, Update, PydanticObjectId, BackLink, Save
 
 
 class Dish(Document):
@@ -16,8 +15,7 @@ class Dish(Document):
     day_of_week: int = Field(..., ge=0, le=6)
     votes: Optional[List[BackLink['Vote']]] = Field(original_field="dish", default=None)
 
-    # todo: need insert?
-    @before_event([Replace, Insert, Update])
+    @before_event([Replace, Insert, Update, Save])
     def update_handler(self):
         self.updated_at = date.today()
 

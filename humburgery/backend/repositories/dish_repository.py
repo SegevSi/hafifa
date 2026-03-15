@@ -1,4 +1,4 @@
-from typing import List, Any, Dict
+from typing import List
 from beanie import DeleteRules, PydanticObjectId
 from database.models import Dish, Vote, DishStatsDTO
 from exceptions import NotFoundException

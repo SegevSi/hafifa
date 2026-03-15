@@ -1,6 +1,6 @@
 from typing import Annotated, Optional
-from pydantic import Field, BaseModel, ConfigDict
-from beanie import Document, Indexed, PydanticObjectId, Link, BackLink
+from pydantic import Field
+from beanie import Document, Indexed, PydanticObjectId, BackLink
 
 # todo  Field(json_schema_extra={"original_field": "owners"})  insted of only original_field all models
 class User(Document):
@@ -12,16 +12,3 @@ class User(Document):
     class Settings:
         name = "users"
         keep_nulls = False
-
-
-# from .custom_types import PyObjectId
-#
-#
-# class UserModel(BaseModel):
-#     id: PyObjectId = Field(alias="_id", default=None)
-#     name: str = Field(...)
-#     password: str = Field(...)
-#     model_config = ConfigDict(
-#         populate_by_name=True,
-#         arbitrary_types_allowed=True
-#     )

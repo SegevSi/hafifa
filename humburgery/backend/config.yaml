@@ -1,5 +1,4 @@
 mongodb:
-    uri: mongodb://localhost:27017
     username: username
     password: "will be env var"
     database: mydb
