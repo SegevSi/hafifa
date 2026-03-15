@@ -28,6 +28,6 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
         elif response.status_code >= 400:
             logger.warning(f"Client error: {info}")
         else:
-            logger.info(f"Success: {info} time: {duration_ms:.2f}ms")
+            logger.info(f"Success: {info} duration: {duration_ms:.2f}ms")
 
         return response

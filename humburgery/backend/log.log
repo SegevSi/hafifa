@@ -114,3 +114,8 @@ INFO: middlewares.request_logging_middleware Success: GET /users/current/vote - 
 INFO: middlewares.request_logging_middleware Request started: POST /votes - 127.0.0.1 2026-03-15 18:47:35
 WARNING: middlewares.exception_handler_middleware Client error: Could not Create Vote, dish with id 5eb7cf5a86d9755df3a6c593 not found 2026-03-15 18:47:35
 WARNING: middlewares.request_logging_middleware Client error: POST /votes - 127.0.0.1 - 404 2026-03-15 18:47:35
+INFO: database.connection Connected to database cluster. 2026-03-15 18:52:16
+INFO: database.connection Database is initialized. 2026-03-15 18:52:16
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-15 18:52:25
+WARNING: middlewares.exception_handler_middleware Client error: Could not Create Vote, dish with id 5eb7cf5a86d9755df3a6c593 not found 2026-03-15 18:52:25
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 404 2026-03-15 18:52:25
