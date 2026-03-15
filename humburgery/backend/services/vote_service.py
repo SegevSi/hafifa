@@ -18,6 +18,6 @@ async def create_vote(vote: VoteRequest, user_id: PydanticObjectId) -> VoteRespo
 
     logger.info(f"Vote with id {new_vote.id} was created")
 
-    return VoteResponse(id=new_vote.id, dish_id=vote.dish_id)
+    return VoteResponse(id=new_vote.id, dish_id=vote.dish_id, user_id=user_id)
 
 
