@@ -1,5 +1,5 @@
 from beanie import PydanticObjectId
-from pydantic import BaseModel, PositiveFloat, Field, PositiveInt, ConfigDict
+from pydantic import BaseModel, ConfigDict
 
 
 class VoteRequest(BaseModel):

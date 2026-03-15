@@ -2,22 +2,22 @@ from datetime import date
 from typing import Optional
 from beanie import PydanticObjectId
 from pydantic import BaseModel, PositiveFloat, Field, PositiveInt, ConfigDict
+from base import BaseResponse
 
 
-class DishRequest(BaseModel):
+class BaseDish(BaseModel):
     name: str
     creator: str
+
+
+class DishRequest(BaseDish):
     price: PositiveFloat
     day_of_week: int = Field(..., ge=0, le=6)
     description: str
 
 
-class DishResponse(DishRequest):
-    id: PydanticObjectId
-    created_at: date
-    updated_at: date
-
-    model_config = ConfigDict(arbitrary_types_allowed=True, from_attributes=True)
+class DishResponse(DishRequest, BaseResponse):
+    pass
 
 
 class UpdateDish(BaseModel):
@@ -28,8 +28,10 @@ class UpdateDish(BaseModel):
     description: Optional[str] = None
 
 
-class DishStatsResponse(DishResponse):
+class DishStatResponse(BaseDish, BaseResponse):
     votes: PositiveInt
+    created_at: date
+    updated_at: date
 
 
 
