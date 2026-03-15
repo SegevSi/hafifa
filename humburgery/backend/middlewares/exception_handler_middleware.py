@@ -37,7 +37,7 @@ class ExceptionHandlerMiddleware(BaseHTTPMiddleware):
         if status_code >= 500:
             logger.error(f"Server error: {detail}")
         else:
-            logger.warning( f"Client error: {detail}")
+            logger.warning(f"Client error: {detail}")
 
 
         return JSONResponse(status_code=status_code, content={"detail": detail}, headers=headers)

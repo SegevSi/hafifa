@@ -1,22 +1,116 @@
-INFO: database.connection Connected to database cluster. 2026-03-15 17:53:23
-INFO: database.connection Database is initialized. 2026-03-15 17:53:24
-INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-15 17:53:26
-INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.48ms) 2026-03-15 17:53:26
-INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-15 17:53:26
-INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.70ms) 2026-03-15 17:53:26
-INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-15 17:53:27
-INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.47ms) 2026-03-15 17:53:27
-INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-15 17:53:27
-INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.66ms) 2026-03-15 17:53:27
-INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 17:54:20
-ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 17:54:20
-ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 17:54:20
-INFO: database.connection Connected to database cluster. 2026-03-15 17:55:40
-INFO: database.connection Database is initialized. 2026-03-15 17:55:40
-INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-15 17:55:54
-INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (2.52ms) 2026-03-15 17:55:54
-INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-15 17:55:54
-INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (359.08ms) 2026-03-15 17:55:54
-INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 17:55:58
-INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-15 17:55:58
-INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (12.72ms) 2026-03-15 17:55:58
+INFO: database.connection Connected to database cluster. 2026-03-15 18:03:10
+INFO: database.connection Database is initialized. 2026-03-15 18:03:10
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:03:19
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:03:19
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:03:19
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:03:20
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:03:20
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:03:20
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:03:21
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:03:21
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:03:21
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:03:21
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:03:21
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:03:21
+INFO: database.connection Connected to database cluster. 2026-03-15 18:06:36
+INFO: database.connection Database is initialized. 2026-03-15 18:06:36
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:06:43
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-15 18:06:43
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (5.03ms) 2026-03-15 18:06:43
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-15 18:08:52
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.60ms) 2026-03-15 18:08:52
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-15 18:08:52
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (23.39ms) 2026-03-15 18:08:52
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:08:56
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-15 18:08:56
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (3.24ms) 2026-03-15 18:08:56
+INFO: database.connection Connected to database cluster. 2026-03-15 18:09:17
+INFO: database.connection Database is initialized. 2026-03-15 18:09:17
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:09:25
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:09:25
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:09:25
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:34
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:34
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:34
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:35
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:35
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:35
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:36
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:36
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:36
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:36
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:36
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:36
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:36
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:36
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:36
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:36
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:36
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:36
+INFO: database.connection Connected to database cluster. 2026-03-15 18:10:46
+INFO: database.connection Database is initialized. 2026-03-15 18:10:46
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:52
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:52
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:52
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:53
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:53
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:53
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:54
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:54
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:54
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:54
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:54
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:54
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:10:55
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:10:55
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:10:55
+INFO: database.connection Connected to database cluster. 2026-03-15 18:24:21
+INFO: database.connection Database is initialized. 2026-03-15 18:24:21
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:24:39
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:24:39
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:24:39
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:24:40
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:24:40
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:24:40
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:24:40
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:24:40
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:24:40
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:24:40
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:24:40
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:24:40
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:32:22
+ERROR: middlewares.exception_handler_middleware Server error: 'AsyncClientSession' object does not support the context manager protocol 2026-03-15 18:32:22
+ERROR: middlewares.request_logging_middleware Server error: POST /users/login - 500 2026-03-15 18:32:22
+INFO: database.connection Connected to database cluster. 2026-03-15 18:32:32
+INFO: database.connection Database is initialized. 2026-03-15 18:32:32
+INFO: database.connection Connected to database cluster. 2026-03-15 18:32:39
+INFO: database.connection Database is initialized. 2026-03-15 18:32:39
+INFO: middlewares.request_logging_middleware Request started: GET /  2026-03-15 18:32:57
+WARNING: middlewares.request_logging_middleware Client error: GET / - 404 2026-03-15 18:32:57
+INFO: middlewares.request_logging_middleware Request started: GET /favicon.ico  2026-03-15 18:32:57
+WARNING: middlewares.request_logging_middleware Client error: GET /favicon.ico - 404 2026-03-15 18:32:57
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-15 18:33:07
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.82ms) 2026-03-15 18:33:07
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-15 18:33:08
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (31.24ms) 2026-03-15 18:33:08
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:34:10
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-15 18:34:10
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (4.05ms) 2026-03-15 18:34:10
+INFO: middlewares.request_logging_middleware Request started: GET /docs  2026-03-15 18:34:34
+INFO: middlewares.request_logging_middleware Success: GET /docs - 200 (0.52ms) 2026-03-15 18:34:34
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json  2026-03-15 18:34:34
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json - 200 (0.65ms) 2026-03-15 18:34:34
+INFO: middlewares.request_logging_middleware Request started: POST /users/login  2026-03-15 18:34:39
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-15 18:34:39
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 200 (2.71ms) 2026-03-15 18:34:39
+INFO: database.connection Connected to database cluster. 2026-03-15 18:47:07
+INFO: database.connection Database is initialized. 2026-03-15 18:47:07
+INFO: middlewares.request_logging_middleware Request started: POST /users/login - 127.0.0.1 2026-03-15 18:47:21
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-15 18:47:21
+INFO: middlewares.request_logging_middleware Success: POST /users/login - 127.0.0.1 - 200 (5.03ms) 2026-03-15 18:47:21
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote - 127.0.0.1 2026-03-15 18:47:27
+INFO: services.user_service Fetched vote for user with id 69b4baf3d166048b675f3160 successfully 2026-03-15 18:47:27
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote - 127.0.0.1 - 200 (5.54ms) 2026-03-15 18:47:27
+INFO: middlewares.request_logging_middleware Request started: POST /votes - 127.0.0.1 2026-03-15 18:47:35
+WARNING: middlewares.exception_handler_middleware Client error: Could not Create Vote, dish with id 5eb7cf5a86d9755df3a6c593 not found 2026-03-15 18:47:35
+WARNING: middlewares.request_logging_middleware Client error: POST /votes - 127.0.0.1 - 404 2026-03-15 18:47:35
