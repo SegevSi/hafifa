@@ -1,5 +1,7 @@
 from fastapi import APIRouter, Depends
 from fastapi.security import OAuth2PasswordRequestForm
+from pymongo.asynchronous.client_session import AsyncClientSession
+from database.connection import get_session
 from schemas.token import Token, TokenData
 from schemas.vote import VoteResponse
 from services import user_service
@@ -9,11 +11,13 @@ router = APIRouter(prefix="/users", tags=["users"])
 
 
 @router.post("/login", response_model=Token)
-async def login(form_data = Depends(OAuth2PasswordRequestForm)) -> Token:
-    return await user_service.login(form_data.username, form_data.password)
+async def login(form_data = Depends(OAuth2PasswordRequestForm),
+                session: AsyncClientSession = Depends(get_session)) -> Token:
+    return await user_service.login(form_data.username, form_data.password, session)
 
 
 
 @router.get("/current/vote", response_model=VoteResponse)
-async def get_current_user_vote(current_user: TokenData = Depends(get_current_user)) -> VoteResponse:
-    return await user_service.get_user_vote(current_user.user_id)
+async def get_current_user_vote(current_user: TokenData = Depends(get_current_user),
+                                session: AsyncClientSession = Depends(get_session)) -> VoteResponse:
+    return await user_service.get_user_vote(current_user.user_id, session)
