@@ -1,3 +1,5 @@
+from typing import List
+
 from beanie import DeleteRules, PydanticObjectId
 from database.models import Dish
 from exceptions import NotFoundException
@@ -29,3 +31,7 @@ async def update_dish(dish_id: PydanticObjectId, to_update: UpdateDish) -> Dish:
     updated_dish = await Dish.get(dish_id)
 
     return updated_dish
+
+
+async def get_all_dishes() -> List[Dish]:
+    return await Dish.find_all().to_list()

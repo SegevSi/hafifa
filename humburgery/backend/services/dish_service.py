@@ -1,3 +1,5 @@
+from typing import List
+
 from schemas.dish import DishRequest, DishResponse, UpdateDish
 from repositories import dish_repository
 import logging
@@ -25,3 +27,10 @@ async def update_dish(dish_id: PydanticObjectId, to_update: UpdateDish) -> DishR
     logger.info(f"Dish with id {dish_id} was updated")
 
     return DishResponse.model_validate(updated_dish)
+
+
+async def get_all_dishes() -> List[DishResponse]:
+    dishes = await dish_repository.get_all_dishes()
+    logger.info(f"Successfully fetched all dishes")
+
+    return [DishResponse.model_validate(dish) for dish in dishes]

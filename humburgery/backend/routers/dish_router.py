@@ -18,8 +18,8 @@ async def create_dish(dish: DishRequest) -> DishResponse:
 
 
 @router.delete("/{dish_id}", status_code=status.HTTP_204_NO_CONTENT)
-async def delete_dish(dish_id: PydanticObjectId):
-    return await dish_service.delete_dish(dish_id)
+async def delete_dish(dish_id: PydanticObjectId) -> None:
+    await dish_service.delete_dish(dish_id)
 
 
 @router.put("/{dish_id}", response_model=DishResponse, status_code=status.HTTP_202_ACCEPTED)
@@ -28,12 +28,12 @@ async def update_dish(dish_id: PydanticObjectId, to_update: UpdateDish) -> DishR
 
 
 @router.get("", response_model=List[DishResponse])
-async def get_all_dishes():
-    pass
+async def get_all_dishes() -> List[DishResponse]:
+    return await dish_service.get_all_dishes()
 
 
 @router.get("/stats", response_model=List[DishStatResponse])
-async def get_all_dishes_for_stats():
+async def get_all_dishes_for_stats() -> List[DishStatResponse]:
     pass
 
 
