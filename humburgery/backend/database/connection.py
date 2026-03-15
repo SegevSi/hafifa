@@ -1,5 +1,4 @@
 from pymongo.asynchronous.database import AsyncDatabase
-from starlette.requests import Request
 from config import conf
 from contextlib import asynccontextmanager
 import logging
@@ -36,8 +35,4 @@ async def db_lifespan(app: FastAPI):
 
     await app.mongodb_client.close()
 
-
-async def get_session(request: Request):
-    async with request.app.mongodb_client.start_session() as session:
-        yield session
 

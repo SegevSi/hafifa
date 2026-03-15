@@ -2,9 +2,7 @@ from typing import Annotated
 from beanie import PydanticObjectId
 from fastapi import APIRouter, Depends
 from fastapi.params import Body
-from pymongo.asynchronous.client_session import AsyncClientSession
 from starlette import status
-from database.connection import get_session
 from schemas.token import TokenData
 from schemas.vote import VoteRequest, VoteResponse
 from services import  vote_service
@@ -15,15 +13,13 @@ router = APIRouter(prefix="/votes", tags=["votes"], dependencies=[Depends(get_cu
 
 # both use current user
 @router.post("", status_code=status.HTTP_201_CREATED, response_model=VoteResponse)
-async def create_vote(vote: VoteRequest, current_user: TokenData = Depends(get_current_user),
-                      session: AsyncClientSession = Depends(get_session)) -> VoteResponse:
-    return await vote_service.create_vote(vote, current_user.user_id, session)
+async def create_vote(vote: VoteRequest, current_user: TokenData = Depends(get_current_user)) -> VoteResponse:
+    return await vote_service.create_vote(vote, current_user.user_id)
 
 # only user in vote can change vote dish todo change this to voteReq
 @router.patch("/{vote_id}/dish", status_code=status.HTTP_202_ACCEPTED)
-async def change_dish(vote_id: PydanticObjectId, dish_id: Annotated[PydanticObjectId, Body(..., embed=True)],
-                      session: AsyncClientSession = Depends(get_session)):
-    await vote_service.change_dish(vote_id, dish_id, session)
+async def change_dish(vote_id: PydanticObjectId, dish_id: Annotated[PydanticObjectId, Body(..., embed=True)]):
+    await vote_service.change_dish(vote_id, dish_id)
 
     return {"message": f"Vote with id {dish_id}  dish was changed"}
 
