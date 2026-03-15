@@ -1,6 +1,6 @@
 from typing import List
 
-from schemas.dish import DishRequest, DishResponse, UpdateDish
+from schemas.dish import DishRequest, DishResponse, UpdateDish, DishStatResponse
 from repositories import dish_repository
 import logging
 from database.models import Dish
@@ -34,3 +34,10 @@ async def get_all_dishes() -> List[DishResponse]:
     logger.info(f"Successfully fetched all dishes")
 
     return [DishResponse.model_validate(dish) for dish in dishes]
+
+
+async def get_all_dishes_for_stats() -> List[DishStatResponse]:
+    dishes = await dish_repository.get_all_dishes_for_stats()
+    logger.info(f"Successfully fetched all dishes stats")
+
+    return [DishStatResponse.model_validate(dish) for dish in dishes]

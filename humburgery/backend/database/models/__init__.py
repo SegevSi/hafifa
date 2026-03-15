@@ -1,5 +1,5 @@
 from .vote import Vote
-from .dish import Dish
+from .dish import Dish, DishStatsDTO
 from .user import User
 
 

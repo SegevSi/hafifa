@@ -34,6 +34,6 @@ async def get_all_dishes() -> List[DishResponse]:
 
 @router.get("/stats", response_model=List[DishStatResponse])
 async def get_all_dishes_for_stats() -> List[DishStatResponse]:
-    pass
+    return await dish_service.get_all_dishes_for_stats()
 
 

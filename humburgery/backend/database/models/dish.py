@@ -1,6 +1,7 @@
 from datetime import date
 from typing import List, Optional
-from pydantic import Field, BaseModel, ConfigDict, PositiveFloat, PositiveInt
+from beanie.odm.documents import DocumentProjectionType
+from pydantic import Field, PositiveFloat, NonNegativeInt, BaseModel
 from beanie import Document, before_event, Replace, Insert, Update, PydanticObjectId, BackLink
 
 
@@ -25,22 +26,11 @@ class Dish(Document):
         keep_nulls = False
 
 
-# from custom_types import PyObjectId
+class DishStatsDTO(BaseModel):
+    id: PydanticObjectId = Field(..., alias="_id")
+    name: str
+    creator: str
+    created_at: date
+    updated_at: date
+    votes: NonNegativeInt
 
-
-# class DishModel(BaseModel):
-#     id: PyObjectId = Field(alias="_id", default=None)
-#     name: str = Field(...)
-#     creator: str = Field(...)
-#     created_at: date = Field(default=date.today())
-#     updated_at: date = Field(default=date.today())
-#     price: PositiveFloat = Field(...)
-#     day_of_week: int = Field(..., ge=0, le=6)
-#     model_config = ConfigDict(
-#         populate_by_name=True,
-#         arbitrary_types_allowed=True
-#     )
-#
-#
-# class DishStatsModel(DishModel):
-#     votes: PositiveInt = Field(...)

@@ -1,7 +1,6 @@
-from typing import List
-
+from typing import List, Any, Dict
 from beanie import DeleteRules, PydanticObjectId
-from database.models import Dish
+from database.models import Dish, Vote, DishStatsDTO
 from exceptions import NotFoundException
 from schemas.dish import UpdateDish
 from utlis import pydantic_encoder
@@ -35,3 +34,32 @@ async def update_dish(dish_id: PydanticObjectId, to_update: UpdateDish) -> Dish:
 
 async def get_all_dishes() -> List[Dish]:
     return await Dish.find_all().to_list()
+
+
+async def get_all_dishes_for_stats() -> List[DishStatsDTO]:
+    lookup = {
+        "$lookup":  {
+            "from": Vote.Settings.name,
+            "localField": "_id",
+            "foreignField": "dish.$id",
+            "as": "votes"
+        }
+    }
+
+    project = {
+        "$project": {
+            "_id": 1,
+            "votes":{ "$size" :"$votes"},
+            "name": 1,
+            "creator": 1,
+            "created_at": 1,
+            "updated_at":1
+        }
+    }
+
+    sort = { "$sort": { "votes" : -1 } }
+
+    aggregation_pipeline = [lookup, project, sort]
+
+    return await Dish.aggregate(aggregation_pipeline, projection_model=DishStatsDTO).to_list()
+

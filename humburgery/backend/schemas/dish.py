@@ -1,7 +1,6 @@
 from datetime import date
 from typing import Optional
-from beanie import PydanticObjectId
-from pydantic import BaseModel, PositiveFloat, Field, PositiveInt, ConfigDict
+from pydantic import BaseModel, PositiveFloat, Field, NonNegativeInt
 from .base import BaseResponse
 
 
@@ -29,7 +28,7 @@ class UpdateDish(BaseModel):
 
 
 class DishStatResponse(BaseDish, BaseResponse):
-    votes: PositiveInt
+    votes: NonNegativeInt
     created_at: date
     updated_at: date
 
