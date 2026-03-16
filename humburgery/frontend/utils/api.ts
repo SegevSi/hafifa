@@ -1,26 +1,19 @@
-import { createError  } from 'http-json-errors'
+import { LoginFormInput } from '@/types';
+import { createError, Unauthorized  } from 'http-json-errors';
+import type { AuthFetchOptions } from "../types";
+import { ACCESS_TOKEN_KEY } from "../conf";
 
 
-const getData = async (url: string) => {
-    const res = await fetch(url);
 
-    const resData = await res.json()
+const login = async (data: LoginFormInput) => {
+    const processedData = new URLSearchParams(data)
 
-    if (!res.ok) {
-        throw createError(res.status, resData);
-    }
-
-    return resData;
-};
-
-// todo type method literal
-const fetchWithBody = async (url: string, data = {}, method: string) => {
-    const res = await fetch(url, {
-        method: method,
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users/login`, {
+        method: "POST",
         headers: {
-        "Content-Type": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: JSON.stringify(data),
+        body: processedData,
     });
 
     const resData = await res.json()
@@ -30,23 +23,37 @@ const fetchWithBody = async (url: string, data = {}, method: string) => {
     }
 
     return resData;
-};
-
-const patchData = async (url: string, data = {}) => {
-    return await fetchWithBody(url, data, "PATCH");
+    
 };
 
 
-const putData = async (url: string, data = {}) => {
-    return await fetchWithBody(url, data, "PUT");
-};
 
-const postData = async (url: string, data = {}) => {
-    return await fetchWithBody(url, data, "POST");
-};
+// const logout = () => {
+//   // Clear the token
+//   localStorage.removeItem('accessToken');
+//   // Redirect to login
+//   window.location.href = '/login';
+// }; todo
+// todo mabye accessToken key should be variable
+const fetchWithAuth = async (url: string, options: AuthFetchOptions) => {
+    const accessToken = localStorage.getItem(ACCESS_TOKEN_KEY);
 
-const deleteData = async (url: string, data = {}) => {
-    return await fetchWithBody(url, data, "DELETE");
-};
+    if (accessToken) {
+        options.headers = {
+            ...options.headers,
+            'Authorization': `Bearer ${accessToken}`
+        };
+        
+        const res = await fetch(process.env.NEXT_PUBLIC_API_URL + url, options);
+        const resData = await res.json()
 
-export { getData, patchData, putData, deleteData, postData}
+        if (!res.ok) {
+            throw createError(res.status, resData);
+        }
+
+        return resData;
+    } else {
+        throw new Unauthorized("Access token does not exist")
+    }
+};
+export { login, fetchWithAuth };

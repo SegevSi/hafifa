@@ -1,6 +1,9 @@
 const Routes: Record<string, string> = {
     HOME: "/main/home",
-    STATISTICS: "/main/statistics"
+    STATISTICS: "/main/statistics",
+    LOGIN: "/"
 } as const;
 
-export {Routes};
+const ACCESS_TOKEN_KEY = "accessToken";
+
+export { Routes, ACCESS_TOKEN_KEY };

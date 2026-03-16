@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta, timezone
-
 from beanie import PydanticObjectId
 from fastapi import HTTPException
 from jose import jwt, JWTError

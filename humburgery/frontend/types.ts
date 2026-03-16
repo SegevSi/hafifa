@@ -4,5 +4,8 @@ type LoginFormInput = {
     password: string;
 }
 
+interface AuthFetchOptions {
+    headers: Record<string, string>;
+}
 
-export type { LoginFormInput };
+export type { LoginFormInput, AuthFetchOptions };

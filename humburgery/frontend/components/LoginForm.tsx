@@ -3,22 +3,11 @@
 import type { LoginFormInput } from "@/types";
 import { useForm } from "react-hook-form";
 import { useMutation } from '@tanstack/react-query';
-import { postData } from "@/utils/api";
+import { login } from "@/utils/api";
 import { NotFound } from "http-json-errors";
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation';
 import { Routes } from "@/conf";
-
-const login = async (data: LoginFormInput) => {
-    try {
-        return await postData(`${process.env.NEXT_PUBLIC_API_URL}/users/login`, data);
-    } catch (error) {
-        if (error instanceof NotFound) {
-            throw new Error("invalid credentials");
-        } else {
-            throw Error("something went wrong");
-        }
-    }
-};
+import { ACCESS_TOKEN_KEY } from "../conf";
 
 
 export default function LoginForm({}) {
@@ -26,8 +15,21 @@ export default function LoginForm({}) {
     const router = useRouter();
     const mutateLogin = useMutation({
         mutationKey: ["login"],
-        mutationFn: login,
-        onSuccess: () => router.push(Routes.HOME_ROUTE)
+        mutationFn: async (data: LoginFormInput) => {
+            try {
+                return await login(data);
+            } catch (error) {
+                if (error instanceof NotFound) {
+                    throw new Error("invalid credentials");
+                } else {
+                    throw Error("something went wrong");
+                }
+            }
+        },
+        onSuccess: (token) => {
+            localStorage.setItem(ACCESS_TOKEN_KEY, token.access_token) // todo mabye use the token type too and be more generic
+            router.push(Routes.HOME);
+        }
     });
     
 
