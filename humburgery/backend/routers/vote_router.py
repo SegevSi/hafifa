@@ -16,7 +16,7 @@ router = APIRouter(prefix="/votes", tags=["votes"], dependencies=[Depends(get_cu
 async def create_vote(vote: VoteRequest, current_user: TokenData = Depends(get_current_user)) -> VoteResponse:
     return await vote_service.create_vote(vote, current_user.user_id)
 
-# only user in vote can change vote dish todo
+
 @router.patch("/{vote_id}/dish", status_code=status.HTTP_202_ACCEPTED)
 async def change_dish(vote_id: PydanticObjectId,
                       dish_id: Annotated[PydanticObjectId, Body(..., embed=True)],

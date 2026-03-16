@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 async def change_dish(vote_id: PydanticObjectId, dish_id: PydanticObjectId, user_data: TokenData) -> None:
     vote = await vote_repository.get_vote(vote_id)
 
-    if vote.user.id != user_data.user_id:
+    if vote.user.ref.id != user_data.user_id:
         raise AuthorizationException(f"Could not change vote with id {vote_id} dish, user {user_data.username} is not authorized")
 
     await vote_repository.change_dish(vote, dish_id)
