@@ -4,12 +4,7 @@ from exceptions import NotFoundException, ConflictException
 from pymongo.errors import DuplicateKeyError
 
 
-async def change_dish(vote_id: PydanticObjectId, dish_id: PydanticObjectId) -> None:
-    vote = await Vote.get(vote_id)
-
-    if not vote:
-        raise NotFoundException(f"Could not Change Vote dish, vote with id {vote_id} not found")
-
+async def change_dish(vote: Vote, dish_id: PydanticObjectId) -> None:
     dish = await Dish.get(dish_id)
 
     if not dish:
@@ -37,5 +32,14 @@ async def create_vote(dish_id: PydanticObjectId, user_id: PydanticObjectId) -> V
         return await Vote.insert_one(new_vote)
     except DuplicateKeyError:
         raise ConflictException(f"Could not create new Vote, user with id {user_id}  already voted")
+
+
+async def get_vote(vote_id: PydanticObjectId) -> Vote:
+    if (
+        vote := await Vote.get(vote_id)
+    ) is not None:
+        return vote
+
+    raise NotFoundException(f"Vote with id {vote_id} not found")
 
 

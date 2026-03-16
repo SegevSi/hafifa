@@ -119,3 +119,31 @@ INFO: database.connection Database is initialized. 2026-03-15 18:52:16
 INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-15 18:52:25
 WARNING: middlewares.exception_handler_middleware Client error: Could not Create Vote, dish with id 5eb7cf5a86d9755df3a6c593 not found 2026-03-15 18:52:25
 WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 404 2026-03-15 18:52:25
+INFO: database.connection Connected to database cluster. 2026-03-16 11:10:43
+INFO: database.connection Database is initialized. 2026-03-16 11:10:43
+INFO: middlewares.request_logging_middleware Request started: GET /docs client: 127.0.0.1 2026-03-16 11:11:01
+INFO: middlewares.request_logging_middleware Success: GET /docs client: 127.0.0.1 status: 200 duration: 0.95ms 2026-03-16 11:11:01
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json client: 127.0.0.1 2026-03-16 11:11:01
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json client: 127.0.0.1 status: 200 duration: 43.10ms 2026-03-16 11:11:01
+INFO: middlewares.request_logging_middleware Request started: GET /docs client: 127.0.0.1 2026-03-16 11:11:05
+INFO: middlewares.request_logging_middleware Success: GET /docs client: 127.0.0.1 status: 200 duration: 0.50ms 2026-03-16 11:11:05
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json client: 127.0.0.1 2026-03-16 11:11:05
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json client: 127.0.0.1 status: 200 duration: 0.67ms 2026-03-16 11:11:05
+INFO: middlewares.request_logging_middleware Request started: GET /docs client: 127.0.0.1 2026-03-16 11:11:06
+INFO: middlewares.request_logging_middleware Success: GET /docs client: 127.0.0.1 status: 200 duration: 0.52ms 2026-03-16 11:11:06
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json client: 127.0.0.1 2026-03-16 11:11:06
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json client: 127.0.0.1 status: 200 duration: 0.62ms 2026-03-16 11:11:06
+INFO: middlewares.request_logging_middleware Request started: GET /docs client: 127.0.0.1 2026-03-16 11:11:07
+INFO: middlewares.request_logging_middleware Success: GET /docs client: 127.0.0.1 status: 200 duration: 0.47ms 2026-03-16 11:11:07
+INFO: middlewares.request_logging_middleware Request started: GET /openapi.json client: 127.0.0.1 2026-03-16 11:11:07
+INFO: middlewares.request_logging_middleware Success: GET /openapi.json client: 127.0.0.1 status: 200 duration: 0.69ms 2026-03-16 11:11:07
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-16 11:11:18
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-16 11:11:18
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 57.11ms 2026-03-16 11:11:18
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-16 11:11:57
+INFO: services.user_service Fetched vote for user with id 69b4baf3d166048b675f3160 successfully 2026-03-16 11:11:57
+ERROR: middlewares.exception_handler_middleware Server error: 1 validation error for VoteResponse
+user_id
+  Field required [type=missing, input_value={'id': ObjectId('69b4bb27...67f566c26880277ba1805')}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing 2026-03-16 11:11:57
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-16 11:11:57
