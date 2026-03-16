@@ -4,6 +4,7 @@ from database.connection import db_lifespan
 from middlewares import ExceptionHandlerMiddleware, RequestLoggingMiddleware
 from utlis.logger import setup_logging
 from routers import user_router, dish_router, vote_router
+from fastapi.middleware.cors import CORSMiddleware
 
 
 setup_logging()
@@ -15,6 +16,13 @@ app.include_router(vote_router)
 
 app.add_middleware(ExceptionHandlerMiddleware)
 app.add_middleware(RequestLoggingMiddleware)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 if __name__ == "__main__":

@@ -179,3 +179,12 @@ WARNING: middlewares.exception_handler_middleware Client error: Could not change
 WARNING: middlewares.request_logging_middleware Client error: PATCH /votes/69b4bb272640caf794160d08/dish client: 127.0.0.1 status: 403 2026-03-16 11:18:31
 INFO: database.connection Connected to database cluster. 2026-03-16 11:19:27
 INFO: database.connection Database is initialized. 2026-03-16 11:19:27
+INFO: database.connection Connected to database cluster. 2026-03-16 16:26:31
+INFO: database.connection Database is initialized. 2026-03-16 16:26:31
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-16 16:26:40
+WARNING: middlewares.exception_handler_middleware Client error: User with username string was not found 2026-03-16 16:26:40
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-16 16:26:40
+INFO: database.connection Connected to database cluster. 2026-03-16 18:33:34
+INFO: database.connection Database is initialized. 2026-03-16 18:33:34
+INFO: middlewares.request_logging_middleware Request started: OPTIONS /users/login client: 127.0.0.1 2026-03-16 18:37:06
+WARNING: middlewares.request_logging_middleware Client error: OPTIONS /users/login client: 127.0.0.1 status: 405 2026-03-16 18:37:06
