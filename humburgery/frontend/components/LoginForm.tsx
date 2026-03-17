@@ -8,6 +8,7 @@ import { NotFound } from "http-json-errors";
 import { useRouter } from 'next/navigation';
 import { Routes } from "@/conf";
 import { ACCESS_TOKEN_KEY } from "../conf";
+import styles from "../styles/LoginForm.module.css";
 
 
 export default function LoginForm({}) {
@@ -34,15 +35,13 @@ export default function LoginForm({}) {
     
 
     return (
-        <form onSubmit={handleSubmit((data: LoginFormInput): void =>  mutateLogin.mutate(data))}>
+        <form className={styles.loginForm} onSubmit={handleSubmit((data: LoginFormInput): void =>  mutateLogin.mutate(data))}>
             <label htmlFor="username">שם משתמש</label>
             <input id="username" {...register("username", { required: true, maxLength: 20 })} />
             <label htmlFor="password">סיסמה</label>
             <input id="password" {...register("password", { required: true, maxLength: 20 })} />
-            <input type="submit" value="התחברות"/>
-            {mutateLogin.isError && (
-                <div className="text-red-700">{mutateLogin.error.message}</div>
-            )}
+            <button type="submit">התחברות</button>
+            {mutateLogin.isError && (<div className="text-red-700">{mutateLogin.error.message}</div>)}
         </form>
     );
 }
