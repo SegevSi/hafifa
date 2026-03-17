@@ -11,7 +11,7 @@ async def create_dish(dish: Dish) -> Dish:
 
 
 async def delete_dish(dish_id: PydanticObjectId) -> None:
-    dish = await Dish.find_one({"_id": dish_id}, fetch_links=True, nesting_depth=2)
+    dish = await Dish.find_one({"_id": dish_id}, fetch_links=True, nesting_depth=1)
 
     if not dish:
         raise NotFoundException(f"Could not delete dish, dish with id {dish_id} was not found")
