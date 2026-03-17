@@ -6,6 +6,8 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import DishStatsRow from "./DishStatsRow";
 import styles from "../styles/DishStatsTable.module.css";
 import type {DishStats, Vote} from "../types"
+import { NotFound } from "http-json-errors";
+import { retry, retryDelay} from "../utils/mutation";
 
 
 export default function DishStatsTable() {
@@ -19,15 +21,35 @@ export default function DishStatsTable() {
 	    queryFn: getUserVote,
     });
 
-    const mutateLogin = useMutation({
+    const onMutationSuccess = (): void => {
+        dishesStats.refetch();
+        currentVote.refetch();
+    };
+
+    const mutateVote = useMutation({
+        mutationKey: ['postVote'],
         mutationFn: postVote,
-        onSuccess: (vote: Vote) => {
-            
-        }
+        onError: onFetchWithAuthError,
+        retry: retry,
+        retryDelay: retryDelay,
+        onSuccess: onMutationSuccess
+    });
+
+    const mutateVoteDish = useMutation({
+        mutationKey: ['changeVoteDish'],
+        mutationFn: changeVotedDish,
+        onError: onFetchWithAuthError,
+        retry: retry,
+        retryDelay: retryDelay,
+        onSuccess: onMutationSuccess
     });
 
     const selectDish = (dishId: string): void => {
-        console.log(dishId)
+        if (currentVote.error instanceof NotFound) {
+            mutateVote.mutate(dishId)
+        } else if (currentVote.isSuccess) {
+            mutateVoteDish.mutate({dishId, voteId: currentVote.data.id})
+        }
     };
 
     if (dishesStats.isError) // todo make it better not like that

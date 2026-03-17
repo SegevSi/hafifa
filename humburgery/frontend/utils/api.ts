@@ -1,6 +1,6 @@
 import { LoginFormInput } from '@/types';
 import { createError, Unauthorized  } from 'http-json-errors';
-import type { AuthFetchOptions, DishStats, HttpMethod, Token, Vote, Dish } from "../types";
+import type { AuthFetchOptions, DishStats, HttpMethod, Token, Vote, Dish, changeVotedDishParms } from "../types";
 import { ACCESS_TOKEN_KEY } from "../conf";
 import { logout } from './navigation';
 
@@ -85,17 +85,17 @@ const getDishesStatistics = async (): Promise<DishStats[]> => {
 
 
 const getUserVote = async (): Promise<Vote> => {
-    return await apiRequest("/users/vote", "GET");
+    return await apiRequest("/users/current/vote", "GET");
 };
 
 
-const postVote = async (dishId: number): Promise<Vote> => {
+const postVote = async (dishId: string): Promise<Vote> => {
     return await apiRequest("/votes", "POST", {dish_id : dishId});
 };
 
 
-const changeVotedDish = async (dishId: number, voteId: number): Promise<void> => {
-    await apiRequest(`/votes/${voteId}`, "PATCH", {dish_id : dishId});
+const changeVotedDish = async ({ dishId, voteId } : changeVotedDishParms): Promise<void> => {
+    await apiRequest(`/votes/${voteId}/dish`, "PATCH", {dish_id : dishId});
 };
 
 

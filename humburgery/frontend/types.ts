@@ -47,6 +47,11 @@ type Dish = BaseDish & {
     description: string;
 };
 
+type changeVotedDishParms = {
+    dishId: string; 
+    voteId: string;
+};
+
 
 export type { 
     LoginFormInput, 
@@ -56,5 +61,6 @@ export type {
     DishStatsRowProps, 
     Token, 
     Vote, 
-    Dish, 
+    Dish,
+    changeVotedDishParms, 
 };
