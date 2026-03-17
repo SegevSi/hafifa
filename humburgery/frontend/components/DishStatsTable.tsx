@@ -1,7 +1,7 @@
 "use client"
 
 
-import { getDishesStatistics, onFetchWithAuthError } from "../utils/api";
+import { getDishesStatistics, onFetchWithAuthError, getUserVote, postVote, changeVotedDish } from "../utils/api";
 import { useMutation, useQuery } from '@tanstack/react-query';
 
 

@@ -91,15 +91,27 @@ const getUserVote = async () => {
 };
 
 
-const postVote = async () => {
-    return await apiRequest("/users/vote", "GET");
+const postVote = async (dishId: number) => {
+    return await apiRequest("/votes", "POST", {dish_id : dishId});
 };
 
+
+const changeVotedDish = async (dishId: number, voteId: number) => {
+    return await apiRequest(`/votes/${voteId}`, "PATCH", {dish_id : dishId});
+};
+
+
+const geAllDishes = async () => {
+    return await apiRequest("/dishes", "GET");
+};
 
 export { 
     login, 
     fetchWithAuth, 
     onFetchWithAuthError, 
     getDishesStatistics, 
-    getUserVote 
+    getUserVote,
+    postVote,
+    changeVotedDish,
+    geAllDishes,
 };
