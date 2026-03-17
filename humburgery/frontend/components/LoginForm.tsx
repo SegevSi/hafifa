@@ -1,6 +1,6 @@
 "use client"
 
-import type { LoginFormInput } from "@/types";
+import type { LoginFormInput, Token } from "@/types";
 import { useForm } from "react-hook-form";
 import { useMutation } from '@tanstack/react-query';
 import { login } from "@/utils/api";
@@ -14,7 +14,7 @@ import styles from "../styles/LoginForm.module.css";
 export default function LoginForm({}) {
     const { register, handleSubmit } = useForm<LoginFormInput>();
     const router = useRouter();
-    const mutateLogin = useMutation({
+    const mutateLogin = useMutation<Token>({
         mutationKey: ["login"],
         mutationFn: async (data: LoginFormInput) => {
             try {
@@ -27,8 +27,8 @@ export default function LoginForm({}) {
                 }
             }
         },
-        onSuccess: (token) => {
-            localStorage.setItem(ACCESS_TOKEN_KEY, token.access_token) // todo mabye use the token type too and be more generic
+        onSuccess: (token: Token) => {
+            localStorage.setItem(ACCESS_TOKEN_KEY, `${token.token_type} ${token.access_token}`) 
             router.push(Routes.HOME);
         }
     });

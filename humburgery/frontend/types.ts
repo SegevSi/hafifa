@@ -16,6 +16,11 @@ type BaseDish = {
     creator: string;
 };
 
+type Token = {
+    access_token: string;
+    token_type: string
+};
+
 type DishStats = BaseDish & {
     votes: number;
     created_at: string;
@@ -29,4 +34,4 @@ type DishStatsRowProps = {
     place: number;
 };
 
-export type { LoginFormInput, AuthFetchOptions, HttpMethod, DishStats, DishStatsRowProps };
+export type { LoginFormInput, AuthFetchOptions, HttpMethod, DishStats, DishStatsRowProps, Token };

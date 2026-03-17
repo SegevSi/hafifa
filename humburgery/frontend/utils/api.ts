@@ -35,7 +35,7 @@ const fetchWithAuth = async (url: string, options: AuthFetchOptions) => {
     if (accessToken) {
         options.headers = {
             ...options.headers,
-            'Authorization': `Bearer ${accessToken}`
+            'Authorization': accessToken
         };
         
         const res = await fetch(process.env.NEXT_PUBLIC_API_URL + url, options);
