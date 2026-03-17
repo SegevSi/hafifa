@@ -33,7 +33,7 @@ async def get_user_vote(user_id: PydanticObjectId) -> VoteResponse:
     vote = await user_repository.get_user_vote(user_id)
     logger.info(f"Fetched vote for user with id {user_id} successfully")
 
-    return VoteResponse(id=vote.id, dish_id=vote.dish.id, user_id=user_id)
+    return VoteResponse(id=vote.id, dish_id=vote.dish.ref.id, user_id=vote.user.ref.id)
 
 
 
