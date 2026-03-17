@@ -5,8 +5,8 @@ from .base import BaseResponse
 
 class VoteRequest(BaseModel):
     dish_id: PydanticObjectId
-    user_id: PydanticObjectId
+
 
 
 class VoteResponse(VoteRequest, BaseResponse):
-    pass
+    user_id: PydanticObjectId

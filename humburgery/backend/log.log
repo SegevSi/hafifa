@@ -340,3 +340,55 @@ INFO: middlewares.request_logging_middleware Success: POST /users/login client: 
 INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-16 23:29:33
 INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-16 23:29:33
 INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 2.73ms 2026-03-16 23:29:33
+INFO: database.connection Connected to database cluster. 2026-03-17 10:40:32
+INFO: database.connection Database is initialized. 2026-03-17 10:40:32
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 10:41:51
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-17 10:41:52
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 5.62ms 2026-03-17 10:41:52
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 11:52:39
+INFO: services.user_service User with id 69b6b19ad166048b675f3161 logged in successfully 2026-03-17 11:52:39
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 20.81ms 2026-03-17 11:52:39
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 11:52:46
+WARNING: middlewares.exception_handler_middleware Client error: User with username ss was not found 2026-03-17 11:52:46
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 11:52:46
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 11:52:48
+WARNING: middlewares.exception_handler_middleware Client error: User with username ss was not found 2026-03-17 11:52:48
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 11:52:48
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 11:52:58
+WARNING: middlewares.exception_handler_middleware Client error: User with username ss was not found 2026-03-17 11:52:58
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 11:52:58
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 11:52:59
+WARNING: middlewares.exception_handler_middleware Client error: User with username ss was not found 2026-03-17 11:52:59
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 11:52:59
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 11:53:00
+WARNING: middlewares.exception_handler_middleware Client error: User with username ss was not found 2026-03-17 11:53:00
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 11:53:00
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 11:55:14
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-17 11:55:14
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 2.43ms 2026-03-17 11:55:14
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 13:38:52
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-17 13:38:52
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 13.19ms 2026-03-17 13:38:52
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 13:38:52
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-17 13:38:53
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 3.57ms 2026-03-17 13:38:53
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 15:26:18
+WARNING: middlewares.exception_handler_middleware Client error: User with username srgf was not found 2026-03-17 15:26:18
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 15:26:18
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 15:26:23
+WARNING: middlewares.exception_handler_middleware Client error: User with username srgf was not found 2026-03-17 15:26:23
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 15:26:23
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 15:26:24
+WARNING: middlewares.exception_handler_middleware Client error: User with username srgf was not found 2026-03-17 15:26:24
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 15:26:24
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 15:26:25
+WARNING: middlewares.exception_handler_middleware Client error: User with username srgf was not found 2026-03-17 15:26:25
+WARNING: middlewares.request_logging_middleware Client error: POST /users/login client: 127.0.0.1 status: 404 2026-03-17 15:26:25
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 15:26:37
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-17 15:26:37
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 4.07ms 2026-03-17 15:26:37
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-17 15:31:21
+INFO: services.user_service User with id 69b4baf3d166048b675f3160 logged in successfully 2026-03-17 15:31:21
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 2.70ms 2026-03-17 15:31:21
+INFO: database.connection Connected to database cluster. 2026-03-17 17:13:01
+INFO: database.connection Database is initialized. 2026-03-17 17:13:01

@@ -1,6 +1,6 @@
 import { LoginFormInput } from '@/types';
 import { createError, Unauthorized  } from 'http-json-errors';
-import type { AuthFetchOptions, HttpMethod } from "../types";
+import type { AuthFetchOptions, DishStats, HttpMethod } from "../types";
 import { ACCESS_TOKEN_KEY } from "../conf";
 import { logout } from './navigation';
 
@@ -80,4 +80,26 @@ const apiRequest = async (url: string, method: HttpMethod, body: object | null =
     }
 };
 
-export { login, fetchWithAuth, onFetchWithAuthError };
+
+const getDishesStatistics = async () => {
+    return await apiRequest("/dishes/stats", "GET");
+};
+
+
+const getUserVote = async () => {
+    return await apiRequest("/users/vote", "GET");
+};
+
+
+const postVote = async () => {
+    return await apiRequest("/users/vote", "GET");
+};
+
+
+export { 
+    login, 
+    fetchWithAuth, 
+    onFetchWithAuthError, 
+    getDishesStatistics, 
+    getUserVote 
+};

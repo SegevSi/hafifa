@@ -10,4 +10,23 @@ interface AuthFetchOptions {
 
 type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
 
-export type { LoginFormInput, AuthFetchOptions, HttpMethod };
+type BaseDish = {
+    id: string;
+    name: string;
+    creator: string;
+};
+
+type DishStats = BaseDish & {
+    votes: number;
+    created_at: string;
+    updated_at: string;
+};
+
+type DishStatsRowProps = {
+    dishStats: DishStats;
+    selectDish: () => void;
+    isSelected: boolean;
+    place: number;
+};
+
+export type { LoginFormInput, AuthFetchOptions, HttpMethod, DishStats, DishStatsRowProps };
