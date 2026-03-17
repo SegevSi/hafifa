@@ -11,8 +11,8 @@ export default function DishStatsRow({dishStats, selectDish, isSelected, place}:
             <td>{dishStats.name}</td>
             <td>{dishStats.votes}</td>
             <td>{dishStats.creator}</td>
-            <td>{new Date(dishStats.created_at).toDateString()}</td>
-            <td>{new Date(dishStats.updated_at).toDateString()}</td>
+            <td>{dishStats.created_at}</td>
+            <td>{dishStats.updated_at}</td>
         </tr>
     );
 }

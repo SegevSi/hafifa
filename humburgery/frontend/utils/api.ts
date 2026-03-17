@@ -53,11 +53,9 @@ const fetchWithAuth = async (url: string, options: AuthFetchOptions) => {
 
 
 const onFetchWithAuthError = (error: Error) => {
-    if (error instanceof Unauthorized) {
-        logout()
-    } else {
-        throw error;
-    }
+    if (error instanceof Unauthorized) 
+        logout();
+    
 }; 
 
 
