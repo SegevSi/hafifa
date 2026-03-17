@@ -13,7 +13,7 @@ async def get_user_by_name(username: str) -> User:
 
 
 async def get_user_vote(user_id: PydanticObjectId) -> Vote:
-    user = await User.get(user_id, fetch_links=True)
+    user = await User.get(user_id, fetch_links=True, nesting_depth=1)
 
     if not user:
         raise NotFoundException(f"Could not fetch user vote, user with id {user_id} was not found")
