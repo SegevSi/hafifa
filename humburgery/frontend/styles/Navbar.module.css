@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 0 6%;
+    height: 2.5rem; 
+    position: fixed;
+    width: 100%; 
+    z-index: 20; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    background-color: #38ff81; 
+}
+
+.navbar button {
+    height: 70%;
+    font-size: small;
+    padding: 2px;
+}
+
+.selectedButton {
+    background-color: green;
+    color: white;
+}
+
+
+

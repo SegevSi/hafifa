@@ -1,7 +1,10 @@
 
 
 export default function Statistics() {
-  return (
-    <></>
-  );
+  
+    return (
+        <div className="flex justify-center items-center">
+            <p className="text-xl">המאכל הכי אכיל</p>
+        </div>
+    );
 }

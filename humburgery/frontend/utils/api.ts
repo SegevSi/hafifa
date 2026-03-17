@@ -1,7 +1,9 @@
 import { LoginFormInput } from '@/types';
 import { createError, Unauthorized  } from 'http-json-errors';
-import type { AuthFetchOptions } from "../types";
+import type { AuthFetchOptions, HttpMethod } from "../types";
 import { ACCESS_TOKEN_KEY } from "../conf";
+import { logout } from './navigation';
+
 
 
 
@@ -27,14 +29,6 @@ const login = async (data: LoginFormInput) => {
 };
 
 
-
-// const logout = () => {
-//   // Clear the token
-//   localStorage.removeItem('accessToken');
-//   // Redirect to login
-//   window.location.href = '/login';
-// }; todo
-// todo mabye accessToken key should be variable
 const fetchWithAuth = async (url: string, options: AuthFetchOptions) => {
     const accessToken = localStorage.getItem(ACCESS_TOKEN_KEY);
 
@@ -56,4 +50,34 @@ const fetchWithAuth = async (url: string, options: AuthFetchOptions) => {
         throw new Unauthorized("Access token does not exist")
     }
 };
-export { login, fetchWithAuth };
+
+
+const onFetchWithAuthError = (error: Error) => {
+    if (error instanceof Unauthorized) {
+        logout()
+    } else {
+        throw error;
+    }
+}; 
+
+
+const apiRequest = async (url: string, method: HttpMethod, body: object | null = null) => {
+    const options = {
+        method,
+        headers: {
+            "Content-Type": "application/json"
+        },    
+    }
+
+    if (method !== "GET" && body) {
+        const optionsWithBody = {...options, body: JSON.stringify(body)};
+
+        return await fetchWithAuth(url, optionsWithBody);
+    } else if (method === "GET") {
+        return await fetchWithAuth(url, options);
+    } else {
+        throw new Error(`Cannot fetch with method: ${method} and body: ${body}`);
+    }
+};
+
+export { login, fetchWithAuth, onFetchWithAuthError };

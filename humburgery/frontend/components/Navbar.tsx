@@ -1,12 +1,28 @@
-import Link from "next/link";
+"use client"
+
 import { Routes } from "../conf";
+import styles from "../styles/Navbar.module.css";
+import { usePathname, useRouter } from 'next/navigation';
 
 
 export default function Navbar() {
-  return ( // ccs moduls better and use buttons
-    <nav className="flex gap-10 h-10 fixed w-full z-20 top-0 inset-s-0 bg-green-500">
-      <Link className="bg-green-700 text-white hover:bg-green-800" href={Routes.HOME}>התפריט השבועי</Link>
-      <Link className="text-white hover:bg-green-500" href={Routes.STATISTICS}>הצביעו והשפיעו</Link>
-    </nav>
+    const router = useRouter();
+    const pathname = usePathname();
+    
+    return ( 
+        <nav className={styles.navbar}>
+            <button 
+                className={Routes.HOME === pathname ? styles.selectedButton : ""}
+                onClick={() => router.push(Routes.HOME)}
+            >
+                התפריט השבועי
+            </button>
+            <button 
+                className={Routes.STATISTICS === pathname ? styles.selectedButton : ""}
+                onClick={() => router.push(Routes.STATISTICS)}
+            >   
+                הצביעו והשפיעו
+            </button>
+        </nav>
   );
 }

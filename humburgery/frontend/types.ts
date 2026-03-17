@@ -8,4 +8,6 @@ interface AuthFetchOptions {
     headers: Record<string, string>;
 }
 
-export type { LoginFormInput, AuthFetchOptions };
+type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
+
+export type { LoginFormInput, AuthFetchOptions, HttpMethod };

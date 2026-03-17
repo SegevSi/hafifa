@@ -1,6 +1,9 @@
 
 export default function Home() {
-  return (
-    <></>
-  );
+  
+    return (
+        <div className="flex justify-center items-center">
+
+        </div>
+    );
 }
