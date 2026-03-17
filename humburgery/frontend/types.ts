@@ -1,3 +1,6 @@
+type Item = {
+    id: string;
+}
 
 type LoginFormInput = {
     username: string;
@@ -10,8 +13,7 @@ interface AuthFetchOptions {
 
 type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
 
-type BaseDish = {
-    id: string;
+type BaseDish = Item &{
     name: string;
     creator: string;
 };
@@ -34,4 +36,25 @@ type DishStatsRowProps = {
     place: number;
 };
 
-export type { LoginFormInput, AuthFetchOptions, HttpMethod, DishStats, DishStatsRowProps, Token };
+type Vote = Item & {
+    dish_id: string;
+    user_id: string;
+};
+
+type Dish = BaseDish & {
+    price: number;
+    day_of_week: number;
+    description: string;
+};
+
+
+export type { 
+    LoginFormInput, 
+    AuthFetchOptions, 
+    HttpMethod, 
+    DishStats, 
+    DishStatsRowProps, 
+    Token, 
+    Vote, 
+    Dish, 
+};

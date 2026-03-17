@@ -1,13 +1,13 @@
 import { LoginFormInput } from '@/types';
 import { createError, Unauthorized  } from 'http-json-errors';
-import type { AuthFetchOptions, DishStats, HttpMethod } from "../types";
+import type { AuthFetchOptions, DishStats, HttpMethod, Token, Vote, Dish } from "../types";
 import { ACCESS_TOKEN_KEY } from "../conf";
 import { logout } from './navigation';
 
 
 
 
-const login = async (data: LoginFormInput) => {
+const login = async (data: LoginFormInput): Promise<Token> => {
     const processedData = new URLSearchParams(data)
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users/login`, {
@@ -81,27 +81,27 @@ const apiRequest = async (url: string, method: HttpMethod, body: object | null =
 };
 
 
-const getDishesStatistics = async () => {
+const getDishesStatistics = async (): Promise<DishStats[]> => {
     return await apiRequest("/dishes/stats", "GET");
 };
 
 
-const getUserVote = async () => {
+const getUserVote = async (): Promise<Vote> => {
     return await apiRequest("/users/vote", "GET");
 };
 
 
-const postVote = async (dishId: number) => {
+const postVote = async (dishId: number): Promise<Vote> => {
     return await apiRequest("/votes", "POST", {dish_id : dishId});
 };
 
 
-const changeVotedDish = async (dishId: number, voteId: number) => {
-    return await apiRequest(`/votes/${voteId}`, "PATCH", {dish_id : dishId});
+const changeVotedDish = async (dishId: number, voteId: number): Promise<void> => {
+    await apiRequest(`/votes/${voteId}`, "PATCH", {dish_id : dishId});
 };
 
 
-const geAllDishes = async () => {
+const geAllDishes = async (): Promise<Dish> => {
     return await apiRequest("/dishes", "GET");
 };
 

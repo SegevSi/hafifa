@@ -14,9 +14,9 @@ import styles from "../styles/LoginForm.module.css";
 export default function LoginForm({}) {
     const { register, handleSubmit } = useForm<LoginFormInput>();
     const router = useRouter();
-    const mutateLogin = useMutation<Token>({
+    const mutateLogin = useMutation({
         mutationKey: ["login"],
-        mutationFn: async (data: LoginFormInput) => {
+        mutationFn: async (data: LoginFormInput): Promise<Token> => {
             try {
                 return await login(data);
             } catch (error) {

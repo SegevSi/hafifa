@@ -14,23 +14,46 @@ export default function DishStatsTable() {
 	    queryFn: getDishesStatistics,
     });
     
-    const currentVote = useQuery<DishStats>({
+    const currentVote = useQuery({
 	    queryKey: ['currentVote'],
 	    queryFn: getUserVote,
     });
+
+    const selectDish = (dishId: string): void => {
+        console.log(dishId)
+    };
   
     return (
         <table className={styles.dishTable}>
-            <tr className={styles.dishTableHeader}>
-                <th>מיקום</th>
-                <th>שם המאכל</th>
-                <th>הצבעות</th>
-                <th>כותב המתכון</th>
-                <th>תאריך השקה</th>
-                <th>עודכן לאחרונה</th>
-            </tr>
-
-            {}
+            <thead className={styles.dishTableHeader}>
+                <tr>
+                    <th>מיקום</th>
+                    <th>שם המאכל</th>
+                    <th>הצבעות</th>
+                    <th>כותב המתכון</th>
+                    <th>תאריך השקה</th>
+                    <th>עודכן לאחרונה</th>
+                </tr>
+            </thead>
+            <tbody>
+                {dishesStats.isSuccess ? (
+                    dishesStats.data.map((dishStats: DishStats, index: number) => // maybe index should be in type? todo
+                        <DishStatsRow
+                            key={dishStats.id}
+                            dishStats={dishStats}
+                            selectDish={() => selectDish(dishStats.id)}
+                            isSelected={dishStats.id === currentVote.data?.dish_id}
+                            place={index + 1}
+                        />
+                    )
+                ) : (
+                    <tr>
+                        <td  className="h-24 text-center">
+                            No results.
+                        </td>
+                    </tr> 
+                )}
+            </tbody>
         </table>
     );
 }
