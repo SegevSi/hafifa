@@ -12,13 +12,13 @@ export default function Navbar() {
     return ( 
         <nav className={styles.navbar}>
             <button 
-                className={Routes.HOME === pathname ? styles.selectedButton : ""}
+                className={Routes.HOME === pathname ? styles.selectedButton : "bg-inherit"}
                 onClick={() => router.push(Routes.HOME)}
             >
                 התפריט השבועי
             </button>
             <button 
-                className={Routes.STATISTICS === pathname ? styles.selectedButton : ""}
+                className={Routes.STATISTICS === pathname ? styles.selectedButton : "bg-inherit"}
                 onClick={() => router.push(Routes.STATISTICS)}
             >   
                 הצביעו והשפיעו
