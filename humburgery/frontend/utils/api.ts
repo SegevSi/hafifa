@@ -1,6 +1,6 @@
 import { LoginFormInput } from '@/types';
 import { createError, Unauthorized  } from 'http-json-errors';
-import type { AuthFetchOptions, DishStats, HttpMethod, Token, Vote, Dish, changeVotedDishParms } from "../types";
+import type { AuthFetchOptions, DishStats, HttpMethod, Token, Vote, Dish, changeVotedDishParms, DishRequest, UpdateDishParms } from "../types";
 import { ACCESS_TOKEN_KEY } from "../conf";
 import { logout } from './navigation';
 
@@ -103,6 +103,19 @@ const geAllDishes = async (): Promise<Dish> => {
     return await apiRequest("/dishes", "GET");
 };
 
+
+const postDish = async (dish: DishRequest): Promise<Dish> => {
+    return await apiRequest("/dishes", "POST", dish);
+};
+
+const deleteDish = async (dish_id: string): Promise<void> => {
+    await apiRequest(`/dishes/${dish_id}`, "DELETE");
+};
+
+const updateDish = async ({dish_id, updateDish }: UpdateDishParms): Promise<Dish> => {
+    return await apiRequest(`/dishes/${dish_id}`, "PUT", updateDish);
+};
+
 export { 
     login, 
     fetchWithAuth, 
@@ -112,4 +125,7 @@ export {
     postVote,
     changeVotedDish,
     geAllDishes,
+    postDish,
+    deleteDish,
+    updateDish
 };

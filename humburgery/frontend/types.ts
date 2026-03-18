@@ -1,4 +1,4 @@
-type Item = {
+type ResponseItem = {
     id: string;
 }
 
@@ -13,7 +13,7 @@ interface AuthFetchOptions {
 
 type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
 
-type BaseDish = Item &{
+type BaseDish = ResponseItem & {
     name: string;
     creator: string;
 };
@@ -23,7 +23,7 @@ type Token = {
     token_type: string
 };
 
-type DishStats = BaseDish & {
+type DishStats = BaseDish & ResponseItem & {
     votes: number;
     created_at: string;
     updated_at: string;
@@ -36,22 +36,32 @@ type DishStatsRowProps = {
     place: number;
 };
 
-type Vote = Item & {
+type Vote = ResponseItem & {
     dish_id: string;
     user_id: string;
 };
 
-type Dish = BaseDish & {
+type DishRequest = BaseDish & {
     price: number;
     day_of_week: number;
     description: string;
 };
+
+type Dish = ResponseItem & DishRequest;
+
+
+type UpdateDish = Partial<DishRequest>;
 
 type changeVotedDishParms = {
     dishId: string; 
     voteId: string;
 };
 
+
+type UpdateDishParms = {
+    dish_id: string;
+    updateDish: UpdateDish; 
+};
 
 export type { 
     LoginFormInput, 
@@ -63,4 +73,7 @@ export type {
     Vote, 
     Dish,
     changeVotedDishParms, 
+    DishRequest,
+    UpdateDish,
+    UpdateDishParms
 };
