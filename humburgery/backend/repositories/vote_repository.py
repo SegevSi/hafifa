@@ -43,3 +43,12 @@ async def get_vote(vote_id: PydanticObjectId) -> Vote:
     raise NotFoundException(f"Vote with id {vote_id} not found")
 
 
+async def get_vote_by_user(user_id: PydanticObjectId) -> Vote:
+    if (
+        vote := await Vote.find_one({"user_id": user_id})
+    ) is not None:
+        return vote
+
+    raise NotFoundException(f"vote of user with id {user_id} not found")
+
+

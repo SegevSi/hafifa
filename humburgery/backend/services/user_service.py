@@ -6,6 +6,7 @@ from schemas.token import Token
 from repositories import user_repository
 import logging
 from schemas.vote import VoteResponse
+from services import vote_service
 from utlis.hash import verify_password
 from utlis.jwt import create_access_token
 
@@ -30,10 +31,10 @@ async def login(username: str, password: str) -> Token:
 
 
 async def get_user_vote(user_id: PydanticObjectId) -> VoteResponse:
-    vote = await user_repository.get_user_vote(user_id)
+    vote = await vote_service.get_vote_by_user(user_id)
     logger.info(f"Fetched vote for user with id {user_id} successfully")
 
-    return VoteResponse(id=vote.id, dish_id=vote.dish.ref.id, user_id=vote.user.ref.id)
+    return vote;
 
 
 

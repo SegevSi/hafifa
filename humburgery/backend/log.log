@@ -3817,3 +3817,95 @@ INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 
 INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:35:31
 ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:35:57
 ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:35:57
+INFO: database.connection Connected to database cluster. 2026-03-18 01:39:48
+INFO: database.connection Database is initialized. 2026-03-18 01:39:48
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:39:55
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-18 01:39:55
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:39:55
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:39:55
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:39:55
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-18 01:39:55
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 9.00ms 2026-03-18 01:39:55
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-18 01:40:30
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-18 01:40:30
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 6.10ms 2026-03-18 01:40:30
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:40:30
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:40:30
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:40:30
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:40:30
+INFO: database.connection Connected to database cluster. 2026-03-18 01:41:22
+INFO: database.connection Database is initialized. 2026-03-18 01:41:22
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-18 01:41:29
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:41:29
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-18 01:41:29
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 11.47ms 2026-03-18 01:41:29
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:41:29
+INFO: services.user_service <beanie.odm.fields.BackLink object at 0x0000021A3FD1BC50> 2026-03-18 01:41:29
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:41:29
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:41:29
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:41:31
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:41:31
+INFO: services.user_service <beanie.odm.fields.BackLink object at 0x0000021A3FD2AFD0> 2026-03-18 01:41:31
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:41:31
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:41:31
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-18 01:42:30
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:42:30
+WARNING: middlewares.request_logging_middleware Client error: GET /dishes/stats client: 127.0.0.1 status: 401 2026-03-18 01:42:30
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-18 01:42:30
+INFO: database.connection Connected to database cluster. 2026-03-18 01:42:31
+INFO: database.connection Database is initialized. 2026-03-18 01:42:31
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-18 01:42:34
+INFO: services.user_service User with id 69b6b19ad166048b675f3161 logged in successfully 2026-03-18 01:42:34
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 7.23ms 2026-03-18 01:42:34
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-18 01:42:36
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-18 01:42:36
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 42.80ms 2026-03-18 01:42:36
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:42:36
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:42:36
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'model_dump' 2026-03-18 01:42:36
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:42:36
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:42:37
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:42:37
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'model_dump' 2026-03-18 01:42:37
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:42:37
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:42:39
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:42:39
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'model_dump' 2026-03-18 01:42:39
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:42:39
+INFO: database.connection Connected to database cluster. 2026-03-18 01:43:47
+INFO: database.connection Database is initialized. 2026-03-18 01:43:47
+INFO: database.connection Connected to database cluster. 2026-03-18 01:44:30
+INFO: database.connection Database is initialized. 2026-03-18 01:44:30
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-18 01:44:30
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-18 01:44:30
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 6.37ms 2026-03-18 01:44:30
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:44:30
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:44:30
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:44:30
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:44:30
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:44:37
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:44:37
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:44:37
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:44:37
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-18 01:44:49
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:44:49
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-18 01:44:49
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 8.84ms 2026-03-18 01:44:49
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:44:49
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:44:49
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:44:49
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:44:50
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:44:50
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:44:50
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:44:50
+INFO: database.connection Connected to database cluster. 2026-03-18 01:51:14
+INFO: database.connection Database is initialized. 2026-03-18 01:51:14
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:51:19
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-18 01:51:19
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-18 01:51:29
+INFO: services.user_service User with id 69b6b19ad166048b675f3161 logged in successfully 2026-03-18 01:51:29
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 4.78ms 2026-03-18 01:51:29
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-18 01:51:34
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-18 01:51:34
+ERROR: middlewares.exception_handler_middleware Server error: 'BackLink' object has no attribute 'id' 2026-03-18 01:51:34
+ERROR: middlewares.request_logging_middleware Server error: GET /users/current/vote client: 127.0.0.1 status: 500 2026-03-18 01:51:34
