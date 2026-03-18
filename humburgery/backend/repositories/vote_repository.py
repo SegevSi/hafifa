@@ -45,7 +45,7 @@ async def get_vote(vote_id: PydanticObjectId) -> Vote:
 
 async def get_vote_by_user(user_id: PydanticObjectId) -> Vote:
     if (
-        vote := await Vote.find_one({"user_id": user_id})
+        vote := await Vote.find_one({"user.$id": user_id})
     ) is not None:
         return vote
 

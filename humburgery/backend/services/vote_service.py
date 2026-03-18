@@ -1,6 +1,6 @@
 import logging
 from beanie import PydanticObjectId
-
+from database.models import Vote
 from exceptions import AuthorizationException
 from repositories import vote_repository
 from schemas.token import TokenData
