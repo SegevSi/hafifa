@@ -119,6 +119,10 @@ const updateDish = async ({dish_id, updateDish }: UpdateDishParms): Promise<Dish
     return await apiRequest(`/dishes/${dish_id}`, "PUT", updateDish);
 };
 
+const deleteVote = async (vote_id: string): Promise<void> => {
+    await apiRequest(`/votes/${vote_id}`, "DELETE", {});
+};
+
 
 export { 
     login, 
@@ -131,5 +135,6 @@ export {
     geAllDishes,
     postDish,
     deleteDish,
-    updateDish
+    updateDish,
+    deleteVote
 };

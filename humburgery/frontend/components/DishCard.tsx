@@ -19,10 +19,11 @@ export default function DishCard(dish: Dish) {
             
         },
         onError: onFetchWithAuthError,
+        retry: retry,
         retryDelay: retryDelay,
         onSuccess: async (): Promise<void> => {
             await queryClient.cancelQueries({queryKey: QueryKeys.GET_ALL_DISHES});
-            console.log("in");
+            
             queryClient.setQueryData(QueryKeys.GET_ALL_DISHES, (old: Dish[]) => deleteDishLocal(old, dish.id));
         },
     });

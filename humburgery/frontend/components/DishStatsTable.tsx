@@ -1,11 +1,11 @@
 "use client"
 
 
-import { getDishesStatistics, onFetchWithAuthError, getUserVote, postVote, changeVotedDish } from "../utils/api";
+import { getDishesStatistics, onFetchWithAuthError, getUserVote, postVote, changeVotedDish, deleteVote } from "../utils/api";
 import { useMutation, useQuery } from '@tanstack/react-query';
 import DishStatsRow from "./DishStatsRow";
 import styles from "../styles/DishStatsTable.module.css";
-import type {DishStats, Vote} from "../types"
+import type { DishStats } from "../types"
 import { NotFound } from "http-json-errors";
 import { retry, retryDelay} from "../utils/mutation";
 
@@ -26,7 +26,7 @@ export default function DishStatsTable() {
         currentVote.refetch();
     };
 
-    const mutateVote = useMutation({
+    const postVoteMutation = useMutation({
         mutationFn: postVote,
         onError: onFetchWithAuthError,
         retry: retry,
@@ -34,7 +34,7 @@ export default function DishStatsTable() {
         onSuccess: onMutationSuccess
     });
 
-    const mutateVotedDish = useMutation({ 
+    const changeVotedDishMutation = useMutation({ 
         mutationFn: changeVotedDish,
         onError: onFetchWithAuthError,
         retry: retry,
@@ -42,11 +42,23 @@ export default function DishStatsTable() {
         onSuccess: onMutationSuccess
     });
 
-    const selectDish = (dishId: string): void => {
+    const deleteVoteMutation = useMutation({ 
+        mutationFn: deleteVote,
+        onError: onFetchWithAuthError,
+        retry: retry,
+        retryDelay: retryDelay,
+        onSuccess: onMutationSuccess
+    });
+
+    const onClickDishStatsRow = (dishId: string): void => {
         if (currentVote.error instanceof NotFound) {
-            mutateVote.mutate(dishId)
+            postVoteMutation.mutate(dishId)
         } else if (currentVote.isSuccess) {
-            mutateVotedDish.mutate({dishId, voteId: currentVote.data.id})
+            if (currentVote.data.dish_id !== dishId) {
+                changeVotedDishMutation.mutate({dishId, voteId: currentVote.data.id});
+            } else {
+                deleteVoteMutation.mutate(currentVote.data.id);
+            }
         }
     };
 
@@ -76,7 +88,7 @@ export default function DishStatsTable() {
                             <DishStatsRow
                                 key={dishStats.id}
                                 dishStats={dishStats}
-                                selectDish={() => selectDish(dishStats.id)}
+                                selectDish={() => onClickDishStatsRow(dishStats.id)}
                                 isSelected={dishStats.id === currentVote.data?.dish_id}
                                 place={index + 1}
                             />
