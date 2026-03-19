@@ -23,7 +23,7 @@ const updateDishLocal = (oldDishes: Dish[], updatedDish: Dish): Dish[] => {
 
 
 const getGroupedDishesByDayOfWeek = (dishes: Dish[]): Dish[][] => {
-    const dishesByDayOfWeek: Dish[][] = new Array(DaysData.DAYS.length).fill([]);
+    const dishesByDayOfWeek: Dish[][] = Array.apply(null, Array(DaysData.DAYS.length)).map(() => []);
 
     dishes.forEach(dish => {
         dishesByDayOfWeek[dish.day_of_week].push(dish);

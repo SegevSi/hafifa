@@ -16,14 +16,14 @@ export default function DishCard(dish: Dish) {
     const deleteDishMutation = useMutation({
         mutationFn: async (): Promise<void> =>  {
             await deleteDish(dish.id);
+            
         },
         onError: onFetchWithAuthError,
-        retry: retry,
         retryDelay: retryDelay,
         onSuccess: async (): Promise<void> => {
-             await queryClient.cancelQueries({queryKey: QueryKeys.GET_ALL_DISHES});
-
-             queryClient.setQueryData(QueryKeys.GET_ALL_DISHES, (old: Dish[]) => deleteDishLocal(old, dish.id));
+            await queryClient.cancelQueries({queryKey: QueryKeys.GET_ALL_DISHES});
+            console.log("in");
+            queryClient.setQueryData(QueryKeys.GET_ALL_DISHES, (old: Dish[]) => deleteDishLocal(old, dish.id));
         },
     });
 
@@ -51,7 +51,7 @@ export default function DishCard(dish: Dish) {
                 <div className={styles.buttonsRow}>
                     <button>עריכה</button>
                     <button
-                    onClick={() => deleteDishMutation.mutate()}
+                        onClick={() => deleteDishMutation.mutate()}
                     >
                         מחיקה
                     </button>

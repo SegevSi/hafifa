@@ -109,7 +109,7 @@ const postDish = async (dish: DishRequest): Promise<Dish> => {
 };
 
 const deleteDish = async (dish_id: string): Promise<void> => {
-    await apiRequest(`/dishes/${dish_id}`, "DELETE");
+    await apiRequest(`/dishes/${dish_id}`, "DELETE", {});
 };
 
 const updateDish = async ({dish_id, updateDish }: UpdateDishParms): Promise<Dish> => {
