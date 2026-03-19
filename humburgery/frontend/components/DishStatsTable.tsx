@@ -71,7 +71,7 @@ export default function DishStatsTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    {dishesStats.isSuccess ? (
+                    {dishesStats.isSuccess && (
                         dishesStats.data.map((dishStats: DishStats, index: number) => // maybe index should be in type? todo
                             <DishStatsRow
                                 key={dishStats.id}
@@ -81,16 +81,9 @@ export default function DishStatsTable() {
                                 place={index + 1}
                             />
                         )
-                    ) : (
-                        <tr className="flex flex-row items-center justify-center">
-                            <td  className="h-24 text-center"> 
-                                No results.
-                            </td>
-                        </tr> 
                     )}
                 </tbody>
             </table>
         </div>
     );
 }
-// fix the No result to be better and just use onerror and loading insted todo outside of table or in middle or do only is succes without more with &&
