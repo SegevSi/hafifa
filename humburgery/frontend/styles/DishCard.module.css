@@ -6,6 +6,7 @@
     flex-direction: column;
     gap: 5px;
     transition: transform 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .dishCard:hover {
@@ -24,6 +25,8 @@
     flex-direction: column;
     gap: 10%;
     background-color: white;
+    flex-grow: 1;
+    margin-bottom: 2%;
 }
 
 
@@ -33,6 +36,9 @@
 
 .dishCardContent .description {
     font-size: medium;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .buttonsRow {
@@ -42,6 +48,8 @@
     justify-content: center;
     gap: 8%;
     width: 100%;
+    align-self: center;
+    margin-top: auto;
 }
 
 .buttonsRow button {

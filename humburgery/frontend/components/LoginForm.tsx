@@ -39,7 +39,7 @@ export default function LoginForm({}) {
             <label htmlFor="username">שם משתמש</label>
             <input id="username" {...register("username", { required: true, maxLength: 20 })} />
             <label htmlFor="password">סיסמה</label>
-            <input id="password" {...register("password", { required: true, maxLength: 20 })} />
+            <input id="password" type="password" {...register("password", { required: true, maxLength: 20 })} />
             <button type="submit">התחברות</button>
             {mutateLogin.isError && (<div className="text-red-700">{mutateLogin.error.message}</div>)}
         </form>
