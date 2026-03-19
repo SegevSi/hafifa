@@ -39,7 +39,8 @@ const fetchWithAuth = async (url: string, options: AuthFetchOptions) => {
         };
         
         const res = await fetch(process.env.NEXT_PUBLIC_API_URL + url, options);
-        const resData = await res.json()
+        const text = await res.text();
+        const resData = text ? JSON.parse(text) : {};
 
         if (!res.ok) {
             throw createError(res.status, resData);
@@ -55,6 +56,8 @@ const fetchWithAuth = async (url: string, options: AuthFetchOptions) => {
 const onFetchWithAuthError = (error: Error) => {
     if (error instanceof Unauthorized) 
         logout();
+
+    console.error(error);
     
 }; 
 
