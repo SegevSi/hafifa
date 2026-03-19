@@ -34,7 +34,7 @@ export default function DishStatsTable() {
         onSuccess: onMutationSuccess
     });
 
-    const mutateVotedDish = useMutation({ // todo onmutate 
+    const mutateVotedDish = useMutation({ 
         mutationFn: changeVotedDish,
         onError: onFetchWithAuthError,
         retry: retry,

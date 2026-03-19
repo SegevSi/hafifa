@@ -9,6 +9,11 @@ const DaysData = {
     DAYS: ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"]  
 } as const; 
 
+
+const QueryKeys = {
+    GET_ALL_DISHES: ['dishes']
+} as const;
+
 const ACCESS_TOKEN_KEY = "accessToken";
 
-export { Routes, ACCESS_TOKEN_KEY, DaysData };
+export { Routes, ACCESS_TOKEN_KEY, DaysData, QueryKeys };

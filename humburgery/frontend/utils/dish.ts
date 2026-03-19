@@ -2,17 +2,17 @@ import type { Dish, DailyDishesProp, UpdateDish, DishRequest } from "../types";
 import { DaysData } from "@/conf";
 
 
-const addDish = (oldDishes: Dish[], newDish: Dish): Dish[] => {
+const addDishLocal = (oldDishes: Dish[], newDish: Dish): Dish[] => {
     return [...oldDishes, newDish];
 };
 
 
-const deleteDish = (oldDishes: Dish[], dish_id: string): Dish[] => {
+const deleteDishLocal = (oldDishes: Dish[], dish_id: string): Dish[] => {
     return oldDishes.filter(dish => dish.id !== dish_id);
 };
 
 
-const updateDish = (oldDishes: Dish[], updatedDish: Dish): Dish[] => {
+const updateDishLocal = (oldDishes: Dish[], updatedDish: Dish): Dish[] => {
     return oldDishes.map(dish => {
         if (updatedDish.id !== dish.id)
             return dish;
@@ -73,9 +73,9 @@ const proccesDishForUpdate = (oldDish: Dish, newDish: DishRequest): UpdateDish =
 };
 
 export {
-    addDish,
-    deleteDish,
-    updateDish,
+    addDishLocal,
+    deleteDishLocal,
+    updateDishLocal,
     proccesDishes,
     proccesDishForUpdate,
 };

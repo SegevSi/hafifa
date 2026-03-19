@@ -4,11 +4,12 @@
 import { geAllDishes, onFetchWithAuthError } from "../utils/api";
 import { useQuery } from '@tanstack/react-query';
 import DailyDishesList from "./DailyDishesList";
+import { QueryKeys } from "../conf";
 
 
 export default function Dishes() {
     const dishes = useQuery({
-	    queryKey: ['dishes'], // todo make  var
+	    queryKey: QueryKeys.GET_ALL_DISHES,
 	    queryFn: geAllDishes,
     });
     
