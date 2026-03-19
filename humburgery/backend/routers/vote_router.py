@@ -26,3 +26,8 @@ async def change_dish(vote_id: PydanticObjectId,
     return {"message": f"Vote with id {dish_id}  dish was changed"}
 
 
+@router.delete("/{vote_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_vote(vote_id: PydanticObjectId) -> None:
+    await vote_service.delete_vote(vote_id)
+
+

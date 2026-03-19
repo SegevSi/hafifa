@@ -37,3 +37,8 @@ async def get_vote_by_user(user_id: PydanticObjectId) -> VoteResponse:
     vote = await vote_repository.get_vote_by_user(user_id)
 
     return process_vote(vote)
+
+
+async def delete_vote(vote_id: PydanticObjectId) -> None:
+    await vote_repository.delete_vote(vote_id)
+    logger.info(f"Vote with id {vote_id} was successfully deleted")

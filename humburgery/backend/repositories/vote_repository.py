@@ -52,3 +52,12 @@ async def get_vote_by_user(user_id: PydanticObjectId) -> Vote:
     raise NotFoundException(f"vote of user with id {user_id} not found")
 
 
+async def delete_vote(vote_id: PydanticObjectId) -> None:
+    if (
+        vote := await Vote.get(vote_id)
+    ) is not None:
+        await vote.delete()
+
+    raise NotFoundException(f"Could not delete vote, vote with id {vote_id} not found")
+
+
