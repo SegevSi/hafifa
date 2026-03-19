@@ -5,18 +5,18 @@
 }
 
 .title {
-    font-size: medium;
+    font-size: large;
 }
 
 .date {
-    font-size: small;
+    font-size: medium;
 }
 
 .dishesRow {
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    overflow-x: auto; 
+    gap: 2%;
+    overflow-y: auto; 
     height: 85%;
 }
 

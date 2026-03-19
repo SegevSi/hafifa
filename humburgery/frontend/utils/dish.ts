@@ -39,7 +39,7 @@ const proccesDishes = (dishes: Dish[]): DailyDishesProp[] => {
     const currDate = new Date();
     const dailyDishesArr = [];
     const todayDishes = {
-        title: `${DaysData.DAYS[currDate.getDay()]} ,${DaysData.TODAY}`,
+        title: `${DaysData.TODAY}, ${DaysData.DAYS[currDate.getDay()]}`,
         date: new Date(currDate),
         dishes: dishesByDayOfWeek[currDate.getDay()]
     };

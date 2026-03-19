@@ -1,10 +1,11 @@
 import Dishes from "../../../components/Dishes";// todo maybe give it better name unit it with child
+import styles from "../../../styles/Home.module.css";
 
 
 export default function Home() {
   
     return (
-        <div className="flex flex-row justify-center items-center h-screen">
+        <div className={styles.home}>
             <Dishes/>
         </div>
     );

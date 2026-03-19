@@ -32,7 +32,7 @@ export default function DishCard(dish: Dish) {
 
     return (
         <div className={styles.dishCard}>
-            <img src="/images/hamburger" alt="img not found"/>
+            <img src="/images/hamburger.jfif" alt="img not found"/>
             <div className={styles.dishCardContent}>
                 <div className={styles.name}>{dish.name}</div>
                 <div className={styles.description}>{dish.description}</div>
