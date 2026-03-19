@@ -1,0 +1,46 @@
+.dishCard {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dishCard:hover {
+    transform: scale(1.1);
+}
+
+
+.dishCard img {
+    width: 100%;
+    height: 45%;
+}
+
+.dishCardContent {
+    height: 55%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+}
+
+
+.dishCardContent .name {
+    font-size: 0.5rem;
+}
+
+.dishCardContent .description {
+    font-size: 0.25rem;
+}
+
+.buttonsRow {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.buttonsRow button {
+    background-color: rgb(154, 188, 103);
+}

@@ -1,0 +1,25 @@
+.dailyDishes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title {
+    font-size: medium;
+}
+
+.date {
+    font-size: small;
+}
+
+.dishesRow {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow-x: auto; 
+    height: 85%;
+}
+
+.dishesRow::-webkit-scrollbar {
+    display: none;
+}
