@@ -4,7 +4,7 @@ export default function DishStatsRow({dishStats, selectDish, isSelected, place}:
   
     return (
         <tr
-            className={isSelected ? "bg-gray-800" : ""}
+            className={isSelected ? "bg-gray-300" : ""}
             onClick={selectDish}
         >
             <td>{place}</td>

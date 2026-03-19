@@ -99,7 +99,7 @@ const changeVotedDish = async ({ dishId, voteId } : changeVotedDishParms): Promi
 };
 
 
-const geAllDishes = async (): Promise<Dish> => {
+const geAllDishes = async (): Promise<Dish[]> => {
     return await apiRequest("/dishes", "GET");
 };
 
@@ -115,6 +115,7 @@ const deleteDish = async (dish_id: string): Promise<void> => {
 const updateDish = async ({dish_id, updateDish }: UpdateDishParms): Promise<Dish> => {
     return await apiRequest(`/dishes/${dish_id}`, "PUT", updateDish);
 };
+
 
 export { 
     login, 

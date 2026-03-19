@@ -63,6 +63,12 @@ type UpdateDishParms = {
     updateDish: UpdateDish; 
 };
 
+type DailyDishesProp = {
+    title: string;
+    dishes: Dish[];
+    date: Date;
+};
+
 export type { 
     LoginFormInput, 
     AuthFetchOptions, 
@@ -75,5 +81,6 @@ export type {
     changeVotedDishParms, 
     DishRequest,
     UpdateDish,
-    UpdateDishParms
+    UpdateDishParms,
+    DailyDishesProp,
 };

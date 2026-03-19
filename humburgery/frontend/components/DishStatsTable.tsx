@@ -27,7 +27,6 @@ export default function DishStatsTable() {
     };
 
     const mutateVote = useMutation({
-        mutationKey: ['postVote'],
         mutationFn: postVote,
         onError: onFetchWithAuthError,
         retry: retry,
@@ -35,8 +34,7 @@ export default function DishStatsTable() {
         onSuccess: onMutationSuccess
     });
 
-    const mutateVoteDish = useMutation({
-        mutationKey: ['changeVoteDish'],
+    const mutateVotedDish = useMutation({ // todo onmutate 
         mutationFn: changeVotedDish,
         onError: onFetchWithAuthError,
         retry: retry,
@@ -48,7 +46,7 @@ export default function DishStatsTable() {
         if (currentVote.error instanceof NotFound) {
             mutateVote.mutate(dishId)
         } else if (currentVote.isSuccess) {
-            mutateVoteDish.mutate({dishId, voteId: currentVote.data.id})
+            mutateVotedDish.mutate({dishId, voteId: currentVote.data.id})
         }
     };
 
@@ -84,7 +82,7 @@ export default function DishStatsTable() {
                             />
                         )
                     ) : (
-                        <tr>
+                        <tr className="flex flex-row items-center justify-center">
                             <td  className="h-24 text-center">
                                 No results.
                             </td>
