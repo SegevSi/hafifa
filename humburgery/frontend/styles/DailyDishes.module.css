@@ -21,8 +21,10 @@
     overflow-y: hidden; 
     height: 40vh;
     width: 100%;
+    
 }
 
 .dishesRow::-webkit-scrollbar {
     display: none;
 }
+
