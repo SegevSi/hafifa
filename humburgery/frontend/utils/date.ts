@@ -1,5 +1,5 @@
 const proccesDate = (date: string | Date): string => {
-    const DATE_FORMAT = "en-Us";
+    const DATE_FORMAT = "en-GB";
 
     if (date instanceof Date)
         return date.toLocaleDateString(DATE_FORMAT);

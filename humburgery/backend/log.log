@@ -9418,3 +9418,136 @@ INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.
 INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:58:33
 INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:58:33
 INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.14ms 2026-03-19 21:58:33
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 21:59:49
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:59:49
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-19 21:59:49
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-19 21:59:49
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-19 21:59:49
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.68ms 2026-03-19 21:59:49
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:59:50
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-19 21:59:50
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-19 21:59:50
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:59:52
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-19 21:59:52
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-19 21:59:52
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:59:56
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-19 21:59:56
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-19 21:59:56
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:00
+INFO: services.vote_service Vote with id 69bc55c0f8ac4cc33b5df7ca was created 2026-03-19 22:00:00
+ERROR: middlewares.exception_handler_middleware Server error: 'Dish' object has no attribute 'ref' 2026-03-19 22:00:00
+ERROR: middlewares.request_logging_middleware Server error: POST /votes client: 127.0.0.1 status: 500 2026-03-19 22:00:00
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:01
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:01
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:01
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:01
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:01
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:01
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:02
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:02
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:02
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:03
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:03
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:03
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:03
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:03
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:03
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:03
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:03
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:03
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:04
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:04
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:04
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:04
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:04
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:04
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:04
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:04
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:04
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:04
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:04
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:04
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:04
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:04
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:04
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:05
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:05
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:05
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:05
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:05
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:05
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:05
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:05
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:05
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:05
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:05
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:05
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:06
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:06
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:06
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:06
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:06
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:06
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:06
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:06
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:06
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:06
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:06
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:06
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:07
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:07
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:07
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:07
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:07
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:07
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:07
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:07
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:07
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:08
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:08
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:08
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:08
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:08
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:08
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:08
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:08
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:08
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:10
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:10
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:10
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-19 22:00:10
+WARNING: middlewares.exception_handler_middleware Client error: Could not create new Vote, user with id 69b6b19ad166048b675f3161  already voted 2026-03-19 22:00:10
+WARNING: middlewares.request_logging_middleware Client error: POST /votes client: 127.0.0.1 status: 409 2026-03-19 22:00:10
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 22:00:10
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-19 22:00:10
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 7.83ms 2026-03-19 22:00:10
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 22:00:10
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-19 22:00:10
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.97ms 2026-03-19 22:00:10
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 22:02:36
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 22:02:36
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-19 22:02:36
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.87ms 2026-03-19 22:02:36
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-19 22:02:36
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.40ms 2026-03-19 22:02:36
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 22:02:38
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 22:02:38
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.55ms 2026-03-19 22:02:38
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 22:02:39
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 22:02:39
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-19 22:02:39
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.70ms 2026-03-19 22:02:39
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-19 22:02:39
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 6.09ms 2026-03-19 22:02:39
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 22:02:40
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 22:02:40
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 6.64ms 2026-03-19 22:02:40
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 22:02:41
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 22:02:41
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-19 22:02:41
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.17ms 2026-03-19 22:02:41
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-19 22:02:41
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 6.03ms 2026-03-19 22:02:41
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 22:02:42
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 22:02:42
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.17ms 2026-03-19 22:02:42
