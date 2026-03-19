@@ -9078,3 +9078,343 @@ INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f31
 INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.62ms 2026-03-19 19:59:43
 INFO: services.dish_service Successfully fetched all dishes stats 2026-03-19 19:59:43
 INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.41ms 2026-03-19 19:59:43
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 20:00:28
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-19 20:00:28
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.89ms 2026-03-19 20:00:28
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 20:00:28
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-19 20:00:28
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.35ms 2026-03-19 20:00:28
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 20:00:29
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 20:00:29
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.66ms 2026-03-19 20:00:29
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69bc371bf8ac4cc33b5df781 client: 127.0.0.1 2026-03-19 20:00:31
+INFO: services.dish_service Dish with id 69bc371bf8ac4cc33b5df781 was deleted 2026-03-19 20:00:31
+INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69bc371bf8ac4cc33b5df781 client: 127.0.0.1 status: 204 duration: 3.48ms 2026-03-19 20:00:31
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 20:00:34
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 20:00:34
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.83ms 2026-03-19 20:00:34
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 20:01:28
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 20:01:28
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.40ms 2026-03-19 20:01:28
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 20:01:34
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 20:01:34
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.30ms 2026-03-19 20:01:34
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 20:01:45
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 20:01:45
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.92ms 2026-03-19 20:01:45
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 20:04:11
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 20:04:11
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.30ms 2026-03-19 20:04:11
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 20:04:12
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-19 20:04:12
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.74ms 2026-03-19 20:04:12
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 20:04:12
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-19 20:04:12
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.76ms 2026-03-19 20:04:12
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 21:33:09
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:33:09
+WARNING: middlewares.request_logging_middleware Client error: GET /dishes/stats client: 127.0.0.1 status: 401 2026-03-19 21:33:09
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-19 21:33:09
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 21:33:10
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:33:10
+WARNING: middlewares.request_logging_middleware Client error: GET /dishes/stats client: 127.0.0.1 status: 401 2026-03-19 21:33:10
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-19 21:33:10
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 21:33:12
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:33:12
+WARNING: middlewares.request_logging_middleware Client error: GET /dishes/stats client: 127.0.0.1 status: 401 2026-03-19 21:33:12
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-19 21:33:12
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 21:33:13
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:33:13
+WARNING: middlewares.request_logging_middleware Client error: GET /dishes/stats client: 127.0.0.1 status: 401 2026-03-19 21:33:13
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-19 21:33:13
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 21:33:14
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:33:14
+WARNING: middlewares.request_logging_middleware Client error: GET /dishes/stats client: 127.0.0.1 status: 401 2026-03-19 21:33:14
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-19 21:33:14
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 21:33:16
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:33:16
+WARNING: middlewares.request_logging_middleware Client error: GET /dishes/stats client: 127.0.0.1 status: 401 2026-03-19 21:33:16
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-19 21:33:16
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-19 21:33:20
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-19 21:33:20
+WARNING: middlewares.request_logging_middleware Client error: GET /dishes/stats client: 127.0.0.1 status: 401 2026-03-19 21:33:20
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 401 2026-03-19 21:33:20
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-19 21:34:18
+INFO: services.user_service User with id 69b6b19ad166048b675f3161 logged in successfully 2026-03-19 21:34:18
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 3.05ms 2026-03-19 21:34:18
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:34:18
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:34:18
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.91ms 2026-03-19 21:34:18
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69bc372af8ac4cc33b5df782 client: 127.0.0.1 2026-03-19 21:34:34
+INFO: services.dish_service Dish with id 69bc372af8ac4cc33b5df782 was deleted 2026-03-19 21:34:34
+INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69bc372af8ac4cc33b5df782 client: 127.0.0.1 status: 204 duration: 4.06ms 2026-03-19 21:34:34
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:34:37
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:34:37
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.08ms 2026-03-19 21:34:37
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-19 21:35:15
+INFO: services.user_service User with id 69b6b19ad166048b675f3161 logged in successfully 2026-03-19 21:35:15
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 2.79ms 2026-03-19 21:35:15
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:36:18
+INFO: services.dish_service Dish with id 69bc5032f8ac4cc33b5df783 was created 2026-03-19 21:36:18
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.67ms 2026-03-19 21:36:18
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:36:46
+INFO: services.dish_service Dish with id 69bc504ef8ac4cc33b5df784 was created 2026-03-19 21:36:46
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.37ms 2026-03-19 21:36:46
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:08
+INFO: services.dish_service Dish with id 69bc5064f8ac4cc33b5df785 was created 2026-03-19 21:37:08
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.60ms 2026-03-19 21:37:08
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:22
+INFO: services.dish_service Dish with id 69bc5072f8ac4cc33b5df786 was created 2026-03-19 21:37:22
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.55ms 2026-03-19 21:37:22
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:27
+INFO: services.dish_service Dish with id 69bc5077f8ac4cc33b5df787 was created 2026-03-19 21:37:27
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.35ms 2026-03-19 21:37:27
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:32
+INFO: services.dish_service Dish with id 69bc507cf8ac4cc33b5df788 was created 2026-03-19 21:37:32
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.48ms 2026-03-19 21:37:32
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:37
+INFO: services.dish_service Dish with id 69bc5081f8ac4cc33b5df789 was created 2026-03-19 21:37:37
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.67ms 2026-03-19 21:37:37
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:37
+INFO: services.dish_service Dish with id 69bc5081f8ac4cc33b5df78a was created 2026-03-19 21:37:37
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.36ms 2026-03-19 21:37:37
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:38
+INFO: services.dish_service Dish with id 69bc5082f8ac4cc33b5df78b was created 2026-03-19 21:37:38
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.50ms 2026-03-19 21:37:38
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:42
+INFO: services.dish_service Dish with id 69bc5086f8ac4cc33b5df78c was created 2026-03-19 21:37:42
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.62ms 2026-03-19 21:37:42
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:42
+INFO: services.dish_service Dish with id 69bc5086f8ac4cc33b5df78d was created 2026-03-19 21:37:42
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.45ms 2026-03-19 21:37:42
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:42
+INFO: services.dish_service Dish with id 69bc5086f8ac4cc33b5df78e was created 2026-03-19 21:37:42
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.38ms 2026-03-19 21:37:42
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:43
+INFO: services.dish_service Dish with id 69bc5087f8ac4cc33b5df78f was created 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.44ms 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:43
+INFO: services.dish_service Dish with id 69bc5087f8ac4cc33b5df790 was created 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.41ms 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:43
+INFO: services.dish_service Dish with id 69bc5087f8ac4cc33b5df791 was created 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 3.30ms 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:43
+INFO: services.dish_service Dish with id 69bc5087f8ac4cc33b5df792 was created 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.69ms 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:43
+INFO: services.dish_service Dish with id 69bc5087f8ac4cc33b5df793 was created 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.39ms 2026-03-19 21:37:43
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:44
+INFO: services.dish_service Dish with id 69bc5088f8ac4cc33b5df794 was created 2026-03-19 21:37:44
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.52ms 2026-03-19 21:37:44
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:51
+INFO: services.dish_service Dish with id 69bc508ff8ac4cc33b5df795 was created 2026-03-19 21:37:51
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.69ms 2026-03-19 21:37:51
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:52
+INFO: services.dish_service Dish with id 69bc5090f8ac4cc33b5df796 was created 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.37ms 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:52
+INFO: services.dish_service Dish with id 69bc5090f8ac4cc33b5df797 was created 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.43ms 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:52
+INFO: services.dish_service Dish with id 69bc5090f8ac4cc33b5df798 was created 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.49ms 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:52
+INFO: services.dish_service Dish with id 69bc5090f8ac4cc33b5df799 was created 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.38ms 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:52
+INFO: services.dish_service Dish with id 69bc5090f8ac4cc33b5df79a was created 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.62ms 2026-03-19 21:37:52
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:53
+INFO: services.dish_service Dish with id 69bc5091f8ac4cc33b5df79b was created 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.60ms 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:53
+INFO: services.dish_service Dish with id 69bc5091f8ac4cc33b5df79c was created 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.60ms 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:53
+INFO: services.dish_service Dish with id 69bc5091f8ac4cc33b5df79d was created 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.81ms 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:53
+INFO: services.dish_service Dish with id 69bc5091f8ac4cc33b5df79e was created 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.40ms 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:53
+INFO: services.dish_service Dish with id 69bc5091f8ac4cc33b5df79f was created 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.59ms 2026-03-19 21:37:53
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:54
+INFO: services.dish_service Dish with id 69bc5092f8ac4cc33b5df7a0 was created 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.39ms 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:54
+INFO: services.dish_service Dish with id 69bc5092f8ac4cc33b5df7a1 was created 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.51ms 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:54
+INFO: services.dish_service Dish with id 69bc5092f8ac4cc33b5df7a2 was created 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.60ms 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:54
+INFO: services.dish_service Dish with id 69bc5092f8ac4cc33b5df7a3 was created 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 3.15ms 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:54
+INFO: services.dish_service Dish with id 69bc5092f8ac4cc33b5df7a4 was created 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.59ms 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:54
+INFO: services.dish_service Dish with id 69bc5092f8ac4cc33b5df7a5 was created 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.39ms 2026-03-19 21:37:54
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:55
+INFO: services.dish_service Dish with id 69bc5093f8ac4cc33b5df7a6 was created 2026-03-19 21:37:55
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.40ms 2026-03-19 21:37:55
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:37:55
+INFO: services.dish_service Dish with id 69bc5093f8ac4cc33b5df7a7 was created 2026-03-19 21:37:55
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.43ms 2026-03-19 21:37:55
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:03
+INFO: services.dish_service Dish with id 69bc509bf8ac4cc33b5df7a8 was created 2026-03-19 21:38:03
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.30ms 2026-03-19 21:38:03
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:03
+INFO: services.dish_service Dish with id 69bc509bf8ac4cc33b5df7a9 was created 2026-03-19 21:38:03
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.84ms 2026-03-19 21:38:03
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:03
+INFO: services.dish_service Dish with id 69bc509bf8ac4cc33b5df7aa was created 2026-03-19 21:38:03
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.42ms 2026-03-19 21:38:03
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:03
+INFO: services.dish_service Dish with id 69bc509bf8ac4cc33b5df7ab was created 2026-03-19 21:38:03
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.62ms 2026-03-19 21:38:03
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:04
+INFO: services.dish_service Dish with id 69bc509cf8ac4cc33b5df7ac was created 2026-03-19 21:38:04
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.52ms 2026-03-19 21:38:04
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:04
+INFO: services.dish_service Dish with id 69bc509cf8ac4cc33b5df7ad was created 2026-03-19 21:38:04
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.79ms 2026-03-19 21:38:04
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:05
+INFO: services.dish_service Dish with id 69bc509df8ac4cc33b5df7ae was created 2026-03-19 21:38:05
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.59ms 2026-03-19 21:38:05
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:05
+INFO: services.dish_service Dish with id 69bc509df8ac4cc33b5df7af was created 2026-03-19 21:38:05
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.43ms 2026-03-19 21:38:05
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:06
+INFO: services.dish_service Dish with id 69bc509ef8ac4cc33b5df7b0 was created 2026-03-19 21:38:06
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.51ms 2026-03-19 21:38:06
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:11
+INFO: services.dish_service Dish with id 69bc50a3f8ac4cc33b5df7b1 was created 2026-03-19 21:38:11
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.45ms 2026-03-19 21:38:11
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:12
+INFO: services.dish_service Dish with id 69bc50a4f8ac4cc33b5df7b2 was created 2026-03-19 21:38:12
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.61ms 2026-03-19 21:38:12
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:12
+INFO: services.dish_service Dish with id 69bc50a4f8ac4cc33b5df7b3 was created 2026-03-19 21:38:12
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.39ms 2026-03-19 21:38:12
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:13
+INFO: services.dish_service Dish with id 69bc50a5f8ac4cc33b5df7b4 was created 2026-03-19 21:38:13
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.51ms 2026-03-19 21:38:13
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:17
+INFO: services.dish_service Dish with id 69bc50a9f8ac4cc33b5df7b5 was created 2026-03-19 21:38:17
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 3.98ms 2026-03-19 21:38:17
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:18
+INFO: services.dish_service Dish with id 69bc50aaf8ac4cc33b5df7b6 was created 2026-03-19 21:38:18
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.60ms 2026-03-19 21:38:18
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:18
+INFO: services.dish_service Dish with id 69bc50aaf8ac4cc33b5df7b7 was created 2026-03-19 21:38:18
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.78ms 2026-03-19 21:38:18
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:19
+INFO: services.dish_service Dish with id 69bc50abf8ac4cc33b5df7b8 was created 2026-03-19 21:38:19
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.48ms 2026-03-19 21:38:19
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:19
+INFO: services.dish_service Dish with id 69bc50abf8ac4cc33b5df7b9 was created 2026-03-19 21:38:19
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.62ms 2026-03-19 21:38:19
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:19
+INFO: services.dish_service Dish with id 69bc50abf8ac4cc33b5df7ba was created 2026-03-19 21:38:19
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.47ms 2026-03-19 21:38:19
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:20
+INFO: services.dish_service Dish with id 69bc50acf8ac4cc33b5df7bb was created 2026-03-19 21:38:20
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.70ms 2026-03-19 21:38:20
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:20
+INFO: services.dish_service Dish with id 69bc50acf8ac4cc33b5df7bc was created 2026-03-19 21:38:20
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.51ms 2026-03-19 21:38:20
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:38:28
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:38:28
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.11ms 2026-03-19 21:38:28
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:38:48
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:38:48
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 5.26ms 2026-03-19 21:38:48
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:59
+INFO: services.dish_service Dish with id 69bc50d3f8ac4cc33b5df7bd was created 2026-03-19 21:38:59
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.46ms 2026-03-19 21:38:59
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:38:59
+INFO: services.dish_service Dish with id 69bc50d3f8ac4cc33b5df7be was created 2026-03-19 21:38:59
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.42ms 2026-03-19 21:38:59
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:00
+INFO: services.dish_service Dish with id 69bc50d4f8ac4cc33b5df7bf was created 2026-03-19 21:39:00
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.57ms 2026-03-19 21:39:00
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:01
+INFO: services.dish_service Dish with id 69bc50d5f8ac4cc33b5df7c0 was created 2026-03-19 21:39:01
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.44ms 2026-03-19 21:39:01
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:01
+INFO: services.dish_service Dish with id 69bc50d5f8ac4cc33b5df7c1 was created 2026-03-19 21:39:01
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.42ms 2026-03-19 21:39:01
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:01
+INFO: services.dish_service Dish with id 69bc50d5f8ac4cc33b5df7c2 was created 2026-03-19 21:39:01
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.44ms 2026-03-19 21:39:01
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:02
+INFO: services.dish_service Dish with id 69bc50d6f8ac4cc33b5df7c3 was created 2026-03-19 21:39:02
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.37ms 2026-03-19 21:39:02
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:02
+INFO: services.dish_service Dish with id 69bc50d6f8ac4cc33b5df7c4 was created 2026-03-19 21:39:02
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.45ms 2026-03-19 21:39:02
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:03
+INFO: services.dish_service Dish with id 69bc50d7f8ac4cc33b5df7c5 was created 2026-03-19 21:39:03
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.50ms 2026-03-19 21:39:03
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:03
+INFO: services.dish_service Dish with id 69bc50d7f8ac4cc33b5df7c6 was created 2026-03-19 21:39:03
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 3.39ms 2026-03-19 21:39:03
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:04
+INFO: services.dish_service Dish with id 69bc50d8f8ac4cc33b5df7c7 was created 2026-03-19 21:39:04
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.43ms 2026-03-19 21:39:04
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:04
+INFO: services.dish_service Dish with id 69bc50d8f8ac4cc33b5df7c8 was created 2026-03-19 21:39:04
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.45ms 2026-03-19 21:39:04
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-19 21:39:05
+INFO: services.dish_service Dish with id 69bc50d9f8ac4cc33b5df7c9 was created 2026-03-19 21:39:05
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.65ms 2026-03-19 21:39:05
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:39:07
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:39:07
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.32ms 2026-03-19 21:39:07
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:43:04
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:43:04
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.21ms 2026-03-19 21:43:04
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:45:25
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:45:25
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.23ms 2026-03-19 21:45:25
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:45:27
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:45:27
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 6.03ms 2026-03-19 21:45:27
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:47:16
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:47:16
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.93ms 2026-03-19 21:47:16
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:47:26
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:47:26
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 5.71ms 2026-03-19 21:47:26
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:49:22
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:49:22
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.47ms 2026-03-19 21:49:22
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:50:18
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:50:18
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.71ms 2026-03-19 21:50:18
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:50:25
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:50:25
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.33ms 2026-03-19 21:50:25
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:50:30
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:50:30
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 7.26ms 2026-03-19 21:50:30
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:50:36
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:50:36
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.12ms 2026-03-19 21:50:36
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:55:57
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:55:57
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.06ms 2026-03-19 21:55:57
+INFO: middlewares.request_logging_middleware Request started: DELETE /dishes/69bc50d4f8ac4cc33b5df7bf client: 127.0.0.1 2026-03-19 21:56:43
+INFO: services.dish_service Dish with id 69bc50d4f8ac4cc33b5df7bf was deleted 2026-03-19 21:56:43
+INFO: middlewares.request_logging_middleware Success: DELETE /dishes/69bc50d4f8ac4cc33b5df7bf client: 127.0.0.1 status: 204 duration: 3.28ms 2026-03-19 21:56:43
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:56:45
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:56:45
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 5.88ms 2026-03-19 21:56:45
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-19 21:58:33
+INFO: services.dish_service Successfully fetched all dishes 2026-03-19 21:58:33
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.14ms 2026-03-19 21:58:33

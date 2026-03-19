@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 10px;
-  padding-right: 10px;
-  width: 100%;
+  margin-top: 25%;
+  margin-right: 35%;
+  width: 17vw;
 }
 
 .loginForm label {
@@ -12,6 +12,7 @@
 }
 
 .loginForm input {
+    background-color: whitesmoke;
     margin-bottom: 10%;
     border: 1px solid gray
 }
