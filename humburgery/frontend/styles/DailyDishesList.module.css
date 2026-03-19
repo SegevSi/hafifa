@@ -1,0 +1,10 @@
+.dailyDishesList {
+    width: 70vw;
+    height: 70vh;
+    margin-top: 2%;
+    overflow-y: auto; 
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}

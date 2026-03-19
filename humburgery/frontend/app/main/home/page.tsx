@@ -2,8 +2,8 @@
 export default function Home() {
   
     return (
-        <div className="flex justify-center items-center">
-
+        <div className="flex flex-row justify-center items-center h-screen">
+                    
         </div>
     );
 }

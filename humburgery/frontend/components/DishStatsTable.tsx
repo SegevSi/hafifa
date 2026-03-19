@@ -12,7 +12,7 @@ import { retry, retryDelay} from "../utils/mutation";
 
 export default function DishStatsTable() {
     const dishesStats = useQuery({
-	    queryKey: ['dishesStats'],
+	    queryKey: ['dishesStats'], // todo make  var
 	    queryFn: getDishesStatistics,
     });
     
@@ -83,7 +83,7 @@ export default function DishStatsTable() {
                         )
                     ) : (
                         <tr className="flex flex-row items-center justify-center">
-                            <td  className="h-24 text-center">
+                            <td  className="h-24 text-center"> 
                                 No results.
                             </td>
                         </tr> 
@@ -93,3 +93,4 @@ export default function DishStatsTable() {
         </div>
     );
 }
+// fix the No result to be better and just use onerror and loading insted todo outside of table or in middle or do only is succes without more with &&
