@@ -1,5 +1,5 @@
 mongodb:
-    username: username
+    username: "will be env var"
     password: "will be env var"
     database: mydb
     host: localhost

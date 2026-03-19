@@ -1,0 +1,2 @@
+db name  host and port, (maybe host and port be together and than need to change backend) maybe should call it backend configmap
+use inside claster connection host
