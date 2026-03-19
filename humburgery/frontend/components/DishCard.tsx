@@ -4,7 +4,7 @@
 import { deleteDish, onFetchWithAuthError, updateDish } from "../utils/api";
 import { useMutation, useQueryClient  } from '@tanstack/react-query';
 import styles from "../styles/DishCard.module.css";
-import type { Dish } from "../types"
+import type { Dish, UpdateDish } from "../types"
 import { retry, retryDelay} from "../utils/mutation";
 import { deleteDishLocal, updateDishLocal } from "../utils/dish";
 import { QueryKeys} from "../conf";
@@ -28,7 +28,9 @@ export default function DishCard(dish: Dish) {
     });
 
     const editDishMutation = useMutation({  
-        mutationFn: updateDish,
+        mutationFn: async (toUpdateDish: UpdateDish): Promise<Dish> => {
+            return await updateDish({dish_id: dish.id, updateDish: toUpdateDish});
+        },
         onError: onFetchWithAuthError,
         retry: retry,
         retryDelay: retryDelay,
