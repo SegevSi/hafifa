@@ -39,3 +39,8 @@
     border-bottom: none;
 }
 
+
+.dishTable tbody tr {
+    height: 10%;
+}
+
