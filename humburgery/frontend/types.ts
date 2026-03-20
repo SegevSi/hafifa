@@ -71,7 +71,7 @@ type DailyDishesProp = {
 
 type DishFormProps = {
     isSubmitionError: boolean;
-    defaultDish: Dish | null;
+    defaultDish: DishRequest | null;
     onSubmit: (dish: DishRequest) => void;
     onClose: () => void;
     submitButtonText: string;

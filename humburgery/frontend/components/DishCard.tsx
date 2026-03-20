@@ -4,16 +4,18 @@
 import { deleteDish, onFetchWithAuthError, updateDish } from "../utils/api";
 import { useMutation, useQueryClient  } from '@tanstack/react-query';
 import styles from "../styles/DishCard.module.css";
-import type { Dish, UpdateDish } from "../types"
+import type { Dish, UpdateDish, DishRequest } from "../types"
 import { retry, retryDelay} from "../utils/mutation";
-import { deleteDishLocal, updateDishLocal } from "../utils/dish";
+import { deleteDishLocal, updateDishLocal, proccesDishForUpdate } from "../utils/dish";
 import { QueryKeys} from "../conf";
 import { useToggle } from "@custom-react-hooks/use-toggle";
+import Modal from "./Modal";
+import DishForm from "./DishForm";
 
 
 export default function DishCard(dish: Dish) {
     const queryClient = useQueryClient();
-    const {value: isModalOpen, setTrue: openModal, setFalse: closeModal} = useToggle(false);
+    const {value: isEditDishFormOpen, setTrue: openEditDishForm, setFalse: closeEditDishForm} = useToggle(false);
     
     const deleteDishMutation = useMutation({
         mutationFn: async (): Promise<void> =>  {
@@ -41,26 +43,48 @@ export default function DishCard(dish: Dish) {
             await queryClient.cancelQueries({queryKey: QueryKeys.GET_ALL_DISHES});
 
             queryClient.setQueryData(QueryKeys.GET_ALL_DISHES, (old: Dish[]) => updateDishLocal(old, updatedDish));
-            closeModal();
+            closeEditDishForm();
         }
     });
 
+    const onEditDishFormSubmit = (formDish: DishRequest): void => {
+        const updateDish = proccesDishForUpdate(dish, formDish);
+        editDishMutation.mutate(updateDish);
+    };
+
 
     return (
-        <div className={styles.dishCard}>
-            <img src="/images/hamburger.jfif" alt="img not found"/>
-            <div className={styles.dishCardContent}>
-                <div className={styles.name}>{dish.name}</div>
-                <div className={styles.description}>{dish.description}</div>
-                <div className={styles.buttonsRow}>
-                    <button>עריכה</button>
-                    <button
-                        onClick={() => deleteDishMutation.mutate()}
-                    >
-                        מחיקה
-                    </button>
+        <>
+            <div className={styles.dishCard}>
+                <img src="/images/hamburger.jfif" alt="img not found"/>
+                <div className={styles.dishCardContent}>
+                    <div className={styles.name}>{dish.name}</div>
+                    <div className={styles.description}>{dish.description}</div>
+                    <div className={styles.buttonsRow}>
+                        <button
+                            onClick={openEditDishForm}
+                        >
+                        עריכה
+                       </button>
+                        <button
+                            onClick={() => deleteDishMutation.mutate()}
+                        >
+                            מחיקה
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+            {isEditDishFormOpen && (
+                <Modal>
+                    <DishForm
+                        isSubmitionError={editDishMutation.isError}
+                        onSubmit={onEditDishFormSubmit}
+                        onClose={closeEditDishForm}
+                        submitButtonText="שמירה"
+                        defaultDish={dish}
+                    />
+                </Modal>
+            )}
+        </>
     );
 }
