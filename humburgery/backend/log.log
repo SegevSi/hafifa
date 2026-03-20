@@ -3323,3 +3323,12 @@ INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.
 INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 01:19:09
 INFO: services.dish_service Successfully fetched all dishes 2026-03-21 01:19:09
 INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.05ms 2026-03-21 01:19:09
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 01:21:42
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 01:21:42
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.93ms 2026-03-21 01:21:42
+INFO: middlewares.request_logging_middleware Request started: PUT /dishes/69bdc8dd698000a103ab7eb9 client: 127.0.0.1 2026-03-21 01:21:55
+INFO: services.dish_service Dish with id 69bdc8dd698000a103ab7eb9 was updated 2026-03-21 01:21:55
+INFO: middlewares.request_logging_middleware Success: PUT /dishes/69bdc8dd698000a103ab7eb9 client: 127.0.0.1 status: 202 duration: 4.00ms 2026-03-21 01:21:55
+INFO: middlewares.request_logging_middleware Request started: PUT /dishes/69bdc8dd698000a103ab7eb9 client: 127.0.0.1 2026-03-21 01:22:16
+INFO: services.dish_service Dish with id 69bdc8dd698000a103ab7eb9 was updated 2026-03-21 01:22:16
+INFO: middlewares.request_logging_middleware Success: PUT /dishes/69bdc8dd698000a103ab7eb9 client: 127.0.0.1 status: 202 duration: 4.31ms 2026-03-21 01:22:16

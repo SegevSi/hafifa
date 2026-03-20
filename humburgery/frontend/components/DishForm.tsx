@@ -39,7 +39,6 @@ export default function LoginForm({ isSubmitionError, defaultDish, onSubmit, onC
                             classNamePrefix="select"
                             isSearchable={false} 
                             isClearable={false}
-                            placeholder=""
                             options={proccesOptions(DaysData.DAYS)}
                             onChange={(({ value }) => field.onChange(value))}
                         />
