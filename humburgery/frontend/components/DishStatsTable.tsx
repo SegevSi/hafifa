@@ -93,7 +93,7 @@ export default function DishStatsTable() {
                                 key={dishStats.id}
                                 dishStats={dishStats}
                                 selectDish={() => onClickDishStatsRow(dishStats.id)}
-                                isSelected={dishStats.id === currentVote.data?.dish_id}
+                                isSelected={currentVote.isSuccess ? dishStats.id === currentVote.data.dish_id : false}
                                 place={index + 1}
                             />
                         )
