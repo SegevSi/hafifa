@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@custom-react-hooks/use-toggle": "^1.5.1",
     "@tanstack/react-query": "^5.90.21",
     "http-json-errors": "^1.2.12",
     "next": "16.1.6",

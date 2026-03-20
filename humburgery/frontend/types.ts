@@ -69,6 +69,15 @@ type DailyDishesProp = {
     date: Date;
 };
 
+type DishFormProps = {
+    isSubmitionError: boolean;
+    defaultDish: Dish;
+    onSubmit: (dish: DishRequest) => void;
+    onClose: () => void;
+    submitButtonText: string;
+}; 
+
+
 export type { 
     LoginFormInput, 
     AuthFetchOptions, 
@@ -83,4 +92,5 @@ export type {
     UpdateDish,
     UpdateDishParms,
     DailyDishesProp,
+    DishFormProps
 };

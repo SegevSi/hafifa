@@ -16,7 +16,7 @@ export default function LoginForm({}) {
     const router = useRouter();
     const mutateLogin = useMutation({
         mutationKey: ["login"],
-        mutationFn: async (data: LoginFormInput): Promise<Token> => {
+        mutationFn: async (data: LoginFormInput): Promise<Token> => { // todo maybe do it in onError
             try {
                 return await login(data);
             } catch (error) {
@@ -45,19 +45,3 @@ export default function LoginForm({}) {
         </form>
     );
 }
-
-
-
-
-// async (data: LoginFormInput) => {
-//             const response = await fetch(`${}/users/login`, {
-//                 method: 'POST',
-//                 body: JSON.stringify(data),
-//                 headers: { 'Content-type': 'application/json' },
-//             });
-            
-//             if (response.status === 404)
-//                 throw Error("Invalid cradentials");
-//             else if (!response.ok)
-//                 throw Error();
-//         }
