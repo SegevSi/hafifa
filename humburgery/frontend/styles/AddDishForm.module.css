@@ -18,12 +18,12 @@
     width: 22%;
     right: 78%;
     top: 5%;
-    padding: 1%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     gap: 2%;
     position: fixed;
-    background-color: aliceblue;
+    background-color: whitesmoke;
 }
 
 .title {
