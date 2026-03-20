@@ -4,7 +4,7 @@
 import { onFetchWithAuthError, postDish } from "../utils/api";
 import { useMutation, useQueryClient  } from '@tanstack/react-query';
 import styles from "../styles/AddDishForm.module.css";
-import type { Dish, DishRequest, UpdateDish } from "../types"
+import type { Dish, DishRequest } from "../types"
 import { retry, retryDelay} from "../utils/mutation";
 import {  addDishLocal } from "../utils/dish";
 import { QueryKeys} from "../conf";
@@ -31,8 +31,8 @@ export default function AddDishForm() {
 
 
     return (
-        <div>
-            <button className={styles.addToMenuButton}>
+        <>
+            <button className={styles.addToMenuButton} onClick={openForm}>
                 + הוספה לתפריט
             </button>
             { isFormOpen && (
@@ -51,6 +51,6 @@ export default function AddDishForm() {
                     </div>
                 </div>
             )}
-        </div>  
+        </>  
     );
 }

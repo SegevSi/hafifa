@@ -2014,3 +2014,6 @@ INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 
 INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 16:01:32
 INFO: services.dish_service Successfully fetched all dishes 2026-03-20 16:01:32
 INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.59ms 2026-03-20 16:01:32
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 16:02:43
+INFO: services.dish_service Successfully fetched all dishes 2026-03-20 16:02:43
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.46ms 2026-03-20 16:02:43
