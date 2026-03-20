@@ -1,0 +1,167 @@
+INFO: database.connection Connected to database cluster. 2026-03-20 12:33:31
+INFO: database.connection Database is initialized. 2026-03-20 12:33:31
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:33:40
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:33:40
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:33:40
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 37.78ms 2026-03-20 12:33:40
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:33:40
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:33:40
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:33:44
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:33:44
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:33:44
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:33:46
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:33:46
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:33:46
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:33:46
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:33:46
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 9.23ms 2026-03-20 12:33:46
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:33:47
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:33:47
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:33:47
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:33:49
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:33:49
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:33:49
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:33:53
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:33:53
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:33:53
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-20 12:33:59
+INFO: services.vote_service Vote with id 69bd22979f3ab9b10d068bed was created 2026-03-20 12:33:59
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.81ms 2026-03-20 12:33:59
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:33:59
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:33:59
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.53ms 2026-03-20 12:33:59
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:33:59
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-20 12:33:59
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.22ms 2026-03-20 12:33:59
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd22979f3ab9b10d068bed client: 127.0.0.1 2026-03-20 12:34:39
+INFO: services.vote_service Vote with id 69bd22979f3ab9b10d068bed was successfully deleted 2026-03-20 12:34:39
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bd22979f3ab9b10d068bed client: 127.0.0.1 status: 204 duration: 3.00ms 2026-03-20 12:34:39
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:34:39
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:34:39
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:34:39
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:34:39
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:34:39
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.21ms 2026-03-20 12:34:39
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:34:40
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:34:40
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:34:40
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:34:42
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:34:42
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:34:42
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:34:46
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:34:46
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:34:46
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-20 12:35:39
+INFO: services.vote_service Vote with id 69bd22fb9f3ab9b10d068bee was created 2026-03-20 12:35:39
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.67ms 2026-03-20 12:35:39
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:35:39
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:35:39
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.49ms 2026-03-20 12:35:39
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:35:39
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-20 12:35:39
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 1.78ms 2026-03-20 12:35:39
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd22fb9f3ab9b10d068bee client: 127.0.0.1 2026-03-20 12:35:40
+INFO: services.vote_service Vote with id 69bd22fb9f3ab9b10d068bee was successfully deleted 2026-03-20 12:35:40
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bd22fb9f3ab9b10d068bee client: 127.0.0.1 status: 204 duration: 2.83ms 2026-03-20 12:35:40
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:35:40
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:35:40
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:35:40
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:35:40
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:35:40
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.84ms 2026-03-20 12:35:40
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd22fb9f3ab9b10d068bee client: 127.0.0.1 2026-03-20 12:35:41
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd22fb9f3ab9b10d068bee not found 2026-03-20 12:35:41
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd22fb9f3ab9b10d068bee client: 127.0.0.1 status: 404 2026-03-20 12:35:41
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:35:41
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:35:41
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:35:41
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd22fb9f3ab9b10d068bee client: 127.0.0.1 2026-03-20 12:35:43
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd22fb9f3ab9b10d068bee not found 2026-03-20 12:35:43
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd22fb9f3ab9b10d068bee client: 127.0.0.1 status: 404 2026-03-20 12:35:43
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:35:43
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:35:43
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:35:43
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd22fb9f3ab9b10d068bee client: 127.0.0.1 2026-03-20 12:35:44
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd22fb9f3ab9b10d068bee not found 2026-03-20 12:35:44
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd22fb9f3ab9b10d068bee client: 127.0.0.1 status: 404 2026-03-20 12:35:44
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:35:47
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:35:47
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:35:47
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-20 12:36:08
+INFO: services.vote_service Vote with id 69bd23189f3ab9b10d068bef was created 2026-03-20 12:36:08
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.68ms 2026-03-20 12:36:08
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:36:08
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:08
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-20 12:36:08
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.55ms 2026-03-20 12:36:08
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:36:08
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 6.89ms 2026-03-20 12:36:08
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 2026-03-20 12:36:10
+INFO: services.vote_service Vote with id 69bd23189f3ab9b10d068bef was successfully deleted 2026-03-20 12:36:10
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 status: 204 duration: 2.53ms 2026-03-20 12:36:10
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:36:10
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:10
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:36:10
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:36:10
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:36:10
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.95ms 2026-03-20 12:36:10
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 2026-03-20 12:36:11
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd23189f3ab9b10d068bef not found 2026-03-20 12:36:11
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 status: 404 2026-03-20 12:36:11
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:11
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:36:11
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:36:11
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 2026-03-20 12:36:13
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd23189f3ab9b10d068bef not found 2026-03-20 12:36:13
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 status: 404 2026-03-20 12:36:13
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:13
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:36:13
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:36:13
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 2026-03-20 12:36:14
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd23189f3ab9b10d068bef not found 2026-03-20 12:36:14
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 status: 404 2026-03-20 12:36:14
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 2026-03-20 12:36:15
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd23189f3ab9b10d068bef not found 2026-03-20 12:36:15
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 status: 404 2026-03-20 12:36:15
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 2026-03-20 12:36:17
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd23189f3ab9b10d068bef not found 2026-03-20 12:36:17
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd23189f3ab9b10d068bef client: 127.0.0.1 status: 404 2026-03-20 12:36:17
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:17
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:36:17
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:36:17
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-20 12:36:18
+INFO: services.vote_service Vote with id 69bd23229f3ab9b10d068bf0 was created 2026-03-20 12:36:18
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.57ms 2026-03-20 12:36:18
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:36:18
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:36:18
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 8.23ms 2026-03-20 12:36:18
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:18
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-20 12:36:18
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.04ms 2026-03-20 12:36:18
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd23229f3ab9b10d068bf0 client: 127.0.0.1 2026-03-20 12:36:21
+INFO: services.vote_service Vote with id 69bd23229f3ab9b10d068bf0 was successfully deleted 2026-03-20 12:36:21
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bd23229f3ab9b10d068bf0 client: 127.0.0.1 status: 204 duration: 2.71ms 2026-03-20 12:36:21
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:36:21
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:21
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:36:21
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:36:21
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:36:21
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 8.19ms 2026-03-20 12:36:21
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bd23229f3ab9b10d068bf0 client: 127.0.0.1 2026-03-20 12:36:22
+WARNING: middlewares.exception_handler_middleware Client error: Could not delete vote, vote with id 69bd23229f3ab9b10d068bf0 not found 2026-03-20 12:36:22
+WARNING: middlewares.request_logging_middleware Client error: DELETE /votes/69bd23229f3ab9b10d068bf0 client: 127.0.0.1 status: 404 2026-03-20 12:36:22
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:22
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:36:22
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:36:22
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:24
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:36:24
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:36:24
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:36:25
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:36:25
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 6.65ms 2026-03-20 12:36:25
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-20 12:36:38
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-20 12:36:38
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-20 12:36:38
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-20 12:36:38
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 12:36:38
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 7.03ms 2026-03-20 12:36:38

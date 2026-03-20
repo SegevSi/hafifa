@@ -14,11 +14,15 @@ export default function DishStatsTable() {
     const dishesStats = useQuery({
 	    queryKey: ['dishesStats'], // todo make  var
 	    queryFn: getDishesStatistics,
+        retry: retry,
+        retryDelay: retryDelay,
     });
     
     const currentVote = useQuery({
 	    queryKey: ['currentVote'],
 	    queryFn: getUserVote,
+        retry: retry,
+        retryDelay: retryDelay,
     });
 
     const onMutationSuccess = (): void => {
