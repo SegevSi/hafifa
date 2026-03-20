@@ -12,7 +12,12 @@
 
 .dishForm input, .dishForm textarea {
     background-color: white;
-    border: 1px solid gray;
+    border: 1px solid gainsboro;
+}
+
+.dishForm input:focus, .dishForm textarea:focus {
+    border: 2px solid #4A90E2;
+    outline: none; 
 }
 
 .dishForm * {

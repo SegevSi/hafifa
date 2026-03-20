@@ -2839,3 +2839,78 @@ INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f31
 INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.45ms 2026-03-20 23:54:33
 INFO: services.dish_service Successfully fetched all dishes stats 2026-03-20 23:54:33
 INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.50ms 2026-03-20 23:54:33
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 23:56:09
+INFO: services.dish_service Successfully fetched all dishes 2026-03-20 23:56:09
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.25ms 2026-03-20 23:56:09
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 23:57:15
+INFO: services.dish_service Successfully fetched all dishes 2026-03-20 23:57:15
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.89ms 2026-03-20 23:57:15
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 23:57:15
+INFO: services.dish_service Successfully fetched all dishes 2026-03-20 23:57:15
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.59ms 2026-03-20 23:57:15
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 23:57:44
+INFO: services.dish_service Successfully fetched all dishes 2026-03-20 23:57:44
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 6.87ms 2026-03-20 23:57:44
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 23:57:44
+INFO: services.dish_service Successfully fetched all dishes 2026-03-20 23:57:44
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.89ms 2026-03-20 23:57:44
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 23:58:22
+INFO: services.dish_service Successfully fetched all dishes 2026-03-20 23:58:22
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.24ms 2026-03-20 23:58:22
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-20 23:58:32
+INFO: services.dish_service Successfully fetched all dishes 2026-03-20 23:58:32
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 6.87ms 2026-03-20 23:58:32
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:01:04
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:01:04
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.92ms 2026-03-21 00:01:04
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:02:08
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:02:08
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.03ms 2026-03-21 00:02:08
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:02:47
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:02:47
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.99ms 2026-03-21 00:02:47
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:02:54
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:02:54
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.61ms 2026-03-21 00:02:54
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:02:59
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:02:59
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.94ms 2026-03-21 00:02:59
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:04:01
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:04:01
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 5.98ms 2026-03-21 00:04:01
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:04:12
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:04:12
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.90ms 2026-03-21 00:04:12
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:04:54
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:04:54
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.73ms 2026-03-21 00:04:54
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:05:28
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:05:28
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 6.08ms 2026-03-21 00:05:28
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:06:11
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:06:11
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.10ms 2026-03-21 00:06:11
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:07:13
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:07:13
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.45ms 2026-03-21 00:07:13
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:07:31
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:07:31
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.22ms 2026-03-21 00:07:31
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:07:47
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:07:47
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.57ms 2026-03-21 00:07:47
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:07:55
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:07:55
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 6.46ms 2026-03-21 00:07:55
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:08:04
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:08:04
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.00ms 2026-03-21 00:08:04
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:08:18
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:08:18
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 8.00ms 2026-03-21 00:08:18
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:08:22
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:08:22
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 7.07ms 2026-03-21 00:08:22
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 00:08:29
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 00:08:29
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.45ms 2026-03-21 00:08:29
