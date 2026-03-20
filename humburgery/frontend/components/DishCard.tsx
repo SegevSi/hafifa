@@ -41,6 +41,7 @@ export default function DishCard(dish: Dish) {
             await queryClient.cancelQueries({queryKey: QueryKeys.GET_ALL_DISHES});
 
             queryClient.setQueryData(QueryKeys.GET_ALL_DISHES, (old: Dish[]) => updateDishLocal(old, updatedDish));
+            closeModal();
         }
     });
 

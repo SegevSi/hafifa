@@ -9,7 +9,7 @@ import { retry, retryDelay} from "../utils/mutation";
 import {  addDishLocal } from "../utils/dish";
 import { QueryKeys} from "../conf";
 import { useToggle } from "@custom-react-hooks/use-toggle";
-import LoginForm from "./LoginForm";
+import DishForm from "./DishForm";
 
 
 export default function AddDishForm() {
@@ -29,14 +29,28 @@ export default function AddDishForm() {
         }
     });
 
-    const onSubmitForm = (dish: DishRequest):void => {
-        postDishMutation.mutate(dish);
-    };
-
 
     return (
-        <button className={styles.addToMenuButton}>
-           + הוספה לתפריט
-        </button>
+        <div>
+            <button className={styles.addToMenuButton}>
+                + הוספה לתפריט
+            </button>
+            { isFormOpen && (
+                <div className={styles.wrapper} >
+                    <div className={styles.title}>
+                        הוספת מאכל
+                    </div>
+                    <div className={styles.formContainer}>
+                        <DishForm
+                            isSubmitionError={postDishMutation.isError}
+                            onSubmit={(dish: DishRequest):void => postDishMutation.mutate(dish)}
+                            onClose={closeForm}
+                            submitButtonText="הוספת מאכל"
+                            defaultDish={null}
+                        />
+                    </div>
+                </div>
+            )}
+        </div>  
     );
 }

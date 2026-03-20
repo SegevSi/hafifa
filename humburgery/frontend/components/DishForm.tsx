@@ -8,7 +8,7 @@ import Select from 'react-select';
 import { DaysData  } from "../conf";
 
 
-export default function LoginForm({ isSubmitionError, defaultDish = null, onSubmit, onClose, submitButtonText} : DishFormProps) {
+export default function LoginForm({ isSubmitionError, defaultDish, onSubmit, onClose, submitButtonText} : DishFormProps) {
     const { register, handleSubmit } = useForm<DishRequest>({
         shouldUnregister: true, 
         defaultValues: defaultDish ? defaultDish : {} 
