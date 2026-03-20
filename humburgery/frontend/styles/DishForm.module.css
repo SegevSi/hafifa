@@ -1,0 +1,47 @@
+.dishForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.dishForm label {
+    font-size: small;
+}
+
+.dishForm input {
+    background-color: whitesmoke;
+    margin-bottom: 10%;
+    border: 1px solid gray
+}
+
+.dishForm * {
+    border-radius: 4px;
+}
+
+.submitButton {
+    margin-top: 5%;
+    background-color: green;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    align-self: center;
+}
+
+.buttons button {
+    background-color: rgb(154, 188, 103);
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+

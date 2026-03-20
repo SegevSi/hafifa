@@ -16,7 +16,7 @@ export default function LoginForm({}) {
     const router = useRouter();
     const mutateLogin = useMutation({
         mutationKey: ["login"],
-        mutationFn: async (data: LoginFormInput): Promise<Token> => { // todo maybe do it in onError
+        mutationFn: async (data: LoginFormInput): Promise<Token> => { 
             try {
                 return await login(data);
             } catch (error) {

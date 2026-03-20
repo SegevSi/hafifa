@@ -71,12 +71,16 @@ type DailyDishesProp = {
 
 type DishFormProps = {
     isSubmitionError: boolean;
-    defaultDish: Dish;
+    defaultDish: Dish | null;
     onSubmit: (dish: DishRequest) => void;
     onClose: () => void;
     submitButtonText: string;
 }; 
 
+type Option = {
+    value: number; 
+    label: string;
+}; 
 
 export type { 
     LoginFormInput, 
@@ -92,5 +96,6 @@ export type {
     UpdateDish,
     UpdateDishParms,
     DailyDishesProp,
-    DishFormProps
+    DishFormProps,
+    Option
 };

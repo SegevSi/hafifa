@@ -8,10 +8,12 @@ import type { Dish, UpdateDish } from "../types"
 import { retry, retryDelay} from "../utils/mutation";
 import { deleteDishLocal, updateDishLocal } from "../utils/dish";
 import { QueryKeys} from "../conf";
+import { useToggle } from "@custom-react-hooks/use-toggle";
 
 
 export default function DishCard(dish: Dish) {
     const queryClient = useQueryClient();
+    const {value: isModalOpen, setTrue: openModal, setFalse: closeModal} = useToggle(false);
     
     const deleteDishMutation = useMutation({
         mutationFn: async (): Promise<void> =>  {
