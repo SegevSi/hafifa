@@ -35,11 +35,14 @@ export default function LoginForm({ isSubmitionError, defaultDish, onSubmit, onC
                     rules={{required: true}}
                     control={control}
                     render={({ field }) => (
-                    <Select
-                        placeholder=""
-                        options={proccesOptions(DaysData.DAYS)}
-                        onChange={(({ value }) => field.onChange(value))}
-                    />
+                        <Select
+                            classNamePrefix="select"
+                            isSearchable={false} 
+                            isClearable={false}
+                            placeholder=""
+                            options={proccesOptions(DaysData.DAYS)}
+                            onChange={(({ value }) => field.onChange(value))}
+                        />
                     )}
                 />
             </div>

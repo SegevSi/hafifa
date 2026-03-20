@@ -10,10 +10,13 @@
     font-size: small;
 }
 
-.dishForm input, .dishForm textarea {
-    background-color: whitesmoke;
-    margin-bottom: 10%;
-    border: 1px solid gray
+.dishForm input, .dishForm textarea, .select__control  {
+    background-color: whitesmoke !important;
+    border: 1px solid gray !important;
+}
+
+.select__control:hover {
+    border-color: black !important;
 }
 
 .dishForm * {
@@ -27,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2%;
+    gap: 15%;
     align-self: center;
     width: 100%;
 }

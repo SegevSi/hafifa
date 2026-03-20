@@ -14,14 +14,16 @@
 
 .formContainer {
     z-index: 20;
-    height: 20%;
-    width: 30%;
-    right: 70%;
-    padding: 3%;
+    height: 94%;
+    width: 22%;
+    right: 78%;
+    top: 5%;
+    padding: 1%;
     display: flex;
     flex-direction: column;
-    gap: 5%;
-    position: sticky;
+    gap: 2%;
+    position: fixed;
+    background-color: aliceblue;
 }
 
 .title {
