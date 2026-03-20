@@ -36,11 +36,11 @@ export default function AddDishForm() {
                 + הוספה לתפריט
             </button>
             { isFormOpen && (
-                <div className={styles.wrapper} >
+                <div className={styles.formContainer} >
                     <div className={styles.title}>
                         הוספת מאכל
                     </div>
-                    <div className={styles.formContainer}>
+                    <div className={styles.wrapper}>
                         <DishForm
                             isSubmitionError={postDishMutation.isError}
                             onSubmit={(dish: DishRequest):void => postDishMutation.mutate(dish)}
