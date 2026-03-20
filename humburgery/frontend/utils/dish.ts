@@ -66,7 +66,7 @@ const proccesDishForUpdate = (oldDish: Dish, newDish: DishRequest): UpdateDish =
 
     for (key in newDish) {
         if (oldDish[key] !== newDish[key])
-            Object.assign(updateDish, {key: newDish[key]});
+            Object.assign(updateDish, {[key]: newDish[key]});
     } 
 
     return updateDish;
