@@ -4545,3 +4545,12 @@ INFO: middlewares.request_logging_middleware Success: GET /users/current/vote cl
 INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 18:32:11
 INFO: services.dish_service Successfully fetched all dishes 2026-03-21 18:32:11
 INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.50ms 2026-03-21 18:32:11
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 18:46:42
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 18:46:42
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.00ms 2026-03-21 18:46:42
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 18:47:24
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 18:47:24
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.27ms 2026-03-21 18:47:24
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 18:49:41
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 18:49:41
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.82ms 2026-03-21 18:49:41
