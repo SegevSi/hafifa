@@ -18,10 +18,8 @@ async def create_vote(vote: VoteRequest, current_user: TokenData = Depends(get_c
 
 
 @router.patch("/{vote_id}/dish", status_code=status.HTTP_202_ACCEPTED)
-async def change_dish(vote_id: PydanticObjectId,
-                      dish_id: Annotated[PydanticObjectId, Body(..., embed=True)],
-                      current_user: TokenData = Depends(get_current_user)):
-    await vote_service.change_dish(vote_id, dish_id, current_user)
+async def change_dish(vote_id: PydanticObjectId, dish_id: Annotated[PydanticObjectId, Body(..., embed=True)]):
+    await vote_service.change_dish(vote_id, dish_id)
 
     return {"message": f"Vote with id {dish_id}  dish was changed"}
 

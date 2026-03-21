@@ -18,13 +18,8 @@ def process_vote_with_links(vote: Vote) -> VoteResponse:
     return VoteResponse(id=vote.id, dish_id=vote.dish.id, user_id=vote.user.id)
 
 
-async def change_dish(vote_id: PydanticObjectId, dish_id: PydanticObjectId, user_data: TokenData) -> None:
-    vote = await vote_repository.get_vote(vote_id)
-
-    if vote.user.ref.id != user_data.user_id:
-        raise AuthorizationException(f"Could not change vote with id {vote_id} dish, user {user_data.username} is not authorized")
-
-    await vote_repository.change_dish(vote, dish_id)
+async def change_dish(vote_id: PydanticObjectId, dish_id: PydanticObjectId) -> None:
+    await vote_repository.change_dish(vote_id, dish_id)
 
     logger.info(f"Vote with id {vote_id} dish was Changed to dish id with id {dish_id}")
 

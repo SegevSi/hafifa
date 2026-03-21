@@ -3362,3 +3362,17 @@ INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.
 INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 01:32:02
 INFO: services.dish_service Dish with id 69bdd8f2698000a103ab7ebd was created 2026-03-21 01:32:02
 INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.71ms 2026-03-21 01:32:02
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 01:34:02
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 01:34:02
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.86ms 2026-03-21 01:34:02
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 01:34:05
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 01:34:05
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.51ms 2026-03-21 01:34:05
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 01:34:14
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 01:34:14
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.20ms 2026-03-21 01:34:14
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 01:36:13
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 01:36:13
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.66ms 2026-03-21 01:36:13
+INFO: database.connection Connected to database cluster. 2026-03-21 01:58:51
+INFO: database.connection Database is initialized. 2026-03-21 01:58:51
