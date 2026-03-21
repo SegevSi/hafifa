@@ -35,8 +35,6 @@ export default function Dishes() {
         }
     });
     
-    if (dishes.isError) 
-        onFetchWithAuthError(dishes.error);
 
     return (
         <div className={styles.dishes}>

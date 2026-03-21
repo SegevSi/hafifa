@@ -67,13 +67,7 @@ export default function DishStatsTable() {
         }
     };
 
-    if (dishesStats.isError) 
-        onFetchWithAuthError(dishesStats.error);
-
-    if (currentVote.isError)
-        onFetchWithAuthError(currentVote.error);
-
-    
+   
     return (
         <div className={styles.tableContainer}>
             <table className={styles.dishTable}>

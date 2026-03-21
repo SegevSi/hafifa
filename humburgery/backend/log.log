@@ -4554,3 +4554,950 @@ INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.
 INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 18:49:41
 INFO: services.dish_service Successfully fetched all dishes 2026-03-21 18:49:41
 INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.82ms 2026-03-21 18:49:41
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 18:55:59
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 18:55:59
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.65ms 2026-03-21 18:55:59
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:09
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:09
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.35ms 2026-03-21 18:56:09
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:09
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:09
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.04ms 2026-03-21 18:56:09
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:10
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:56:10
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 5.88ms 2026-03-21 18:56:10
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:10
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:10
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:10
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 4.81ms 2026-03-21 18:56:10
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:10
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 6.45ms 2026-03-21 18:56:10
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:11
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:56:11
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.09ms 2026-03-21 18:56:11
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:11
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:11
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:11
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.29ms 2026-03-21 18:56:11
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:11
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.00ms 2026-03-21 18:56:11
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:12
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509ef8ac4cc33b5df7b0 2026-03-21 18:56:12
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.78ms 2026-03-21 18:56:12
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:12
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:12
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:12
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.20ms 2026-03-21 18:56:12
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:12
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.83ms 2026-03-21 18:56:12
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:13
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:56:13
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.60ms 2026-03-21 18:56:13
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:13
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:13
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:13
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.41ms 2026-03-21 18:56:13
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:13
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.30ms 2026-03-21 18:56:13
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:15
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bdc8dd698000a103ab7eb9 2026-03-21 18:56:15
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.62ms 2026-03-21 18:56:15
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:15
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:15
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:15
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.21ms 2026-03-21 18:56:15
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:15
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.92ms 2026-03-21 18:56:15
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:17
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:56:17
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.68ms 2026-03-21 18:56:17
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:17
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:17
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:17
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.07ms 2026-03-21 18:56:17
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:17
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.75ms 2026-03-21 18:56:17
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:18
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509ef8ac4cc33b5df7b0 2026-03-21 18:56:18
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.62ms 2026-03-21 18:56:18
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:18
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:18
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:18
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.36ms 2026-03-21 18:56:18
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:18
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.38ms 2026-03-21 18:56:18
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:19
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509df8ac4cc33b5df7af 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.72ms 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:19
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.19ms 2026-03-21 18:56:19
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.84ms 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:19
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509ef8ac4cc33b5df7b0 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.55ms 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:19
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.15ms 2026-03-21 18:56:19
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.79ms 2026-03-21 18:56:19
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:20
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:56:20
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.65ms 2026-03-21 18:56:20
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:20
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:20
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:20
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.15ms 2026-03-21 18:56:20
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:20
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.80ms 2026-03-21 18:56:20
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 18:56:22
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 18:56:22
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.38ms 2026-03-21 18:56:22
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:53
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:53
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:53
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.10ms 2026-03-21 18:56:53
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:53
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.10ms 2026-03-21 18:56:53
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:56:56
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bdb584698000a103ab7eb2 2026-03-21 18:56:56
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.61ms 2026-03-21 18:56:56
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:56:56
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:56:56
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:56:56
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.37ms 2026-03-21 18:56:56
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:56:56
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.00ms 2026-03-21 18:56:56
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:00
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509ef8ac4cc33b5df7b0 2026-03-21 18:57:00
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.38ms 2026-03-21 18:57:00
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:00
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:00
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:00
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.26ms 2026-03-21 18:57:00
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:00
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.96ms 2026-03-21 18:57:00
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:02
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:02
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.86ms 2026-03-21 18:57:02
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:02
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:02
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:02
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.36ms 2026-03-21 18:57:02
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:02
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.13ms 2026-03-21 18:57:02
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:03
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509df8ac4cc33b5df7af 2026-03-21 18:57:03
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.34ms 2026-03-21 18:57:03
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:03
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:03
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:03
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.36ms 2026-03-21 18:57:03
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:03
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.09ms 2026-03-21 18:57:03
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:05
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a8f8ac4cc33b5df7f6 2026-03-21 18:57:05
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.83ms 2026-03-21 18:57:05
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:05
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:05
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:05
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.02ms 2026-03-21 18:57:05
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:05
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.83ms 2026-03-21 18:57:05
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:06
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509ef8ac4cc33b5df7b0 2026-03-21 18:57:06
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.66ms 2026-03-21 18:57:06
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:06
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:06
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:06
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.27ms 2026-03-21 18:57:06
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:06
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.84ms 2026-03-21 18:57:06
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:07
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509df8ac4cc33b5df7af 2026-03-21 18:57:07
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.75ms 2026-03-21 18:57:07
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:07
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:07
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:07
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.18ms 2026-03-21 18:57:07
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:07
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.84ms 2026-03-21 18:57:07
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:09
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:09
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.21ms 2026-03-21 18:57:09
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:09
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:09
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:09
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.28ms 2026-03-21 18:57:09
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:09
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.00ms 2026-03-21 18:57:09
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:10
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509df8ac4cc33b5df7ae 2026-03-21 18:57:10
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.74ms 2026-03-21 18:57:10
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:10
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:10
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:10
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.11ms 2026-03-21 18:57:10
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:10
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.80ms 2026-03-21 18:57:10
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:12
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509ef8ac4cc33b5df7b0 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.05ms 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:12
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.29ms 2026-03-21 18:57:12
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.09ms 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:12
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509df8ac4cc33b5df7af 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.09ms 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:12
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.41ms 2026-03-21 18:57:12
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.28ms 2026-03-21 18:57:12
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:14
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:14
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.62ms 2026-03-21 18:57:14
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:14
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:14
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:14
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 1.95ms 2026-03-21 18:57:14
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:14
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.12ms 2026-03-21 18:57:14
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:15
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:57:15
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.59ms 2026-03-21 18:57:15
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:15
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:15
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:15
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.22ms 2026-03-21 18:57:15
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:15
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.77ms 2026-03-21 18:57:15
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:17
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509ef8ac4cc33b5df7b0 2026-03-21 18:57:17
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.11ms 2026-03-21 18:57:17
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:17
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:17
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:17
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.20ms 2026-03-21 18:57:17
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:17
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.92ms 2026-03-21 18:57:17
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:18
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:18
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.60ms 2026-03-21 18:57:18
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:18
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:18
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:18
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.84ms 2026-03-21 18:57:18
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:18
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.49ms 2026-03-21 18:57:18
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:19
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:57:19
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.92ms 2026-03-21 18:57:19
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:19
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:19
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:19
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.17ms 2026-03-21 18:57:19
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:19
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.93ms 2026-03-21 18:57:19
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:21
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:21
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.62ms 2026-03-21 18:57:21
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:21
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:21
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:21
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.04ms 2026-03-21 18:57:21
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:21
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.65ms 2026-03-21 18:57:21
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:22
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:57:22
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.93ms 2026-03-21 18:57:22
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:22
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:22
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:22
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.45ms 2026-03-21 18:57:22
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:22
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.18ms 2026-03-21 18:57:22
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:23
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:23
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.02ms 2026-03-21 18:57:23
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:23
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:23
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:23
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.36ms 2026-03-21 18:57:23
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:23
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.14ms 2026-03-21 18:57:23
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:24
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:57:24
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.26ms 2026-03-21 18:57:24
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:24
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:24
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:24
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.46ms 2026-03-21 18:57:24
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:24
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.29ms 2026-03-21 18:57:24
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:27
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:27
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.84ms 2026-03-21 18:57:27
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:27
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:27
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:27
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.59ms 2026-03-21 18:57:27
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:27
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.27ms 2026-03-21 18:57:27
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:28
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:57:28
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.49ms 2026-03-21 18:57:28
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:28
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:28
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:28
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.08ms 2026-03-21 18:57:28
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:28
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.60ms 2026-03-21 18:57:28
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:29
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:29
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.65ms 2026-03-21 18:57:29
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:29
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:29
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:29
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.12ms 2026-03-21 18:57:29
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:29
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.70ms 2026-03-21 18:57:29
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:31
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.63ms 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:31
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.07ms 2026-03-21 18:57:31
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.62ms 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:31
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.56ms 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:31
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.70ms 2026-03-21 18:57:31
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.31ms 2026-03-21 18:57:31
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:33
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bdc201698000a103ab7eb7 2026-03-21 18:57:33
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.47ms 2026-03-21 18:57:33
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:33
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:33
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:33
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.37ms 2026-03-21 18:57:33
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:33
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.02ms 2026-03-21 18:57:33
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:35
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bdbb6d698000a103ab7eb6 2026-03-21 18:57:35
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.81ms 2026-03-21 18:57:35
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:35
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:35
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:35
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.45ms 2026-03-21 18:57:35
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:35
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.71ms 2026-03-21 18:57:35
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:37
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bdc7c0698000a103ab7eb8 2026-03-21 18:57:37
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.64ms 2026-03-21 18:57:37
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:37
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:37
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:37
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.40ms 2026-03-21 18:57:37
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:37
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.06ms 2026-03-21 18:57:37
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:39
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bdc8dd698000a103ab7eb9 2026-03-21 18:57:39
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.80ms 2026-03-21 18:57:39
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:39
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:39
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:39
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.21ms 2026-03-21 18:57:39
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:39
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.78ms 2026-03-21 18:57:39
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:47
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.53ms 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:47
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.25ms 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:47
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 1.70ms 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:47
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a9f8ac4cc33b5df7f7 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.89ms 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:47
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.49ms 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:47
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 1.82ms 2026-03-21 18:57:47
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:50
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bdd8f2698000a103ab7ebd 2026-03-21 18:57:50
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 4.53ms 2026-03-21 18:57:50
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:50
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:50
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:50
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.47ms 2026-03-21 18:57:50
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:50
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.21ms 2026-03-21 18:57:50
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:52
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bebb8d9e4c25e6d5e2f3a6 2026-03-21 18:57:52
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.81ms 2026-03-21 18:57:52
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:52
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:52
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:52
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.23ms 2026-03-21 18:57:52
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:52
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.32ms 2026-03-21 18:57:52
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:57:54
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bdc8dd698000a103ab7eb9 2026-03-21 18:57:54
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.92ms 2026-03-21 18:57:54
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:57:54
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:57:54
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:57:54
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.27ms 2026-03-21 18:57:54
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:57:54
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.90ms 2026-03-21 18:57:54
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:58:28
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:58:28
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.98ms 2026-03-21 18:58:28
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:28
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:28
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:28
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.68ms 2026-03-21 18:58:28
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:28
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.44ms 2026-03-21 18:58:28
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 2026-03-21 18:58:30
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 18:58:30
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69beb9299e4c25e6d5e2f3a5/dish client: 127.0.0.1 status: 202 duration: 3.91ms 2026-03-21 18:58:30
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:30
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:30
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:30
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.40ms 2026-03-21 18:58:30
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:30
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.27ms 2026-03-21 18:58:30
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69beb9299e4c25e6d5e2f3a5 client: 127.0.0.1 2026-03-21 18:58:32
+INFO: services.vote_service Vote with id 69beb9299e4c25e6d5e2f3a5 was successfully deleted 2026-03-21 18:58:32
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69beb9299e4c25e6d5e2f3a5 client: 127.0.0.1 status: 204 duration: 2.53ms 2026-03-21 18:58:32
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:32
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:32
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:58:32
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:58:32
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:32
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.79ms 2026-03-21 18:58:32
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:58:34
+INFO: services.vote_service Vote with id 69bece3a9e4c25e6d5e2f3aa was created 2026-03-21 18:58:34
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.76ms 2026-03-21 18:58:34
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:34
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:34
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:34
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.33ms 2026-03-21 18:58:34
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:34
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.14ms 2026-03-21 18:58:34
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece3a9e4c25e6d5e2f3aa client: 127.0.0.1 2026-03-21 18:58:36
+INFO: services.vote_service Vote with id 69bece3a9e4c25e6d5e2f3aa was successfully deleted 2026-03-21 18:58:36
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece3a9e4c25e6d5e2f3aa client: 127.0.0.1 status: 204 duration: 2.39ms 2026-03-21 18:58:36
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:36
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:36
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:58:36
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:58:36
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:36
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.83ms 2026-03-21 18:58:36
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:58:38
+INFO: services.vote_service Vote with id 69bece3e9e4c25e6d5e2f3ab was created 2026-03-21 18:58:38
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.71ms 2026-03-21 18:58:38
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:38
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:38
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:38
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.33ms 2026-03-21 18:58:38
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:38
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.55ms 2026-03-21 18:58:38
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece3e9e4c25e6d5e2f3ab client: 127.0.0.1 2026-03-21 18:58:39
+INFO: services.vote_service Vote with id 69bece3e9e4c25e6d5e2f3ab was successfully deleted 2026-03-21 18:58:39
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece3e9e4c25e6d5e2f3ab client: 127.0.0.1 status: 204 duration: 2.73ms 2026-03-21 18:58:39
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:39
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:39
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:58:39
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:58:39
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:39
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.11ms 2026-03-21 18:58:39
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:58:41
+INFO: services.vote_service Vote with id 69bece419e4c25e6d5e2f3ac was created 2026-03-21 18:58:41
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.15ms 2026-03-21 18:58:41
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:41
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:41
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:41
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.09ms 2026-03-21 18:58:41
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:41
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.10ms 2026-03-21 18:58:41
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece419e4c25e6d5e2f3ac client: 127.0.0.1 2026-03-21 18:58:43
+INFO: services.vote_service Vote with id 69bece419e4c25e6d5e2f3ac was successfully deleted 2026-03-21 18:58:43
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece419e4c25e6d5e2f3ac client: 127.0.0.1 status: 204 duration: 2.37ms 2026-03-21 18:58:43
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:43
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:43
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:58:43
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:58:43
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:43
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.77ms 2026-03-21 18:58:43
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:58:45
+INFO: services.vote_service Vote with id 69bece459e4c25e6d5e2f3ad was created 2026-03-21 18:58:45
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.86ms 2026-03-21 18:58:45
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:45
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:45
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:45
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.54ms 2026-03-21 18:58:45
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:45
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.39ms 2026-03-21 18:58:45
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece459e4c25e6d5e2f3ad client: 127.0.0.1 2026-03-21 18:58:47
+INFO: services.vote_service Vote with id 69bece459e4c25e6d5e2f3ad was successfully deleted 2026-03-21 18:58:47
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece459e4c25e6d5e2f3ad client: 127.0.0.1 status: 204 duration: 2.41ms 2026-03-21 18:58:47
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:47
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:47
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:58:47
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:58:47
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:47
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.30ms 2026-03-21 18:58:47
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:58:49
+INFO: services.vote_service Vote with id 69bece499e4c25e6d5e2f3ae was created 2026-03-21 18:58:49
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.62ms 2026-03-21 18:58:49
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:49
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:49
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:49
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.31ms 2026-03-21 18:58:49
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:49
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.30ms 2026-03-21 18:58:49
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece499e4c25e6d5e2f3ae client: 127.0.0.1 2026-03-21 18:58:51
+INFO: services.vote_service Vote with id 69bece499e4c25e6d5e2f3ae was successfully deleted 2026-03-21 18:58:51
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece499e4c25e6d5e2f3ae client: 127.0.0.1 status: 204 duration: 2.61ms 2026-03-21 18:58:51
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:51
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:51
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:58:51
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:58:51
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:51
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.83ms 2026-03-21 18:58:51
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:58:53
+INFO: services.vote_service Vote with id 69bece4d9e4c25e6d5e2f3af was created 2026-03-21 18:58:53
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.39ms 2026-03-21 18:58:53
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:53
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:53
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:53
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.29ms 2026-03-21 18:58:53
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:53
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.08ms 2026-03-21 18:58:53
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69bece4d9e4c25e6d5e2f3af/dish client: 127.0.0.1 2026-03-21 18:58:55
+INFO: services.vote_service Vote with id 69bece4d9e4c25e6d5e2f3af dish was Changed to dish id with id 69bdbb6d698000a103ab7eb6 2026-03-21 18:58:55
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69bece4d9e4c25e6d5e2f3af/dish client: 127.0.0.1 status: 202 duration: 4.18ms 2026-03-21 18:58:55
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:55
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:55
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:55
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.30ms 2026-03-21 18:58:55
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:55
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.00ms 2026-03-21 18:58:55
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece4d9e4c25e6d5e2f3af client: 127.0.0.1 2026-03-21 18:58:57
+INFO: services.vote_service Vote with id 69bece4d9e4c25e6d5e2f3af was successfully deleted 2026-03-21 18:58:57
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece4d9e4c25e6d5e2f3af client: 127.0.0.1 status: 204 duration: 2.68ms 2026-03-21 18:58:57
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:57
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:57
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:58:57
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:58:57
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:57
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.67ms 2026-03-21 18:58:57
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:58:59
+INFO: services.vote_service Vote with id 69bece539e4c25e6d5e2f3b0 was created 2026-03-21 18:58:59
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.10ms 2026-03-21 18:58:59
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:58:59
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:58:59
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:58:59
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.22ms 2026-03-21 18:58:59
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:58:59
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.57ms 2026-03-21 18:58:59
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece539e4c25e6d5e2f3b0 client: 127.0.0.1 2026-03-21 18:59:00
+INFO: services.vote_service Vote with id 69bece539e4c25e6d5e2f3b0 was successfully deleted 2026-03-21 18:59:00
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece539e4c25e6d5e2f3b0 client: 127.0.0.1 status: 204 duration: 2.56ms 2026-03-21 18:59:00
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:00
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:00
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:00
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:00
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:00
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.02ms 2026-03-21 18:59:00
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:02
+INFO: services.vote_service Vote with id 69bece569e4c25e6d5e2f3b1 was created 2026-03-21 18:59:02
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.48ms 2026-03-21 18:59:02
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:02
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:02
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:02
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.25ms 2026-03-21 18:59:02
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:02
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.89ms 2026-03-21 18:59:02
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece569e4c25e6d5e2f3b1 client: 127.0.0.1 2026-03-21 18:59:04
+INFO: services.vote_service Vote with id 69bece569e4c25e6d5e2f3b1 was successfully deleted 2026-03-21 18:59:04
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece569e4c25e6d5e2f3b1 client: 127.0.0.1 status: 204 duration: 2.56ms 2026-03-21 18:59:04
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:04
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:04
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:04
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:04
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:04
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.90ms 2026-03-21 18:59:04
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:06
+INFO: services.vote_service Vote with id 69bece5a9e4c25e6d5e2f3b2 was created 2026-03-21 18:59:06
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.09ms 2026-03-21 18:59:06
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:06
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:06
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:06
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.35ms 2026-03-21 18:59:06
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:06
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.14ms 2026-03-21 18:59:06
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece5a9e4c25e6d5e2f3b2 client: 127.0.0.1 2026-03-21 18:59:07
+INFO: services.vote_service Vote with id 69bece5a9e4c25e6d5e2f3b2 was successfully deleted 2026-03-21 18:59:07
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece5a9e4c25e6d5e2f3b2 client: 127.0.0.1 status: 204 duration: 2.56ms 2026-03-21 18:59:07
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:07
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:07
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:07
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:07
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:07
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.91ms 2026-03-21 18:59:07
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:08
+INFO: services.vote_service Vote with id 69bece5c9e4c25e6d5e2f3b3 was created 2026-03-21 18:59:08
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.72ms 2026-03-21 18:59:08
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:08
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:08
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:08
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.36ms 2026-03-21 18:59:08
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:08
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.17ms 2026-03-21 18:59:08
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece5c9e4c25e6d5e2f3b3 client: 127.0.0.1 2026-03-21 18:59:09
+INFO: services.vote_service Vote with id 69bece5c9e4c25e6d5e2f3b3 was successfully deleted 2026-03-21 18:59:09
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece5c9e4c25e6d5e2f3b3 client: 127.0.0.1 status: 204 duration: 2.60ms 2026-03-21 18:59:09
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:09
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:09
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:09
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:09
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:09
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.81ms 2026-03-21 18:59:09
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:11
+INFO: services.vote_service Vote with id 69bece5f9e4c25e6d5e2f3b4 was created 2026-03-21 18:59:11
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.92ms 2026-03-21 18:59:11
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:11
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:11
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:11
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.10ms 2026-03-21 18:59:11
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:11
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.26ms 2026-03-21 18:59:11
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece5f9e4c25e6d5e2f3b4 client: 127.0.0.1 2026-03-21 18:59:12
+INFO: services.vote_service Vote with id 69bece5f9e4c25e6d5e2f3b4 was successfully deleted 2026-03-21 18:59:12
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece5f9e4c25e6d5e2f3b4 client: 127.0.0.1 status: 204 duration: 2.54ms 2026-03-21 18:59:12
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:12
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:12
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:12
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:12
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:12
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.79ms 2026-03-21 18:59:12
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:14
+INFO: services.vote_service Vote with id 69bece629e4c25e6d5e2f3b5 was created 2026-03-21 18:59:14
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.51ms 2026-03-21 18:59:14
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:14
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:14
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:14
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.22ms 2026-03-21 18:59:14
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:14
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.81ms 2026-03-21 18:59:14
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece629e4c25e6d5e2f3b5 client: 127.0.0.1 2026-03-21 18:59:15
+INFO: services.vote_service Vote with id 69bece629e4c25e6d5e2f3b5 was successfully deleted 2026-03-21 18:59:15
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece629e4c25e6d5e2f3b5 client: 127.0.0.1 status: 204 duration: 2.75ms 2026-03-21 18:59:15
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:15
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:15
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:15
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:15
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:15
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.04ms 2026-03-21 18:59:15
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:16
+INFO: services.vote_service Vote with id 69bece649e4c25e6d5e2f3b6 was created 2026-03-21 18:59:16
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.99ms 2026-03-21 18:59:16
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:16
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:16
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:16
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.43ms 2026-03-21 18:59:16
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:16
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.40ms 2026-03-21 18:59:16
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece649e4c25e6d5e2f3b6 client: 127.0.0.1 2026-03-21 18:59:17
+INFO: services.vote_service Vote with id 69bece649e4c25e6d5e2f3b6 was successfully deleted 2026-03-21 18:59:17
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece649e4c25e6d5e2f3b6 client: 127.0.0.1 status: 204 duration: 2.82ms 2026-03-21 18:59:17
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:17
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:17
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:17
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:17
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:17
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.03ms 2026-03-21 18:59:17
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:19
+INFO: services.vote_service Vote with id 69bece679e4c25e6d5e2f3b7 was created 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.34ms 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:19
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.47ms 2026-03-21 18:59:19
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.77ms 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece679e4c25e6d5e2f3b7 client: 127.0.0.1 2026-03-21 18:59:19
+INFO: services.vote_service Vote with id 69bece679e4c25e6d5e2f3b7 was successfully deleted 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece679e4c25e6d5e2f3b7 client: 127.0.0.1 status: 204 duration: 2.43ms 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:19
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:19
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:19
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.56ms 2026-03-21 18:59:19
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:21
+INFO: services.vote_service Vote with id 69bece699e4c25e6d5e2f3b8 was created 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.57ms 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:21
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.10ms 2026-03-21 18:59:21
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.59ms 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece699e4c25e6d5e2f3b8 client: 127.0.0.1 2026-03-21 18:59:21
+INFO: services.vote_service Vote with id 69bece699e4c25e6d5e2f3b8 was successfully deleted 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece699e4c25e6d5e2f3b8 client: 127.0.0.1 status: 204 duration: 2.93ms 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:21
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:21
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:21
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.41ms 2026-03-21 18:59:21
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:23
+INFO: services.vote_service Vote with id 69bece6b9e4c25e6d5e2f3b9 was created 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.40ms 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:23
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.27ms 2026-03-21 18:59:23
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.91ms 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece6b9e4c25e6d5e2f3b9 client: 127.0.0.1 2026-03-21 18:59:23
+INFO: services.vote_service Vote with id 69bece6b9e4c25e6d5e2f3b9 was successfully deleted 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece6b9e4c25e6d5e2f3b9 client: 127.0.0.1 status: 204 duration: 2.86ms 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:23
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:23
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:23
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.05ms 2026-03-21 18:59:23
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:25
+INFO: services.vote_service Vote with id 69bece6d9e4c25e6d5e2f3ba was created 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.84ms 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:25
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.51ms 2026-03-21 18:59:25
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.05ms 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece6d9e4c25e6d5e2f3ba client: 127.0.0.1 2026-03-21 18:59:25
+INFO: services.vote_service Vote with id 69bece6d9e4c25e6d5e2f3ba was successfully deleted 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece6d9e4c25e6d5e2f3ba client: 127.0.0.1 status: 204 duration: 2.45ms 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:25
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:25
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:25
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.83ms 2026-03-21 18:59:25
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:27
+INFO: services.vote_service Vote with id 69bece6f9e4c25e6d5e2f3bb was created 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.63ms 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:27
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.42ms 2026-03-21 18:59:27
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.39ms 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece6f9e4c25e6d5e2f3bb client: 127.0.0.1 2026-03-21 18:59:27
+INFO: services.vote_service Vote with id 69bece6f9e4c25e6d5e2f3bb was successfully deleted 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece6f9e4c25e6d5e2f3bb client: 127.0.0.1 status: 204 duration: 2.40ms 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:27
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:27
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:27
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.61ms 2026-03-21 18:59:27
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:29
+INFO: services.vote_service Vote with id 69bece719e4c25e6d5e2f3bc was created 2026-03-21 18:59:29
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.96ms 2026-03-21 18:59:29
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:29
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:29
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:29
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.04ms 2026-03-21 18:59:29
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:29
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.88ms 2026-03-21 18:59:29
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece719e4c25e6d5e2f3bc client: 127.0.0.1 2026-03-21 18:59:30
+INFO: services.vote_service Vote with id 69bece719e4c25e6d5e2f3bc was successfully deleted 2026-03-21 18:59:30
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece719e4c25e6d5e2f3bc client: 127.0.0.1 status: 204 duration: 2.60ms 2026-03-21 18:59:30
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:30
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:30
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:30
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:30
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:30
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.82ms 2026-03-21 18:59:30
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:33
+INFO: services.vote_service Vote with id 69bece759e4c25e6d5e2f3bd was created 2026-03-21 18:59:33
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.38ms 2026-03-21 18:59:33
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:33
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:33
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:33
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.50ms 2026-03-21 18:59:33
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:33
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.28ms 2026-03-21 18:59:33
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece759e4c25e6d5e2f3bd client: 127.0.0.1 2026-03-21 18:59:35
+INFO: services.vote_service Vote with id 69bece759e4c25e6d5e2f3bd was successfully deleted 2026-03-21 18:59:35
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece759e4c25e6d5e2f3bd client: 127.0.0.1 status: 204 duration: 2.57ms 2026-03-21 18:59:35
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:35
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:35
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:35
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:35
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:35
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.05ms 2026-03-21 18:59:35
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:45
+INFO: services.vote_service Vote with id 69bece819e4c25e6d5e2f3be was created 2026-03-21 18:59:45
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.67ms 2026-03-21 18:59:45
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:45
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:46
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.62ms 2026-03-21 18:59:46
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:46
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:46
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.14ms 2026-03-21 18:59:46
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece819e4c25e6d5e2f3be client: 127.0.0.1 2026-03-21 18:59:48
+INFO: services.vote_service Vote with id 69bece819e4c25e6d5e2f3be was successfully deleted 2026-03-21 18:59:48
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece819e4c25e6d5e2f3be client: 127.0.0.1 status: 204 duration: 2.61ms 2026-03-21 18:59:48
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:48
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:48
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:48
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:48
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:48
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.30ms 2026-03-21 18:59:48
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:50
+INFO: services.vote_service Vote with id 69bece869e4c25e6d5e2f3bf was created 2026-03-21 18:59:50
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 4.05ms 2026-03-21 18:59:50
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:50
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:50
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:50
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.52ms 2026-03-21 18:59:50
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:50
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.41ms 2026-03-21 18:59:50
+INFO: middlewares.request_logging_middleware Request started: DELETE /votes/69bece869e4c25e6d5e2f3bf client: 127.0.0.1 2026-03-21 18:59:51
+INFO: services.vote_service Vote with id 69bece869e4c25e6d5e2f3bf was successfully deleted 2026-03-21 18:59:51
+INFO: middlewares.request_logging_middleware Success: DELETE /votes/69bece869e4c25e6d5e2f3bf client: 127.0.0.1 status: 204 duration: 2.74ms 2026-03-21 18:59:51
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:51
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:51
+WARNING: middlewares.exception_handler_middleware Client error: vote of user with id 69b6b19ad166048b675f3161 not found 2026-03-21 18:59:51
+WARNING: middlewares.request_logging_middleware Client error: GET /users/current/vote client: 127.0.0.1 status: 404 2026-03-21 18:59:51
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:51
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.84ms 2026-03-21 18:59:51
+INFO: middlewares.request_logging_middleware Request started: POST /votes client: 127.0.0.1 2026-03-21 18:59:52
+INFO: services.vote_service Vote with id 69bece889e4c25e6d5e2f3c0 was created 2026-03-21 18:59:52
+INFO: middlewares.request_logging_middleware Success: POST /votes client: 127.0.0.1 status: 201 duration: 3.93ms 2026-03-21 18:59:52
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:52
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:52
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:52
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.33ms 2026-03-21 18:59:52
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:52
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 5.65ms 2026-03-21 18:59:52
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69bece889e4c25e6d5e2f3c0/dish client: 127.0.0.1 2026-03-21 18:59:53
+INFO: services.vote_service Vote with id 69bece889e4c25e6d5e2f3c0 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 18:59:53
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69bece889e4c25e6d5e2f3c0/dish client: 127.0.0.1 status: 202 duration: 4.03ms 2026-03-21 18:59:53
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:53
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:53
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:53
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.30ms 2026-03-21 18:59:53
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:53
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 3.97ms 2026-03-21 18:59:53
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69bece889e4c25e6d5e2f3c0/dish client: 127.0.0.1 2026-03-21 18:59:54
+INFO: services.vote_service Vote with id 69bece889e4c25e6d5e2f3c0 dish was Changed to dish id with id 69bc509ef8ac4cc33b5df7b0 2026-03-21 18:59:54
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69bece889e4c25e6d5e2f3c0/dish client: 127.0.0.1 status: 202 duration: 4.01ms 2026-03-21 18:59:54
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 18:59:54
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 18:59:54
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 18:59:54
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.32ms 2026-03-21 18:59:54
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 18:59:54
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.05ms 2026-03-21 18:59:54
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 19:00:58
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 19:00:58
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 2.67ms 2026-03-21 19:00:58
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 19:01:03
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 19:01:03
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 19:01:03
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 3.27ms 2026-03-21 19:01:03
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 19:01:03
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 7.19ms 2026-03-21 19:01:03
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69bece889e4c25e6d5e2f3c0/dish client: 127.0.0.1 2026-03-21 19:01:07
+INFO: services.vote_service Vote with id 69bece889e4c25e6d5e2f3c0 dish was Changed to dish id with id 69bc509cf8ac4cc33b5df7ad 2026-03-21 19:01:07
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69bece889e4c25e6d5e2f3c0/dish client: 127.0.0.1 status: 202 duration: 3.59ms 2026-03-21 19:01:07
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 19:01:07
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 19:01:07
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 19:01:07
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.16ms 2026-03-21 19:01:07
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 19:01:07
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.81ms 2026-03-21 19:01:07
+INFO: middlewares.request_logging_middleware Request started: PATCH /votes/69bece889e4c25e6d5e2f3c0/dish client: 127.0.0.1 2026-03-21 19:01:08
+INFO: services.vote_service Vote with id 69bece889e4c25e6d5e2f3c0 dish was Changed to dish id with id 69bc66a3f8ac4cc33b5df7f3 2026-03-21 19:01:08
+INFO: middlewares.request_logging_middleware Success: PATCH /votes/69bece889e4c25e6d5e2f3c0/dish client: 127.0.0.1 status: 202 duration: 3.84ms 2026-03-21 19:01:08
+INFO: middlewares.request_logging_middleware Request started: GET /dishes/stats client: 127.0.0.1 2026-03-21 19:01:08
+INFO: middlewares.request_logging_middleware Request started: GET /users/current/vote client: 127.0.0.1 2026-03-21 19:01:08
+INFO: services.user_service Fetched vote for user with id 69b6b19ad166048b675f3161 successfully 2026-03-21 19:01:08
+INFO: middlewares.request_logging_middleware Success: GET /users/current/vote client: 127.0.0.1 status: 200 duration: 2.47ms 2026-03-21 19:01:08
+INFO: services.dish_service Successfully fetched all dishes stats 2026-03-21 19:01:08
+INFO: middlewares.request_logging_middleware Success: GET /dishes/stats client: 127.0.0.1 status: 200 duration: 4.23ms 2026-03-21 19:01:08
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 19:01:10
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 19:01:10
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.82ms 2026-03-21 19:01:10
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:35
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:35
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:36
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:36
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:36
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:36
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:37
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:37
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:38
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:38
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:38
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:38
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:38
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:38
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:39
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:39
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:39
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:39
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:39
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:39
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:41
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:41
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:41
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:41
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:01:42
+WARNING: middlewares.request_logging_middleware Client error: POST /dishes client: 127.0.0.1 status: 401 2026-03-21 19:01:42
+INFO: middlewares.request_logging_middleware Request started: POST /users/login client: 127.0.0.1 2026-03-21 19:01:47
+INFO: services.user_service User with id 69b6b19ad166048b675f3161 logged in successfully 2026-03-21 19:01:47
+INFO: middlewares.request_logging_middleware Success: POST /users/login client: 127.0.0.1 status: 200 duration: 2.88ms 2026-03-21 19:01:47
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 19:01:47
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 19:01:47
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 4.47ms 2026-03-21 19:01:47
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:02:07
+INFO: services.dish_service Dish with id 69becf0f9e4c25e6d5e2f3c1 was created 2026-03-21 19:02:07
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.63ms 2026-03-21 19:02:07
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:02:23
+INFO: services.dish_service Dish with id 69becf1f9e4c25e6d5e2f3c2 was created 2026-03-21 19:02:23
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.58ms 2026-03-21 19:02:23
+INFO: middlewares.request_logging_middleware Request started: POST /dishes client: 127.0.0.1 2026-03-21 19:02:41
+INFO: services.dish_service Dish with id 69becf319e4c25e6d5e2f3c3 was created 2026-03-21 19:02:41
+INFO: middlewares.request_logging_middleware Success: POST /dishes client: 127.0.0.1 status: 201 duration: 2.57ms 2026-03-21 19:02:41
+INFO: middlewares.request_logging_middleware Request started: GET /dishes client: 127.0.0.1 2026-03-21 19:03:38
+INFO: services.dish_service Successfully fetched all dishes 2026-03-21 19:03:38
+INFO: middlewares.request_logging_middleware Success: GET /dishes client: 127.0.0.1 status: 200 duration: 3.40ms 2026-03-21 19:03:38
