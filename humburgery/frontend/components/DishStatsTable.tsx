@@ -8,18 +8,19 @@ import styles from "../styles/DishStatsTable.module.css";
 import type { DishStats } from "../types"
 import { NotFound } from "http-json-errors";
 import { retry, retryDelay} from "../utils/mutation";
+import { QueryKeys } from "../conf";
 
 
 export default function DishStatsTable() {
     const dishesStats = useQuery({
-	    queryKey: ['dishesStats'], // todo make  var
+	    queryKey: QueryKeys.GET_DISHES_STATS, 
 	    queryFn: getDishesStatistics,
         retry: retry,
         retryDelay: retryDelay,
     });
     
     const currentVote = useQuery({
-	    queryKey: ['currentVote'],
+	    queryKey: QueryKeys.GET_USER_VOTE,
 	    queryFn: getUserVote,
         retry: retry,
         retryDelay: retryDelay,
@@ -66,7 +67,7 @@ export default function DishStatsTable() {
         }
     };
 
-    if (dishesStats.isError) // todo make it better not like that
+    if (dishesStats.isError) 
         onFetchWithAuthError(dishesStats.error);
 
     if (currentVote.isError)
@@ -88,7 +89,7 @@ export default function DishStatsTable() {
                 </thead>
                 <tbody>
                     {dishesStats.isSuccess && (
-                        dishesStats.data.map((dishStats: DishStats, index: number) => // maybe index should be in type? todo
+                        dishesStats.data.map((dishStats: DishStats, index: number) => 
                             <DishStatsRow
                                 key={dishStats.id}
                                 dishStats={dishStats}

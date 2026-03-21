@@ -11,7 +11,9 @@ const DaysData = {
 
 
 const QueryKeys = {
-    GET_ALL_DISHES: ['dishes']
+    GET_ALL_DISHES: ['dishes'],
+    GET_DISHES_STATS: ['dishesStats'],
+    GET_USER_VOTE: ['currentVote']
 } as const;
 
 const ACCESS_TOKEN_KEY = "accessToken";

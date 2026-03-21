@@ -35,7 +35,7 @@ export default function Dishes() {
         }
     });
     
-    if (dishes.isError) // todo make it better not like that
+    if (dishes.isError) 
         onFetchWithAuthError(dishes.error);
 
     return (

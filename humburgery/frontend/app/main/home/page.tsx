@@ -1,4 +1,4 @@
-import Dishes from "../../../components/Dishes";// todo maybe give it better name unit it with child
+import Dishes from "../../../components/Dishes";
 import styles from "../../../styles/Home.module.css";
 
 
