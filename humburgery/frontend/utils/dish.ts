@@ -47,7 +47,6 @@ const proccesDishes = (dishes: Dish[]): DailyDishesProp[] => {
 
     for (let index = 0; index < DaysData.DAYS.length - 1; index++) {
         currDate.setDate(currDate.getDate() + 1);
-
         dailyDishesArr.push({
             title: DaysData.DAYS[currDate.getDay()],
             date: new Date(currDate),
@@ -61,7 +60,6 @@ const proccesDishes = (dishes: Dish[]): DailyDishesProp[] => {
 
 const proccesDishForUpdate = (oldDish: Dish, newDish: DishRequest): UpdateDish => {
     const updateDish: UpdateDish = {};
-
     let key: keyof DishRequest;
 
     for (key in newDish) {
