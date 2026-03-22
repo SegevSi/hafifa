@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fronend
+  labels:
+    app: fronend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fronend
+  template:
+    metadata:
+      labels:
+        app: fronend
+    spec:
+      containers:
+        - name: fronend-container
+          image:
+          ports:
+            - containerPort: 3000
+          env:
+            - name: BACKEND_HOST // edit front and .env file
+              valueFrom:
+                configMapKeyRef:
+                  name: fronend-config
+                  key: backend_host

@@ -1,2 +1,8 @@
-db name  host and port, (maybe host and port be together and than need to change backend) maybe should call it backend configmap
-use inside claster connection host
+port include in host together
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+data:
+  db_host:
+  db name:
